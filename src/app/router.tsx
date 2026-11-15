@@ -47,6 +47,7 @@ export const router = createBrowserRouter(
       { path: 'me', lazy: () => import('@/features/me/MePage').then((m) => ({ Component: m.MePage })) },
       { path: 'me/settings', lazy: () => import('@/features/me/SettingsPage').then((m) => ({ Component: m.SettingsPage })) },
       { path: 'me/plan', lazy: () => import('@/features/me/PlanPage').then((m) => ({ Component: m.PlanPage })) },
+      { path: 'me/install', lazy: () => import('@/features/install/InstallPage').then((m) => ({ Component: m.InstallPage })) },
       { path: 'me/why', lazy: () => import('@/features/me/WhyPage').then((m) => ({ Component: m.WhyPage })) },
 
       { path: 'feedback', lazy: () => import('@/features/feedback/FeedbackPage').then((m) => ({ Component: m.FeedbackPage })) },

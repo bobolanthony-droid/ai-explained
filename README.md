@@ -64,6 +64,8 @@ dev server reloads. `npm run check` tells you if anything is broken.
 - **Update named tools / review date:** `content/shared/tools.yaml` (the only place products are named).
   Lesson 8 shows this list with its "last reviewed" date. Review it every few months.
 - **The 30-day plan:** `plan` in each `pages.yaml`.
+- **Install instructions:** `install` in each `pages.yaml`. In the browser, an invitation card shows on the
+  Welcome and Learn screens until the app is installed or the user taps "Not now"; the steps stay under Me.
 - **Add a glossary term:**
   1. In `content/shared/glossary.yaml`, add its `id`, `category`, the `lesson` that teaches it and its `related` terms.
   2. In `content/en/glossary.yaml` and `content/fr/glossary.yaml`, write the entry with the same `id`:

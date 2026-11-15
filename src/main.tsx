@@ -7,9 +7,11 @@ import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router';
 import { startLocale } from './i18n';
+import { watchInstall } from './features/install/install';
 import { watchSettings } from './store/applySettings';
 
 watchSettings();
+watchInstall();
 
 // Load the saved language's content first, so the first paint is already in it.
 void startLocale().then(() => {

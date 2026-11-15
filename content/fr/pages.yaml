@@ -26,3 +26,32 @@ plan:
       title: "Semaine 4 : un partage"
       text: Montrez à un collègue un prompt qui a bien marché pour vous.
   done: Vous avez fait les quatre étapes. Continuez à votre rythme.
+
+# Comment placer l'appli sur l'écran d'accueil. Affiché dans le navigateur, et dans l'onglet Moi.
+install:
+  title: Installer l'appli
+  intro: Placez l'appli sur votre écran d'accueil. Elle s'ouvre en plein écran et fonctionne sans connexion.
+  cardTitle: Ajoutez cette appli à votre téléphone
+  cardText: Cela prend dix secondes. Vous obtenez une icône sur l'écran d'accueil, et l'appli fonctionne hors ligne.
+  showSteps: Voir comment faire
+  installNow: Installer maintenant
+  dismiss: Plus tard
+  ios:
+    title: Sur iPhone ou iPad
+    steps:
+      - Ouvrez cette page dans Safari.
+      - Touchez le bouton Partager. C'est un carré avec une flèche vers le haut.
+      - Faites défiler vers le bas et touchez « Sur l'écran d'accueil ».
+      - Touchez « Ajouter ».
+  android:
+    title: Sur Android
+    steps:
+      - Ouvrez cette page dans Chrome.
+      - Touchez les trois points en haut à droite.
+      - Touchez « Installer l'application » ou « Ajouter à l'écran d'accueil ».
+      - Touchez « Installer ».
+  desktop:
+    title: Sur un ordinateur
+    text: Dans Chrome ou Edge, cherchez l'icône d'installation à droite de la barre d'adresse. Cette appli est conçue pour le téléphone, mais elle fonctionne aussi sur ordinateur.
+  note: Après l'installation, ouvrez l'appli une fois en étant connecté. Ensuite, elle fonctionne sans connexion.
+  installed: L'appli est déjà installée sur cet appareil.

@@ -93,6 +93,12 @@ export function MePage() {
           </Link>
         </li>
         <li>
+          <Link to="/me/install" className="row-link">
+            {content.pages.install.title}
+            <ChevronIcon />
+          </Link>
+        </li>
+        <li>
           <Link to="/me/settings" className="row-link">
             {t('me.settings')}
             <ChevronIcon />

@@ -16,11 +16,13 @@ export type Settings = {
   theme: Theme;
   textSize: TextSize;
   reduceMotion: boolean;
+  /** The user tapped "Not now" on the install invitation. */
+  installHintDismissed: boolean;
 };
 
 export const useSettings = create<Settings>()(
   persist(
-    (): Settings => ({ locale: 'en', theme: 'light', textSize: 'standard', reduceMotion: false }),
+    (): Settings => ({ locale: 'en', theme: 'light', textSize: 'standard', reduceMotion: false, installHintDismissed: false }),
     { name: `${STORAGE_PREFIX}settings`, version: 1 },
   ),
 );

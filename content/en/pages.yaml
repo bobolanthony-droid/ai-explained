@@ -26,3 +26,32 @@ plan:
       title: "Week 4: one thing shared"
       text: Show a colleague one prompt that worked for you.
   done: You have done all four steps. Carry on at your own pace.
+
+# How to put the app on the home screen. Shown as a card in the browser, and under Me.
+install:
+  title: Install the app
+  intro: Put the app on your home screen. It opens full screen and works without a connection.
+  cardTitle: Add this app to your phone
+  cardText: It takes ten seconds. You get an icon on your home screen, and the app works offline.
+  showSteps: Show me how
+  installNow: Install now
+  dismiss: Not now
+  ios:
+    title: On iPhone or iPad
+    steps:
+      - Open this page in Safari.
+      - Tap the Share button. It is a square with an arrow pointing up.
+      - Scroll down and tap “Add to Home Screen”.
+      - Tap “Add”.
+  android:
+    title: On Android
+    steps:
+      - Open this page in Chrome.
+      - Tap the three dots at the top right.
+      - Tap “Install app” or “Add to Home screen”.
+      - Tap “Install”.
+  desktop:
+    title: On a computer
+    text: In Chrome or Edge, look for the install icon at the right of the address bar. This app is made for phones, but it works on a computer too.
+  note: After you install it, open the app once while you are online. After that, it works without a connection.
+  installed: The app is already installed on this device.

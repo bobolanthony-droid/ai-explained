@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { Choice } from '@/components/Choice';
 import { Page } from '@/components/Page';
+import { InstallCard } from '@/features/install/InstallCard';
 import { useLessons } from '@/features/learn/useLessons';
 import { finishWelcome, useProgress } from '@/store/progress';
 import { PROMPT_LESSON, type WelcomeAnswers, suggestStart } from '@/store/progressLogic';
@@ -59,7 +60,8 @@ export function WelcomePage() {
 
   return (
     <Page title={t('welcome.title')} heading={t('learn.greeting')}>
-      <p className="text-ink-soft mt-2 text-lg">{t('welcome.intro')}</p>
+      <InstallCard />
+      <p className="text-ink-soft mt-6 text-lg">{t('welcome.intro')}</p>
 
       <Choice
         legend={t('welcome.feeling.question')}

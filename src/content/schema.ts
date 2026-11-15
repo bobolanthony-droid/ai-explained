@@ -231,6 +231,21 @@ export const LocaleContentSchema = z.strictObject({
   }),
   pages: z.strictObject({
     why: z.strictObject({ title: text, paragraphs: z.array(text).min(1) }),
+    /** How to put the app on the home screen. */
+    install: z.strictObject({
+      title: text,
+      intro: text,
+      cardTitle: text,
+      cardText: text,
+      showSteps: text,
+      installNow: text,
+      dismiss: text,
+      ios: z.strictObject({ title: text, steps: z.array(text).min(2) }),
+      android: z.strictObject({ title: text, steps: z.array(text).min(2) }),
+      desktop: z.strictObject({ title: text, text }),
+      note: text,
+      installed: text,
+    }),
     /** The "next 30 days" plan: one small step a week. */
     plan: z.strictObject({
       title: text,

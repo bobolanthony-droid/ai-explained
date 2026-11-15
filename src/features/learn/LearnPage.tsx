@@ -3,6 +3,7 @@ import { Link, Navigate } from 'react-router-dom';
 import { shared } from 'virtual:content-index';
 import { Page } from '@/components/Page';
 import { CheckIcon, ChevronIcon } from '@/components/icons';
+import { InstallCard } from '@/features/install/InstallCard';
 import { useContent } from '@/i18n';
 import { useProgress } from '@/store/progress';
 import { doneCount, journey, resume } from '@/store/progressLogic';
@@ -66,6 +67,7 @@ export function LearnPage() {
       <p className="text-ink-soft mt-2 text-lg">{t('learn.intro')}</p>
 
       <ResumeCard />
+      <InstallCard />
 
       <h2 className="font-display mt-10 text-2xl font-semibold">{t('learn.journey')}</h2>
       {/* A gentle count, not a score: no percentages, no streaks. */}
