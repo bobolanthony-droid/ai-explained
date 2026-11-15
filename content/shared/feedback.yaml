@@ -1,0 +1,37 @@
+# In-app feedback: the questions, and where the answers are sent.
+# The wording is in content/<language>/feedback.yaml (same ids).
+#
+# The app has no server of its own, so answers are posted to a form service
+# that collects them for you. Paste its address below.
+#
+#   Formspree (formspree.io): create a form, copy its address, e.g.
+#       endpoint: "https://formspree.io/f/abcdwxyz"
+#   Web3Forms (web3forms.com): use their address and your access key:
+#       endpoint: "https://api.web3forms.com/submit"
+#       accessKey: "your-access-key"
+#
+# While `endpoint` is empty, the "Give feedback" links stay hidden.
+# Anything written here is public (it ships inside the app).
+endpoint: "https://formspree.io/f/mgakaazk"
+accessKey: ""
+
+# `choice` questions list their option ids. Answers are sent as these ids
+# (not the translated labels), so English and French replies add up together.
+questions:
+  - id: clarity
+    type: choice
+    options: [very-clear, mostly-clear, sometimes-confusing, often-confusing]
+  - id: feeling
+    type: choice
+    options: [more-confident, about-the-same, less-confident]
+  - id: most-useful
+    type: text
+  - id: confusing
+    type: text
+  - id: missing
+    type: text
+  - id: recommend
+    type: choice
+    options: ["yes", maybe, "no"]
+  - id: work
+    type: text

@@ -137,6 +137,12 @@ export function LearnPage() {
         {t('learn.whyLink')}
         <ChevronIcon />
       </Link>
+      {shared.feedback.endpoint && (
+        <Link to="/feedback" className="card row-link mt-3">
+          {content.feedback.title}
+          <ChevronIcon />
+        </Link>
+      )}
     </Page>
   );
 }

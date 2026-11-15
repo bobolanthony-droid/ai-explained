@@ -28,6 +28,7 @@ const PAGES = [
   '/me/settings',
   '/me/plan',
   '/me/why',
+  '/feedback',
 ];
 
 test.use({ serviceWorkers: 'block' });

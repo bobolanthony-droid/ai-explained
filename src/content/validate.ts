@@ -122,6 +122,24 @@ export function crossCheck(shared: Shared, locale: LocaleContent, code: string):
     if (!PLACEHOLDER.test(tpl.prompt)) say(`template "${tpl.id}" has no [placeholder] to fill in`);
   }
 
+  // ----- Feedback -----
+  for (const q of shared.feedback.questions) {
+    const wording = locale.feedback.questions[q.id];
+    if (!wording) {
+      say(`feedback question "${q.id}" has no wording in feedback.yaml`);
+      continue;
+    }
+    if (q.type === 'choice') {
+      if (!q.options) say(`feedback question "${q.id}" is a choice but lists no options`);
+      for (const option of q.options ?? []) {
+        if (!wording.options?.[option]) say(`feedback question "${q.id}": option "${option}" has no label`);
+      }
+    }
+  }
+  for (const qid of Object.keys(locale.feedback.questions)) {
+    if (!shared.feedback.questions.some((q) => q.id === qid)) say(`feedback question "${qid}" is worded but not listed in shared/feedback.yaml`);
+  }
+
   // ----- Every [[term]] link, anywhere in the content, must resolve -----
   for (const [path, value] of collectStrings({ ...locale, ui: undefined, meta: undefined }, 'content')) {
     for (const id of termLinks(value)) {

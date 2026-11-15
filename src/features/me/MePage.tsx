@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { shared } from 'virtual:content-index';
 import { Page } from '@/components/Page';
 import { ChevronIcon } from '@/components/icons';
 import { useGlossary } from '@/features/glossary/useGlossary';
@@ -103,6 +104,14 @@ export function MePage() {
             <ChevronIcon />
           </Link>
         </li>
+        {shared.feedback.endpoint && (
+          <li>
+            <Link to="/feedback" className="row-link">
+              {content.feedback.title}
+              <ChevronIcon />
+            </Link>
+          </li>
+        )}
         <li>
           <Link to="/me/why" className="row-link">
             {t('me.why')}

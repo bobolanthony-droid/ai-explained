@@ -142,9 +142,23 @@ The app needs HTTPS to install and work offline (localhost is exempt).
 
 ## Privacy and analytics
 
-Nothing leaves the device. Fonts are bundled, there are no third-party scripts.
+Nothing leaves the device, with one exception the user controls: the optional feedback form
+(see below). Fonts are bundled, there are no third-party scripts.
 If you later want privacy-friendly analytics (a cookieless tool such as Plausible),
 the one place to add it is `src/main.tsx`, behind an explicit setting.
+
+## Feedback from users
+
+The app has a short feedback form at `/feedback` (questions in `content/shared/feedback.yaml`, wording in
+each language's `feedback.yaml`). The app has no server, so answers are posted to a form service you choose:
+
+1. Create a free form at Formspree (or Web3Forms).
+2. Paste its address into `endpoint` in `content/shared/feedback.yaml` (and `accessKey` for Web3Forms).
+3. Commit and push. The "Give feedback" links appear on the Learn and Me tabs.
+
+While `endpoint` is empty the links are hidden, and the form offers "Copy my answers" instead of sending.
+Answers are sent as stable ids (for example `clarity: mostly-clear`), plus the app language, the number of
+lessons finished and the app version. No name, no device identifier.
 
 ## Known limits
 

@@ -1,0 +1,44 @@
+# Feedback screen (English). Question ids and option ids come from content/shared/feedback.yaml.
+
+title: Give feedback
+intro: This is a first version. Your answers help make it better. It takes two minutes, and every question is optional.
+privacy: Your answers go to the person who made this app. We do not ask for your name. Please leave out anything private or confidential.
+alsoSent: We also send the app language and how many lessons you have finished. Nothing else.
+
+questions:
+  clarity:
+    label: How clear were the lessons?
+    options:
+      very-clear: Very clear
+      mostly-clear: Mostly clear
+      sometimes-confusing: Sometimes confusing
+      often-confusing: Often confusing
+  feeling:
+    label: After using the app, how do you feel about AI?
+    options:
+      more-confident: More confident
+      about-the-same: About the same
+      less-confident: Less confident
+  most-useful:
+    label: What was the most useful part?
+  confusing:
+    label: What was confusing or hard to follow?
+  missing:
+    label: What is missing, or what would you change?
+  recommend:
+    label: Would you recommend it to a colleague or a friend?
+    options:
+      "yes": "Yes"
+      maybe: Maybe
+      "no": "No"
+  work:
+    label: What kind of work do you do? (optional)
+
+send: Send my feedback
+sending: Sending...
+empty: Answer at least one question, then send.
+sentTitle: Thank you.
+sentBody: Your feedback has been sent. It will help improve the next version.
+failed: The feedback could not be sent. Check your connection and try again. You can also copy your answers and send them another way.
+copy: Copy my answers
+notReady: Sending is not set up yet. For now, you can copy your answers.

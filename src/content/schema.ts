@@ -41,6 +41,16 @@ export const SharedSchema = z.strictObject({
   practice: z.strictObject({
     exercises: z.array(z.strictObject({ id, lesson: id })),
   }),
+  /** In-app feedback: the questions, and the form service that collects the answers. */
+  feedback: z.strictObject({
+    /** Address the answers are posted to. Empty = feedback links are hidden. */
+    endpoint: z.union([z.literal(''), z.url()]),
+    /** Only for services that need one (Web3Forms). */
+    accessKey: z.string(),
+    questions: z
+      .array(z.strictObject({ id, type: z.enum(['choice', 'text']), options: z.array(id).min(2).optional() }))
+      .min(1),
+  }),
   /** Named example tools live here only, so lesson text never goes stale. */
   tools: z.strictObject({
     lastReviewed: isoDate,
@@ -234,6 +244,22 @@ export const LocaleContentSchema = z.strictObject({
   glossary: z.array(TermSchema),
   exercises: z.array(ExerciseSchema),
   toolkit: ToolkitSchema,
+  /** Wording of the feedback screen. */
+  feedback: z.strictObject({
+    title: text,
+    intro: text,
+    privacy: text,
+    alsoSent: text,
+    questions: z.record(id, z.strictObject({ label: text, options: z.record(id, text).optional() })),
+    send: text,
+    sending: text,
+    empty: text,
+    sentTitle: text,
+    sentBody: text,
+    failed: text,
+    copy: text,
+    notReady: text,
+  }),
 });
 export type LocaleContent = z.infer<typeof LocaleContentSchema>;
 

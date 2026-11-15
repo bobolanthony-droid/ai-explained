@@ -1,0 +1,44 @@
+# Écran d'avis (français). Les id des questions et des choix viennent de content/shared/feedback.yaml.
+
+title: Donner mon avis
+intro: C'est une première version. Vos réponses aident à l'améliorer. Cela prend deux minutes, et aucune question n'est obligatoire.
+privacy: Vos réponses sont envoyées à la personne qui a créé cette appli. Nous ne demandons pas votre nom. N'indiquez rien de privé ni de confidentiel.
+alsoSent: Nous envoyons aussi la langue de l'appli et le nombre de leçons terminées. Rien d'autre.
+
+questions:
+  clarity:
+    label: Les leçons étaient-elles claires ?
+    options:
+      very-clear: Très claires
+      mostly-clear: Plutôt claires
+      sometimes-confusing: Parfois confuses
+      often-confusing: Souvent confuses
+  feeling:
+    label: Après avoir utilisé l'appli, comment vous sentez-vous face à l'IA ?
+    options:
+      more-confident: Plus en confiance
+      about-the-same: À peu près pareil
+      less-confident: Moins en confiance
+  most-useful:
+    label: Qu'est-ce qui vous a été le plus utile ?
+  confusing:
+    label: Qu'est-ce qui était confus ou difficile à suivre ?
+  missing:
+    label: Que manque-t-il, ou que changeriez-vous ?
+  recommend:
+    label: La recommanderiez-vous à un collègue ou à un ami ?
+    options:
+      "yes": Oui
+      maybe: Peut-être
+      "no": Non
+  work:
+    label: Quel type de travail faites-vous ? (facultatif)
+
+send: Envoyer mon avis
+sending: Envoi en cours...
+empty: Répondez à au moins une question, puis envoyez.
+sentTitle: Merci.
+sentBody: Votre avis a bien été envoyé. Il aidera à améliorer la prochaine version.
+failed: L'envoi n'a pas abouti. Vérifiez votre connexion et réessayez. Vous pouvez aussi copier vos réponses et les envoyer autrement.
+copy: Copier mes réponses
+notReady: L'envoi n'est pas encore configuré. En attendant, vous pouvez copier vos réponses.
