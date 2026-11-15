@@ -1,0 +1,70 @@
+# The prompt recipe (English): Role, Context, Task, Format, Constraints, plus optional Examples.
+# The six ids are fixed (the Prompt builder has one box per id). Edit the wording freely.
+#
+#   label        how the element starts in the built prompt, e.g. "Role:"
+#   helper       help text under the builder box
+#   placeholder  example shown inside the empty builder box
+
+intro: A good prompt is like a good briefing. Picture a new colleague on their first day. They are bright, but they know nothing about your work. What would you tell them?
+note: You do not need every ingredient every time. Start with the task. Add the others when the answer is not good enough.
+
+elements:
+  - id: role
+    name: Role
+    label: "Role:"
+    oneLine: Say who the AI should be for this job.
+    analogy: It is like telling a temp, “today you are our receptionist”.
+    before: Write about our new holiday policy.
+    after: You are an HR manager who writes clear, friendly notes to staff. Write about our new holiday policy.
+    helper: Who should the AI act as?
+    placeholder: An HR manager who writes clear, friendly notes to staff
+
+  - id: context
+    name: Context
+    label: "Context:"
+    oneLine: Explain the situation and who it is for.
+    analogy: It is like telling a new colleague what happened before they joined.
+    before: Reply to this customer.
+    after: This customer has waited two weeks for a refund. They are upset but polite. We want to keep them. Reply to this customer.
+    helper: What is going on? Who will read the result?
+    placeholder: Our team of 12 moves offices next month. People are worried about parking.
+
+  - id: task
+    name: Task
+    label: "Task:"
+    oneLine: Say exactly what you want done.
+    analogy: It is like saying “please sort these by date”, not “deal with these”.
+    before: Help with my meeting.
+    after: List five questions I should ask in tomorrow's budget meeting.
+    helper: What should the AI do? Start with a verb.
+    placeholder: Write a short note that explains the office move
+
+  - id: format
+    name: Format
+    label: "Format:"
+    oneLine: Say what shape the answer should take.
+    analogy: It is like asking for “one page” or “a table”, so you do not get a novel.
+    before: Summarise this report.
+    after: Summarise this report in five bullet points. Keep each one under 15 words.
+    helper: Bullet points, a table, an email? How long?
+    placeholder: An email of about 120 words, with a clear subject line
+
+  - id: constraints
+    name: Constraints
+    label: "Constraints:"
+    oneLine: Say what to avoid and what limits to keep.
+    analogy: It is like telling a caterer “no nuts”.
+    before: Write a job advert for a driver.
+    after: Write a job advert for a driver. Use plain words. No jargon. Do not mention the salary.
+    helper: What should it avoid? Are there limits?
+    placeholder: Friendly tone. No jargon. Do not promise dates.
+
+  - id: examples
+    name: Examples (optional)
+    label: "Example of what I want:"
+    oneLine: Show a sample of what good looks like.
+    analogy: It is like showing a painter a photo of the colour you want.
+    before: Write a subject line for my newsletter.
+    after: Write a subject line for my newsletter. Here is one I liked, “Three small wins from March”. Write five in that style.
+    helper: Optional. Paste a short sample you like.
+    placeholder: "“Quick update: the lift is fixed. Thank you for your patience.”"

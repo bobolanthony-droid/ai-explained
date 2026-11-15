@@ -1,0 +1,84 @@
+id: everyday-wins
+title: "Les petits gains du quotidien"
+summary: "Des façons simples et sûres de gagner du temps cette semaine."
+minutes: 7
+
+opener: "Pas besoin d'un grand projet pour tirer parti de l'IA. Les petites tâches sont le meilleur point de départ. Chacune vous fait gagner quelques minutes."
+
+idea:
+  paragraphs:
+    - "L'IA est surtout utile pour le travail des mots, au quotidien. C'est-à-dire lire, écrire et remettre un texte en ordre."
+    - "Voyez-la comme une machine à premiers jets. Elle vous lance rapidement. C'est vous qui terminez le travail."
+  simpler: "Laissez l'IA faire la première version. Vous, vous la mettez au point."
+  analogy: "C'est comme un commis de cuisine qui épluche et remue. Le dîner arrive plus vite sur la table. Mais vous goûtez toujours le plat avant de le servir."
+  analogyLimit: "La limite de cette image : un commis apprend vos goûts avec le temps. L'IA repart de zéro à chaque nouvelle conversation, sauf si vous les lui dites."
+
+sections:
+  - title: Sept petits gains
+    paragraphs:
+      - "Résumer. Collez un long e-mail ou un rapport et demandez l'essentiel."
+      - "Rédiger. Demandez une première version d'un e-mail, d'une note ou d'un plan."
+      - "Reformuler. Rendez un texte plus court, plus chaleureux ou plus simple."
+      - "Chercher des idées. Demandez-en dix, puis gardez les deux bonnes."
+      - "Préparer. Avant une réunion, demandez quelles questions pourraient vous être posées."
+      - "Expliquer. Demandez-lui d'expliquer un document difficile avec des mots simples."
+      - "Le tableur en toutes lettres. Décrivez le calcul que vous voulez, et demandez la formule."
+
+  - title: Elle sait regarder, pas seulement lire
+    paragraphs:
+      - "Beaucoup d'outils sont [[multimodal|multimodaux]]. Ils traitent les images et le son, pas seulement le texte."
+      - "Vous pouvez montrer la photo d'un tableau blanc et demander des notes tapées. Ou partager un graphique et demander ce qui ressort."
+
+  - title: Des réponses tirées de vos propres documents
+    paragraphs:
+      - "Certains outils professionnels cherchent dans les documents de votre entreprise avant de répondre. On appelle cela le [[rag|RAG]]."
+      - "Les réponses collent mieux à votre entreprise. Demandez à l'outil d'indiquer le document utilisé."
+
+  - title: Vous gardez la main
+    paragraphs:
+      - "Ce que l'IA écrit, c'est vous qui l'envoyez. Vous en êtes donc responsable. Relisez chaque mot avant de le laisser partir."
+      - "Cette habitude a un nom. On parle de garder un [[human-in-the-loop|humain dans la boucle]]. Une personne vérifie avant toute action importante."
+      - "Vérifiez les faits, les noms, les dates et les chiffres. Attention aussi aux [[bias|biais]]. L'IA peut reproduire des injustices présentes dans les textes qu'elle a lus."
+
+example:
+  title: Au travail
+  paragraphs:
+    - "Bruno a 40 minutes avant une réunion avec un client. Il colle les notes du trimestre dernier, après avoir retiré le nom du client."
+    - "Il demande un résumé en cinq lignes et trois questions que le client pourrait poser. Cela prend deux minutes."
+    - "Une date du résumé est fausse. Bruno la repère parce qu'il relit. Il la corrige et arrive préparé."
+
+tryIt:
+  - "Choisissez une petite tâche de votre semaine. Un long e-mail à résumer est un bon début."
+  - "Vous préférez ne pas utiliser un vrai document ? L'onglet Pratique propose des textes inventés."
+
+takeaways:
+  - "Commencez petit. Résumer, rédiger, reformuler, chercher des idées."
+  - "L'IA écrit le premier jet. Vous le mettez au point."
+  - "Vous êtes responsable de ce que vous envoyez. Relisez et vérifiez les faits."
+
+quickCheck:
+  - question: Quelle est une bonne première tâche pour l'IA au travail ?
+    options:
+      - text: Décider qui sera promu
+        reply: "Cette décision revient à une personne. Elle touche à la vie des gens, et l'IA peut être injuste. Résumer un e-mail est un début bien plus sûr."
+      - text: Résumer un long e-mail
+        correct: true
+        reply: "Oui. C'est rapide, sans grand risque, et facile à vérifier."
+      - text: Envoyer un contrat sans le relire
+        reply: "Surtout pas. Vous êtes responsable de ce que vous envoyez. Résumer un long e-mail est un début plus sûr."
+
+  - question: L'IA a écrit un bon e-mail pour vous. Que faites-vous avant de l'envoyer ?
+    options:
+      - text: Je le relis en entier et je vérifie les faits
+        correct: true
+        reply: "Oui. Surtout les noms, les dates et les chiffres. C'est votre nom qui figure en bas."
+      - text: Je l'envoie. Il a l'air bien
+        reply: "Il est peut-être très bien. Mais l'IA peut glisser une date ou un nom faux. Une relecture rapide vous protège."
+
+  - question: Que veut dire « humain dans la boucle » ?
+    options:
+      - text: Une personne tape très vite
+        reply: "Pas tout à fait. Cela veut dire qu'une personne vérifie ou valide le travail avant toute action importante."
+      - text: Une personne vérifie le travail de l'IA avant qu'il ne compte
+        correct: true
+        reply: "Oui. L'IA aide, et une personne a le dernier mot."

@@ -1,0 +1,65 @@
+# The structure of the glossary: what is the same in every language.
+# The wording of each term is in content/<language>/glossary.yaml (same ids).
+#
+# To add a term: add a line here, then write it in EVERY language's glossary.yaml.
+# `lesson` is the lesson that introduces the term. Each lesson introduces 3 to 6
+# terms and must link each of them at least once with [[term-id]].
+
+# Order of the filter chips. Labels: "glossary.categories" in each ui.json.
+categories: [basics, how-it-works, using, going-further, safety]
+
+terms:
+  # ----- Lesson 1: You're not late -----
+  - { id: ai, category: basics, lesson: not-late, related: [machine-learning, generative-ai, agi] }
+  - { id: machine-learning, category: basics, lesson: not-late, related: [ai, training-data, model] }
+  - { id: generative-ai, category: basics, lesson: not-late, related: [ai, llm, chatbot] }
+  - { id: chatbot, category: using, lesson: not-late, related: [llm, prompt, agent] }
+
+  # ----- Lesson 2: How chatbots "think" -----
+  - { id: llm, category: how-it-works, lesson: how-chatbots-think, related: [model, training-data, token] }
+  - { id: model, category: basics, lesson: how-chatbots-think, related: [llm, fine-tuning, open-source] }
+  - { id: training-data, category: how-it-works, lesson: how-chatbots-think, related: [machine-learning, llm, bias] }
+  - { id: token, category: how-it-works, lesson: how-chatbots-think, related: [llm, context-window] }
+  - { id: context-window, category: how-it-works, lesson: how-chatbots-think, related: [token, memory] }
+  - { id: hallucination, category: how-it-works, lesson: how-chatbots-think, related: [llm, grounding, human-in-the-loop] }
+
+  # ----- Lesson 3: Writing a good prompt -----
+  - { id: prompt, category: using, lesson: good-prompt, related: [chatbot, custom-instructions, system-prompt] }
+  - { id: grounding, category: using, lesson: good-prompt, related: [hallucination, rag] }
+  - { id: temperature, category: how-it-works, lesson: good-prompt, related: [llm, hallucination] }
+
+  # ----- Lesson 4: Everyday work wins -----
+  - { id: multimodal, category: how-it-works, lesson: everyday-wins, related: [generative-ai, chatbot] }
+  - { id: rag, category: using, lesson: everyday-wins, related: [grounding, hallucination] }
+  - { id: human-in-the-loop, category: going-further, lesson: everyday-wins, related: [hallucination, agent, guardrails] }
+  - { id: bias, category: safety, lesson: everyday-wins, related: [training-data, human-in-the-loop] }
+
+  # ----- Lesson 5: Your AI workspace -----
+  - { id: project, category: using, lesson: workspace, related: [custom-instructions, memory] }
+  - { id: custom-instructions, category: using, lesson: workspace, related: [prompt, system-prompt, project] }
+  - { id: memory, category: using, lesson: workspace, related: [context-window, project, data-privacy] }
+  - { id: system-prompt, category: using, lesson: workspace, related: [custom-instructions, prompt, guardrails] }
+
+  # ----- Lesson 6: Agents, connectors and scheduled tasks -----
+  - { id: agent, category: going-further, lesson: agents, related: [chatbot, agentic-workflow, tool-use] }
+  - { id: agentic-workflow, category: going-further, lesson: agents, related: [agent, automation, human-in-the-loop] }
+  - { id: tool-use, category: going-further, lesson: agents, related: [agent, connector] }
+  - { id: connector, category: going-further, lesson: agents, related: [mcp, tool-use, data-privacy] }
+  - { id: mcp, category: going-further, lesson: agents, related: [connector, api] }
+  - { id: automation, category: going-further, lesson: agents, related: [agent, agentic-workflow, human-in-the-loop] }
+
+  # ----- Lesson 7: Safety, privacy and good judgement -----
+  - { id: data-privacy, category: safety, lesson: safety, related: [confidentiality, connector, memory] }
+  - { id: confidentiality, category: safety, lesson: safety, related: [data-privacy, copyright] }
+  - { id: copyright, category: safety, lesson: safety, related: [confidentiality, generative-ai] }
+  - { id: prompt-injection, category: safety, lesson: safety, related: [agent, connector, guardrails] }
+  - { id: deepfake, category: safety, lesson: safety, related: [generative-ai, multimodal] }
+  - { id: guardrails, category: safety, lesson: safety, related: [system-prompt, prompt-injection, human-in-the-loop] }
+
+  # ----- Lesson 8: Choosing tools and keeping up -----
+  - { id: open-source, category: how-it-works, lesson: keeping-up, related: [model, data-privacy] }
+  - { id: api, category: how-it-works, lesson: keeping-up, related: [mcp, connector] }
+  - { id: plugin, category: using, lesson: keeping-up, related: [connector, tool-use] }
+  - { id: fine-tuning, category: how-it-works, lesson: keeping-up, related: [model, training-data] }
+  - { id: benchmark, category: how-it-works, lesson: keeping-up, related: [model, agi] }
+  - { id: agi, category: basics, lesson: keeping-up, related: [ai, benchmark] }

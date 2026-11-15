@@ -1,0 +1,316 @@
+{
+  "app": {
+    "name": "AI Explained",
+    "wordmark": "*AI* Expl*AI*ned",
+    "tagline": "A calm guide to AI at work."
+  },
+  "nav": {
+    "label": "Main",
+    "skip": "Skip to content",
+    "home": "{{name}}, home",
+    "learn": "Learn",
+    "glossary": "Glossary",
+    "prompts": "Prompts",
+    "practice": "Practice",
+    "me": "Me",
+    "back": "Back"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "welcome": {
+    "title": "Welcome",
+    "intro": "Three quick questions help us suggest where to start. Answer any, all or none.",
+    "feeling": {
+      "question": "How do you feel about AI right now?",
+      "curious": "Curious",
+      "overwhelmed": "A bit overwhelmed",
+      "sceptical": "Sceptical",
+      "behind": "Worried I'm behind"
+    },
+    "used": {
+      "question": "Have you used an AI tool?",
+      "never": "Never",
+      "once": "Once or twice",
+      "often": "Fairly often"
+    },
+    "time": {
+      "question": "How much time do you have each week?",
+      "five": "About 5 minutes",
+      "fifteen": "About 15 minutes",
+      "more": "30 minutes or more"
+    },
+    "submit": "Show my starting point",
+    "skip": "Skip for now",
+    "resultTitle": "A good place to start",
+    "feelingReply": {
+      "curious": "Curiosity is the best place to start.",
+      "overwhelmed": "That makes sense. There is a lot of noise. We will keep things small and clear.",
+      "sceptical": "A little doubt is healthy. We will show you what AI is bad at, too.",
+      "behind": "You are not behind. Most people are just starting."
+    },
+    "timeReply": {
+      "five": "Five minutes a week is enough. One lesson every week or two is a fine pace.",
+      "fifteen": "That is plenty. About two lessons a week, with no rush.",
+      "more": "Lovely. Go at whatever pace feels good."
+    },
+    "usedOften": "You already use AI, so the first lessons may feel familiar. They are short, and you can skip ahead whenever you like.",
+    "suggestion": "We suggest",
+    "seePath": "See the whole journey"
+  },
+  "learn": {
+    "title": "Learn",
+    "greeting": "Hello. You're not late.",
+    "intro": "AI is new for almost everyone. Take it one small step at a time.",
+    "startLabel": "Start here",
+    "journey": "Your journey",
+    "lessonNumber": "Lesson {{number}}",
+    "minutes": "{{n}} min",
+    "lessonCount_one": "{{count}} lesson",
+    "lessonCount_other": "{{count}} lessons",
+    "whyLink": "Why this app exists",
+    "continueLabel": "Continue where you left off",
+    "nextLabel": "Next up",
+    "startButton": "Start the lesson",
+    "continueButton": "Continue the lesson",
+    "finishedTitle": "You have finished the journey.",
+    "finishedBody": "Come back to any lesson, any time.",
+    "doneCount": "{{done}} of {{total}} lessons done",
+    "statusDone": "Done",
+    "soon": "Coming soon"
+  },
+  "lesson": {
+    "idea": "The idea",
+    "tryIt": "Try it",
+    "takeaways": "Key takeaways",
+    "words": "Words in this lesson",
+    "quickCheck": "Quick check",
+    "quickCheckIntro": "No score. Just a way to see what stuck. Pick again as often as you like.",
+    "correctTag": "Yes, that's it",
+    "retryTag": "Not quite",
+    "notes": "Your notes",
+    "notesHint": "Write anything you want to remember. Notes stay on this device.",
+    "notesPlaceholder": "One thing I want to try...",
+    "doneNext": "Done. Next lesson",
+    "doneBack": "Done. Back to my journey",
+    "nextIs": "Next: {{title}}",
+    "exercise": "Practise: {{title}}"
+  },
+  "bookmark": {
+    "save": "Save for later",
+    "saved": "Saved"
+  },
+  "glossary": {
+    "title": "Glossary",
+    "intro": "AI words, in plain language.",
+    "searchLabel": "Search for a word",
+    "searchPlaceholder": "For example: prompt",
+    "filterLabel": "Filter by topic",
+    "all": "All",
+    "categories": {
+      "basics": "The basics",
+      "how-it-works": "How it works",
+      "using": "Using AI",
+      "going-further": "Going further",
+      "safety": "Safety"
+    },
+    "count_one": "{{count}} word",
+    "count_other": "{{count}} words",
+    "none": "No word matches. Try a shorter search.",
+    "analogy": "Think of it like this",
+    "example": "At work",
+    "heardAs": "You might hear",
+    "usageNote": "Good to know",
+    "related": "Related words",
+    "taughtIn": "Taught in",
+    "openFull": "Open the full entry",
+    "close": "Close"
+  },
+  "simpler": {
+    "show": "Explain it even simpler",
+    "hide": "Hide the simpler version",
+    "label": "Even simpler"
+  },
+  "toolkit": {
+    "title": "Prompt Toolkit",
+    "intro": "Everything you need to ask AI clearly. It all works offline.",
+    "tools": {
+      "recipe": {
+        "title": "The recipe",
+        "text": "The five ingredients of a good prompt."
+      },
+      "builder": {
+        "title": "Prompt builder",
+        "text": "Fill in a few boxes. Get a prompt to copy."
+      },
+      "checklist": {
+        "title": "Fix my prompt",
+        "text": "A short checklist to improve any prompt."
+      },
+      "gallery": {
+        "title": "Before and after",
+        "text": "Weak prompts, made strong."
+      },
+      "templates": {
+        "title": "Templates",
+        "text": "Ready-made prompts for everyday tasks."
+      },
+      "tips": {
+        "title": "Tips",
+        "text": "Short ideas you can use today."
+      },
+      "mine": {
+        "title": "My prompts",
+        "text": "Your own prompts and your favourites."
+      }
+    },
+    "before": "Before",
+    "after": "After",
+    "toBuilder": "Try it in the Prompt builder",
+    "builder": {
+      "intro": "Every box is optional. Start with the task, then add more if you like.",
+      "preview": "Your prompt",
+      "empty": "Your prompt will appear here as you type.",
+      "save": "Save to My prompts",
+      "saved": "Saved",
+      "clear": "Clear",
+      "seeMine": "Saved. See My prompts"
+    },
+    "checklist": {
+      "intro": "Read your prompt. Then tick what it already does.",
+      "ideas": "Ideas to make it better",
+      "allDone": "This looks ready. Try it, then improve it as you go.",
+      "reset": "Start again"
+    },
+    "gallery": {
+      "intro": "The same request, asked two ways.",
+      "why": "Why this works"
+    },
+    "templates": {
+      "intro": "Replace the words in [brackets] with your own."
+    },
+    "tips": {
+      "intro": "Swipe through the cards, or use the arrows.",
+      "count": "Tip {{n}} of {{total}}",
+      "example": "Example",
+      "prev": "Previous tip",
+      "next": "Next tip"
+    },
+    "mine": {
+      "intro": "Prompts that work are worth keeping. Everything here stays on this device.",
+      "yours": "Your prompts",
+      "none": "No prompts saved yet. Build one in the Prompt builder, or write one below.",
+      "newTitle": "Write a new prompt",
+      "nameLabel": "Name (optional)",
+      "namePlaceholder": "Weekly report summary",
+      "textLabel": "Prompt",
+      "add": "Save prompt",
+      "edit": "Edit",
+      "delete": "Delete",
+      "saveChanges": "Save changes",
+      "confirmDelete": "Delete this prompt?",
+      "yesDelete": "Yes, delete",
+      "favourites": "Favourites",
+      "noFavourites": "No favourites yet. Tap “Add to favourites” on a template, a tip or an example.",
+      "kind": {
+        "template": "Template",
+        "tip": "Tip",
+        "gallery": "Example"
+      }
+    }
+  },
+  "copy": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyIn": "Copy in {{language}}",
+    "failed": "Could not copy. Select the text and copy it by hand."
+  },
+  "favourite": {
+    "add": "Add to favourites",
+    "added": "In favourites"
+  },
+  "practice": {
+    "title": "Practice",
+    "intro": "Try these in an AI tool you already have. A tool approved by your employer is best.",
+    "tried": "Tried",
+    "safetyTitle": "Before you paste anything",
+    "safetyBody": "Use made-up or non-sensitive text only. Follow your employer's AI policy. Each exercise gives you sample text, so you never need real work data.",
+    "sample": "Copy the sample text",
+    "sampleHint": "This text is made up. It is safe to paste.",
+    "starter": "Copy the starter prompt",
+    "starterHint": "Paste it into your AI tool and read the answer.",
+    "better": "Make it better",
+    "good": "What good looks like",
+    "selfCheck": "Check the answer",
+    "selfCheckHint": "Tick each check once you have done it.",
+    "markTried": "I tried this",
+    "triedDone": "You tried this one. Nice work."
+  },
+  "tools": {
+    "title": "Examples of each kind",
+    "types": {
+      "chat-assistant": "Chat assistants",
+      "office-suite": "AI in office apps",
+      "agent": "Agents"
+    },
+    "note": "These are examples, not recommendations. Use what your employer has approved.",
+    "reviewed": "List last reviewed: {{date}}"
+  },
+  "plan": {
+    "count": "{{done}} of {{total}} steps done"
+  },
+  "stage": {
+    "comingTitle": "Being written",
+    "lesson": "This lesson is being written. It will be here soon."
+  },
+  "me": {
+    "title": "Me",
+    "settings": "Settings",
+    "why": "Why this exists",
+    "pace": "Go at your own pace. There is no rush.",
+    "bookmarks": "Saved for later",
+    "noBookmarks": "Nothing saved yet. Tap “Save for later” on a lesson or a word.",
+    "notes": "Your notes",
+    "noNotes": "No notes yet. You can write some at the end of each lesson.",
+    "welcome": "Welcome questions"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Appearance",
+    "themeSystem": "Same as device",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "textSize": "Text size",
+    "sizeStandard": "Standard",
+    "sizeLarge": "Large",
+    "sizeLarger": "Larger",
+    "sizeLargest": "Largest",
+    "motion": "Reduce motion",
+    "motionHint": "Turns off animations. Your device setting is always respected too.",
+    "data": "Your data",
+    "dataHint": "Everything you save stays on this device.",
+    "export": "Export my data",
+    "reset": "Reset my data",
+    "resetTitle": "Reset everything?",
+    "resetBody": "This deletes your progress, notes and saved prompts from this device. It can't be undone.",
+    "resetConfirm": "Yes, reset",
+    "cancel": "Cancel",
+    "about": "About",
+    "version": "Version {{version}}",
+    "reviewed": "Content last reviewed: {{date}}",
+    "privacy": "No account. No tracking. No ads."
+  },
+  "update": {
+    "available": "A new version is ready.",
+    "reload": "Update now",
+    "later": "Later",
+    "offlineReady": "Ready to use offline.",
+    "dismiss": "OK"
+  },
+  "notFound": {
+    "title": "Nothing here",
+    "body": "This page doesn't exist. That's all right.",
+    "home": "Go to Learn"
+  }
+}

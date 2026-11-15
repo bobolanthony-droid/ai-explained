@@ -1,0 +1,82 @@
+# Fiches conseils (français) : une idée courte par fiche, toujours avec un exemple.
+# L'ordre du fichier est l'ordre des fiches.
+
+- id: be-specific
+  title: Précisez le but et le lecteur
+  text: À question vague, réponse vague. Dites ce que vous voulez, et pour qui.
+  example: Au lieu de « Écris un texte sur le recyclage », essayez « Écris cinq conseils de recyclage au bureau pour les nouveaux arrivants. »
+
+- id: give-context
+  title: Donnez du contexte
+  text: L'IA ne sait rien de votre situation. Dites-lui ce qui se passe et ce que vous savez déjà.
+  example: "« Notre boutique ferme plus tôt le vendredi en août. Les clients demandent pourquoi. Écris une courte affiche pour la porte. »"
+
+- id: say-format
+  title: Dites quel format vous voulez
+  text: Précisez la forme et la longueur. Sinon, l'IA choisit à votre place.
+  example: "« Fais un tableau à trois colonnes. » « Moins de 150 mots. » « Écris-le sous forme d'e-mail. »"
+
+- id: show-example
+  title: Montrez un exemple de bon résultat
+  text: Un exemple en dit plus qu'une longue description. Collez-en un qui vous plaît.
+  example: "« Voici un ancien point d'équipe que j'aimais bien. Écris le nouveau dans le même style. »"
+
+- id: ask-questions-first
+  title: Demandez-lui de vous poser des questions
+  text: Vous ne savez pas quoi préciser ? Laissez l'IA vous interroger.
+  example: "« Avant d'écrire quoi que ce soit, pose-moi jusqu'à cinq questions sur ce dont j'ai besoin. »"
+
+- id: break-into-steps
+  title: Découpez les grosses tâches
+  text: Une demande énorme donne une réponse confuse. Demandez une partie à la fois.
+  example: Demandez d'abord un plan. Puis la première partie. Puis de resserrer la formulation.
+
+- id: set-tone
+  title: Fixez le ton et le niveau de lecture
+  text: Les mêmes faits peuvent sonner chaleureux, formels ou simples. Dites ce que vous voulez.
+  example: "« Chaleureux mais professionnel. » « Explique pour qu'un nouvel arrivant puisse suivre. »"
+
+- id: say-what-to-avoid
+  title: Dites ce qu'il faut éviter
+  text: Les limites aident. Dites ce qu'il faut laisser de côté.
+  example: "« Pas de jargon. Pas de liste à puces. Ne parle pas des prix. »"
+
+- id: iterate
+  title: Voyez cela comme une conversation
+  text: La première réponse est un brouillon. Dites ce qu'il faut changer, et redemandez.
+  example: "« Plus court, s'il te plaît. Et rends le deuxième point plus chaleureux. »"
+
+- id: ask-to-critique
+  title: Demandez-lui de relire sa propre réponse
+  text: Un second regard repère souvent les points faibles. Demandez-le.
+  example: "« Qu'est-ce qui est faible ou peu clair dans ta réponse ? Corrige ces passages. »"
+
+- id: ask-for-sources
+  title: Demandez les sources, puis vérifiez-les vous-même
+  text: Demandez d'où vient un fait et ce que l'IA suppose. Puis vérifiez. Une source peut être fausse, ou inventée.
+  example: "« De quels passages es-tu le moins sûr ? Qu'as-tu supposé ? »"
+
+- id: fresh-chat
+  title: Ouvrez une nouvelle conversation quand elle s'égare
+  text: Les longues conversations s'embrouillent. Une nouvelle, avec un résumé clair, marche mieux.
+  example: Copiez la meilleure version obtenue. Ouvrez une nouvelle conversation. Collez-la et dites ce que vous voulez ensuite.
+
+- id: no-confidential
+  title: Ne collez rien de confidentiel
+  text: Laissez de côté les noms, les chiffres et tout ce qui est privé. Utilisez des mentions entre crochets. Suivez les règles de votre employeur sur l'IA.
+  example: Écrivez « [nom du client] » et « [montant] ». Vous les compléterez vous-même ensuite.
+
+- id: save-prompts
+  title: Gardez les prompts qui marchent
+  text: Un prompt qui a marché une fois marchera encore. Gardez-le et réutilisez-le.
+  example: Enregistrez-le dans Mes prompts, dans cette appli. Le mois prochain, changez deux mots et c'est reparti.
+
+- id: common-mistakes
+  title: Quatre erreurs courantes
+  text: Quatre choses reviennent souvent. La demande est vague, ou longue et touffue. Le contexte manque, ou l'on s'arrête à la première réponse.
+  example: "« Aide-moi pour mon rapport » les réunit toutes. Dites quel rapport, pour qui, et quelle aide vous voulez. Puis améliorez la réponse."
+
+- id: give-a-role
+  title: Donnez-lui un rôle
+  text: Un rôle fixe le style et le niveau de détail en une courte ligne.
+  example: "« Tu es un formateur patient qui explique les choses aux nouveaux arrivants. »"

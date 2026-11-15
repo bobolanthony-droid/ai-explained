@@ -1,0 +1,83 @@
+id: workspace
+title: "Your AI workspace: projects, instructions and memory"
+summary: "Set things up once, so you don't repeat yourself."
+minutes: 7
+
+opener: "Tired of explaining the same thing in every chat? You can set things up once. It takes ten minutes, and you do not need to be technical."
+
+idea:
+  paragraphs:
+    - "Most chat assistants let you save your preferences. You tell them once how you like to work. They apply it every time."
+    - "There are three main ways to do this. They are custom instructions, projects and memory."
+  simpler: "Tell the AI your rules once. It keeps them for next time."
+  analogy: "Think of a new assistant's first week. You explain how you like things done. After that, you do not repeat yourself."
+  analogyLimit: "Where this stops working: a human assistant gets better over the years. The AI only knows what is in its notes. If the notes are out of date, so is the AI."
+
+sections:
+  - title: "Custom instructions: your standing rules"
+    paragraphs:
+      - "[[custom-instructions|Custom instructions]] are notes that apply to every chat. You write them once, in the tool's settings."
+      - "Good ones are short. “I work in HR. Use plain words. Keep answers brief. Ask me before you assume.”"
+
+  - title: "Projects: one place per topic"
+    paragraphs:
+      - "A [[project]] is like a folder for one piece of work. It holds the chats, the files and the rules for that topic."
+      - "Make one for anything you do again and again. A monthly report, a client or a newsletter."
+      - "Add an example of a good result. The AI will copy its style."
+
+  - title: "Memory: what it keeps about you"
+    paragraphs:
+      - "Some tools have [[memory]]. They note things about you and use them in later chats."
+      - "This is handy. It also means the tool stores things about you. You can usually read, edit or switch off its memory in the settings."
+
+  - title: The rules you cannot see
+    paragraphs:
+      - "Every AI tool also has a [[system-prompt|system prompt]]. These are hidden instructions from the people who built it."
+      - "This is why two tools can answer the same question differently. You cannot change it, and that is fine."
+
+  - title: Keep things tidy
+    paragraphs:
+      - "Start a new chat for each new topic. Long, mixed chats confuse the AI."
+      - "Save prompts that work. The My prompts page in this app is one place to keep them."
+      - "Review your instructions every few months. Delete what no longer fits."
+
+example:
+  title: At work
+  paragraphs:
+    - "Carla writes a team update every Friday. She used to explain the format again each week."
+    - "Now she has a project called “Friday update”. It holds her rules and two past updates she liked."
+    - "Each Friday she pastes in her rough notes and gets a draft in her own style. It still needs a read. But it takes five minutes, not thirty."
+
+tryIt:
+  - "Open your AI tool's settings and look for custom instructions. Write three short lines about your job and how you like answers."
+  - "Then ask it something and see the difference. The Practice tab has an exercise that walks you through a full project."
+
+takeaways:
+  - "Custom instructions are your standing rules for every chat."
+  - "A project keeps everything for one topic in one place."
+  - "Check what the tool remembers about you. Keep it tidy."
+
+quickCheck:
+  - question: You want every answer in plain words, in every chat. What do you use?
+    options:
+      - text: Custom instructions
+        correct: true
+        reply: "Yes. Write it once and it applies everywhere."
+      - text: A very long first message each time
+        reply: "That works, but it is tiring. Custom instructions do the same job once, for every chat."
+
+  - question: What is a project good for?
+    options:
+      - text: A quick, one-off question
+        reply: "For a quick question, a normal chat is enough. Projects shine for work you repeat."
+      - text: A task you do again and again
+        correct: true
+        reply: "Yes. The files and rules stay in one place, ready for next time."
+
+  - question: Your tool has memory. What is a sensible habit?
+    options:
+      - text: Telling it your passwords, so it can help more
+        reply: "Please never do that. Memory is for preferences, not secrets. Do look now and then at what it has stored."
+      - text: Looking now and then at what it has stored
+        correct: true
+        reply: "Yes. You can usually read it, edit it or turn it off."

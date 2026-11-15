@@ -1,0 +1,61 @@
+# Before/after gallery (English): a weak prompt, a strong rewrite, and why it works.
+
+- id: late-delivery
+  title: A difficult email
+  weak: Write an email to a customer about a late delivery.
+  strong: You are a customer service agent at a furniture shop. A customer ordered a sofa three weeks ago. It will arrive two weeks late because of a supplier delay. Write an email that says sorry, gives the new date, and offers free delivery. Keep it under 120 words. Warm tone, no excuses.
+  why: It says who is writing, what happened, what to include, how long and what tone. The AI does not have to guess.
+
+- id: manager-summary
+  title: A summary
+  weak: Summarise this.
+  strong: |-
+    Summarise the text below for my manager. She has two minutes. Give me three bullet points and one line on what she must decide. Use plain words.
+
+    [paste your text]
+  why: It names the reader, the length and the purpose. A summary for a busy manager is not the same as a summary for an expert.
+
+- id: team-day
+  title: Ideas
+  weak: Give me ideas for the team day.
+  strong: We are a team of 15 office workers. We have one afternoon and [amount] per person. Some people do not drink alcohol and one person uses a wheelchair. Suggest six team day ideas. Put them in a table with the cost, the time needed, and why it works for everyone.
+  why: The limits do the work. Budget, time and people's needs turn vague ideas into ones you can use.
+
+- id: explain-policy
+  title: An explanation
+  weak: Explain the new expenses policy.
+  strong: |-
+    Explain the expenses policy below to a new member of staff. Use plain words and short sentences. Give one example of a claim that is fine and one that is not. Finish with the three rules they must not forget.
+
+    [paste the policy]
+  why: It gives the AI the real text to work from, so it does not guess. It also names the reader and asks for examples.
+
+- id: friendlier-rewrite
+  title: A rewrite
+  weak: Make this better.
+  strong: |-
+    Rewrite the message below so it sounds friendlier. Keep all the facts and dates. Keep it under 80 words. Do not add exclamation marks.
+
+    [paste your message]
+  why: “Better” can mean anything. This says what to change, what to keep and how long it should be.
+
+- id: meeting-agenda
+  title: A meeting agenda
+  weak: Write an agenda for our meeting.
+  strong: We have a 30-minute team meeting on Monday. We must decide who covers the phones in August, and agree on the new filing system. Write an agenda with timings. Put the decision items first. Add one line on what people should prepare.
+  why: It gives the length, the topics and the purpose. The agenda can then fit the real meeting.
+
+- id: spreadsheet-formula
+  title: A spreadsheet formula
+  weak: How do I add things up in a spreadsheet?
+  strong: I have a spreadsheet. Column A has dates, column B has the name of a salesperson, and column C has the sale amount. I want the total sales for each person in March. Give me the formula, and explain each part in plain words.
+  why: It describes the columns and the exact result wanted. Asking for an explanation means you can check the formula and reuse it.
+
+- id: honest-feedback
+  title: Feedback on a draft
+  weak: Is this good?
+  strong: |-
+    Here is a draft of a welcome note for new customers. Tell me two things that work and two things to improve. Point out any sentence that is hard to follow. Do not rewrite it.
+
+    [paste your draft]
+  why: A yes or no question gets a polite “yes”. Asking for specific strengths and weaknesses gets feedback you can use.

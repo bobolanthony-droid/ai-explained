@@ -1,0 +1,84 @@
+id: everyday-wins
+title: "Everyday work wins"
+summary: "Small, safe ways to save time this week."
+minutes: 7
+
+opener: "You do not need a big project to get value from AI. Small tasks are the best place to start. Each one saves a few minutes."
+
+idea:
+  paragraphs:
+    - "AI is most useful for everyday word work. That means reading, writing and tidying up text."
+    - "Think of it as a first-draft machine. It gets you started fast. You finish the job."
+  simpler: "Let the AI do the rough first version. You make it right."
+  analogy: "It is like a kitchen helper who chops and stirs. Dinner gets to the table sooner. But you still taste the food before you serve it."
+  analogyLimit: "Where this stops working: a kitchen helper learns your taste over time. The AI starts from scratch in each new chat, unless you tell it."
+
+sections:
+  - title: Seven small wins
+    paragraphs:
+      - "Summarise. Paste in a long email or report and ask for the main points."
+      - "Draft. Ask for a first version of an email, a note or a plan."
+      - "Rewrite. Make a text shorter, friendlier or simpler."
+      - "Brainstorm. Ask for ten ideas, then keep the two good ones."
+      - "Prepare. Before a meeting, ask what questions might come up."
+      - "Explain. Ask it to explain a hard document in plain words."
+      - "Spreadsheets in words. Describe what you want to work out, and ask for the formula."
+
+  - title: It can look, not just read
+    paragraphs:
+      - "Many tools are [[multimodal]]. That means they work with pictures and sound, not only text."
+      - "You can show a photo of a whiteboard and ask for typed notes. Or share a chart and ask what stands out."
+
+  - title: Answers from your own documents
+    paragraphs:
+      - "Some work tools can search your company's documents before they answer. This is called [[rag|RAG]]."
+      - "It makes the answers fit your company better. Ask the tool to show which document it used."
+
+  - title: You stay in charge
+    paragraphs:
+      - "Whatever the AI writes, you send. So you own it. Read every word before it leaves your hands."
+      - "This habit has a name. It is called keeping a [[human-in-the-loop|human in the loop]]. A person checks before anything important happens."
+      - "Check facts, names, dates and numbers. Also watch for [[bias]]. AI can repeat unfair patterns from the text it learned from."
+
+example:
+  title: At work
+  paragraphs:
+    - "Ben has 40 minutes before a client meeting. He pastes in last quarter's notes, with the client's name removed."
+    - "He asks for a five-line summary and three questions the client may ask. It takes two minutes."
+    - "One date in the summary is wrong. Ben spots it because he reads it through. He fixes it and walks in prepared."
+
+tryIt:
+  - "Pick one small task from your week. A long email to summarise is a good start."
+  - "Would you rather not use real work? The Practice tab has made-up text you can use."
+
+takeaways:
+  - "Start small. Summarise, draft, rewrite, brainstorm."
+  - "The AI writes the first draft. You make it right."
+  - "You own what you send. Read it and check the facts."
+
+quickCheck:
+  - question: Which is a good first task for AI at work?
+    options:
+      - text: Deciding who gets promoted
+        reply: "That one needs a person. It affects people's lives, and AI can be unfair. Summarising an email is a much safer start."
+      - text: Summarising a long email
+        correct: true
+        reply: "Yes. It is quick, low risk, and easy for you to check."
+      - text: Sending a contract without reading it
+        reply: "Please do not. You own what you send. A summary of a long email is a safer first task."
+
+  - question: The AI wrote a good email for you. What do you do before you send it?
+    options:
+      - text: Read it all and check the facts
+        correct: true
+        reply: "Yes. Check names, dates and numbers most of all. Your name is on it."
+      - text: Send it. It looks fine
+        reply: "It may well be fine. But AI can slip in a wrong date or name. A quick read protects you."
+
+  - question: What does “human in the loop” mean?
+    options:
+      - text: A person types very fast
+        reply: "Not quite. It means a person checks or approves the work before anything important happens."
+      - text: A person checks the AI's work before it matters
+        correct: true
+        reply: "Yes. The AI helps, and a person has the last word."

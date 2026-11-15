@@ -1,0 +1,91 @@
+# Modèles de prompts (français). Chaque modèle contient au moins une mention [entre crochets] à remplacer.
+
+- id: summarise-document
+  title: Résumer un document
+  use: Quand le texte est long et le temps compté.
+  prompt: |-
+    Résume le texte ci-dessous pour [votre public]. Donne-moi [nombre] points. Ajoute ensuite une ligne sur ce que je devrais faire. Emploie des mots simples.
+
+    Texte :
+    [collez votre texte]
+
+- id: difficult-email
+  title: Rédiger un e-mail délicat
+  use: Quand il faut dire quelque chose de difficile, avec tact.
+  prompt: |-
+    Aide-moi à écrire un e-mail à [destinataire]. Voici la situation : [ce qui s'est passé]. Je voudrais que cette personne [ce que vous attendez]. Moins de [nombre] mots. Le ton doit être [ton, par exemple calme et respectueux]. Il ne faut pas [ce qu'il faut éviter].
+
+- id: meeting-prep
+  title: Préparer une réunion
+  use: Avant une réunion où vous voulez arriver serein.
+  prompt: |-
+    J'ai une réunion sur [sujet] avec [participants]. Mon objectif est [votre objectif]. Liste cinq questions auxquelles je dois savoir répondre. Liste ensuite trois questions que je devrais poser. Chaque question doit être courte.
+
+- id: notes-to-actions
+  title: Transformer des notes en actions
+  use: Après une réunion, quand vos notes sont en désordre.
+  prompt: |-
+    Voici mes notes de réunion, prises à la volée. Transforme-les en liste d'actions. Pour chaque action, indique la tâche, la personne responsable et l'échéance. Si un point n'est pas clair, écris « à vérifier » au lieu de deviner.
+
+    Notes :
+    [collez vos notes]
+
+- id: explain-simply
+  title: Expliquer simplement
+  use: Quand un document ou une idée est difficile à suivre.
+  prompt: |-
+    Explique [sujet ou texte collé] avec des mots simples, pour quelqu'un qui découvre le sujet. Fais des phrases courtes et donne une comparaison de la vie courante. Indique ensuite les trois choses à retenir.
+
+- id: compare-options
+  title: Comparer des options
+  use: Quand vous devez choisir entre plusieurs possibilités.
+  prompt: |-
+    Je dois choisir entre [option A], [option B] et [option C]. Ce qui compte le plus pour moi, c'est [vos priorités]. Compare-les dans un tableau avec les points forts, les points faibles et le coût. Ne choisis pas à ma place. Dis-moi ce que je devrais encore vérifier.
+
+- id: critique-draft
+  title: Critiquer mon brouillon
+  use: Quand vous avez écrit un texte et voulez un avis franc.
+  prompt: |-
+    Voici mon brouillon de [type de texte]. Il s'adresse à [votre public]. Donne-moi trois points réussis et trois points à améliorer. Sois direct mais bienveillant. Ne le réécris pas pour l'instant.
+
+    Brouillon :
+    [collez votre brouillon]
+
+- id: plan-project
+  title: Planifier un projet
+  use: Quand une tâche paraît trop grosse pour s'y mettre.
+  prompt: |-
+    Je dois [votre objectif] d'ici le [date]. Je dispose de [personnes, temps ou budget]. Découpe ce travail en étapes, dans l'ordre. Pour chaque étape, indique la durée probable et ce qui pourrait mal tourner. Si un point n'est pas clair, pose-moi d'abord jusqu'à trois questions.
+
+- id: brainstorm
+  title: Trouver des idées
+  use: Quand il vous faut beaucoup d'idées, vite.
+  prompt: |-
+    Donne-moi [nombre] idées pour [ce qu'il vous faut]. C'est destiné à [votre public]. Mes contraintes sont [budget, temps ou autres limites]. Propose des idées bien différentes les unes des autres. Signale les trois plus faciles à réaliser.
+
+- id: rewrite-audience
+  title: Réécrire pour un autre lecteur
+  use: Quand le contenu est bon mais que le lecteur a changé.
+  prompt: |-
+    Réécris le texte ci-dessous pour [nouveau public]. Garde tous les faits. Adopte un ton [ton]. Explique les mots techniques. Moins de [nombre] mots.
+
+    Texte :
+    [collez votre texte]
+
+- id: create-checklist
+  title: Créer une liste de vérification
+  use: Quand vous voulez être sûr de ne rien oublier.
+  prompt: |-
+    Crée une liste de vérification pour [tâche ou événement]. Elle servira à [qui l'utilisera]. Mets les étapes dans l'ordre. Une ligne courte par étape. Ajoute une dernière partie intitulée « Ce qu'on oublie souvent ».
+
+- id: interview-questions
+  title: Préparer les questions d'un entretien
+  use: Avant un entretien d'embauche ou un entretien annuel.
+  prompt: |-
+    Je prépare [un entretien d'embauche ou un entretien annuel] pour le poste de [poste]. Les compétences les plus importantes sont [compétences]. Écris huit questions ouvertes. Pour chacune, indique ce qu'une bonne réponse montrerait. Les questions doivent être équitables et ne pas porter sur la vie privée.
+
+- id: check-answer
+  title: Faire revérifier une réponse
+  use: Après une réponse d'IA sur laquelle vous comptez vous appuyer.
+  prompt: |-
+    Relis ta réponse sur [sujet]. Liste les faits et les chiffres qu'elle contient. Pour chacun, dis à quel point tu en es sûr et où je peux le vérifier moi-même. Dis clairement quand tu supposes.

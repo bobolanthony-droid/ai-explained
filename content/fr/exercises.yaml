@@ -1,0 +1,128 @@
+# Exercices pratiques (français). À faire dans un outil d'IA que la personne a déjà.
+# Chaque exercice fournit un texte inventé : inutile de coller de vraies données de travail.
+# Dans les prompts, on tutoie l'IA (usage courant) ; on vouvoie toujours la personne qui lit.
+
+- id: summarise-email
+  title: Résumer un long e-mail
+  minutes: 5
+  goal: Transformer un e-mail long et confus en quelques points clairs.
+  sampleText: |-
+    Objet : Déménagement des bureaux, le point et deux ou trois autres choses
+
+    Bonjour à tous,
+
+    Un petit message rapide (désolé, il est devenu long). Le déménagement vers l'immeuble des Quais est fixé au lundi 14, et non au 7 comme annoncé. Les ascenseurs y sont encore en cours de contrôle. Les caisses arrivent le jeudi 10. Merci d'inscrire sur chaque caisse votre nom et le numéro de votre nouveau bureau. Ce numéro figure sur le plan, que j'enverrai demain. L'informatique déplacera les ordinateurs pendant le week-end : éteignez votre poste avant 16 h le vendredi 11. Le stationnement est limité aux Quais. Il n'y a que 20 places, attribuées aux premiers arrivés. Pensez au bus ou au train. Pour toute question, adressez-vous à moi ou à Samira.
+
+    Merci,
+    David
+  starterPrompt: |-
+    Résume l'e-mail ci-dessous en trois points. Ensuite, liste les dates que je dois retenir.
+
+    [collez l'e-mail ici]
+  good:
+    - Elle est bien plus courte que l'e-mail.
+    - Elle garde l'essentiel. C'est-à-dire la nouvelle date du déménagement et ce que vous devez faire.
+    - Les dates correspondent à celles de l'e-mail. Vérifiez-les vous-même.
+  better:
+    text: Précisez maintenant à qui s'adresse le résumé et la forme que vous voulez.
+    prompt: |-
+      Résume le même e-mail pour une personne qui était en congé. Présente le résultat dans un tableau à deux colonnes : « Date » et « Ce que je dois faire ».
+  selfCheck:
+    - "Comparez chaque date avec l'e-mail."
+    - "Cherchez s'il manque quelque chose d'important."
+    - "Cherchez ce qui ne figurait pas dans l'e-mail."
+    - "Demandez-vous si vous pourriez l'envoyer tel quel à un collègue."
+
+- id: better-question
+  title: Poser une meilleure question
+  minutes: 6
+  goal: Voir comment un rôle, un peu de contexte et un format changent la réponse.
+  starterPrompt: |-
+    Donne-moi des idées pour un déjeuner d'équipe.
+  good:
+    - La première réponse est générale. C'est normal. Vous lui avez donné très peu d'éléments.
+    - La deuxième réponse convient à votre équipe, pas à n'importe quelle équipe.
+    - Elle tient compte de vos contraintes. C'est-à-dire le temps, le budget et les régimes alimentaires.
+  better:
+    text: Reposez la question dans la même conversation. Cette fois, donnez un rôle, du contexte et un format.
+    prompt: |-
+      Tu es responsable de bureau et tu organises des moments d'équipe conviviaux. Nous sommes 12. Deux personnes sont végétariennes et une ne mange pas de gluten. Nous avons une heure et [montant] par personne. Propose trois idées de déjeuner d'équipe. Présente-les dans un tableau avec le coût, ce qu'il faut commander et pourquoi cela convient à tout le monde.
+  selfCheck:
+    - "Comparez les deux réponses. Voyez laquelle est la plus utile."
+    - "Vérifiez que la deuxième réponse respecte toutes vos contraintes."
+    - "Vérifiez qu'elle est au format demandé."
+    - "Pensez à un détail de plus qui l'améliorerait."
+
+- id: draft-improve
+  title: Rédiger un message, puis l'améliorer
+  minutes: 7
+  goal: Obtenir un premier jet, puis le mettre au point en deux petites étapes.
+  starterPrompt: |-
+    Écris un court message à mon équipe. Notre réunion du jeudi passe de 10 h à 14 h cette semaine, parce que la salle de réunion est en peinture. Elle aura lieu en salle 4.
+  good:
+    - Le premier jet contient tous les faits. C'est-à-dire le jour, le nouvel horaire, la raison et la salle.
+    - Après vos modifications, il ressemble à un message que vous enverriez.
+    - Il est assez court pour être lu en dix secondes.
+  better:
+    text: Améliorez-le maintenant dans la même conversation. Demandez un changement à la fois.
+    prompt: |-
+      Rends-le plus court et plus chaleureux. Mets le nouvel horaire et la salle dans la première ligne.
+  selfCheck:
+    - "Vérifiez que le premier jet reprend tous les faits donnés."
+    - "Cherchez ce qu'il aurait inventé, comme une autre salle ou un autre horaire."
+    - "Vérifiez que chaque changement demandé l'a amélioré."
+    - "Demandez-vous si vous seriez à l'aise pour envoyer la version finale."
+
+- id: fact-check
+  title: Vérifier une réponse de l'IA
+  minutes: 8
+  goal: S'entraîner à repérer les réponses qui sonnent juste sans l'être forcément.
+  starterPrompt: |-
+    Donne-moi cinq faits sur l'histoire du trombone de bureau. Indique une source pour chacun.
+  good:
+    - Vous remarquez que la réponse paraît sûre d'elle. Cela ne dit rien de sa justesse.
+    - Vous cherchez vous-même au moins une source, en dehors de la conversation.
+    - Vous découvrez quels faits tiennent la route. Certaines sources peuvent être fausses, ou ne pas exister.
+  better:
+    text: Demandez-lui maintenant de juger sa propre réponse. Vérifiez ensuite un fait vous-même.
+    prompt: |-
+      Relis ta dernière réponse. De quels faits es-tu le moins sûr, et pourquoi ? Quelles sources devrais-je vérifier moi-même ?
+  selfCheck:
+    - "Cherchez vous-même l'une des sources, en dehors de la conversation."
+    - "Voyez si cette source existe vraiment."
+    - "Voyez si la source dit bien ce que l'IA affirme."
+    - "Lisez de quels faits l'IA s'est dite la moins sûre."
+
+- id: reusable-project
+  title: Créer des consignes réutilisables
+  minutes: 10
+  goal: Enregistrer vos règles une fois, pour qu'une tâche régulière prenne moins de temps.
+  sampleText: |-
+    Notes pour le point d'équipe, semaine 12
+    - nouvelle imprimante installée au 2e étage, elle fonctionne
+    - Jo revient de congé lundi
+    - visite du client déplacée au 21
+    - rappel, feuilles de temps à rendre vendredi midi
+    - le frigo de la cuisine sera vidé jeudi soir
+  starterPrompt: |-
+    Tu m'aides à rédiger mon point d'équipe hebdomadaire. Suis ces règles à chaque fois.
+    - Emploie des mots simples et chaleureux.
+    - Commence par le sujet le plus important.
+    - Fais des points courts, une ligne chacun.
+    - Mets les dates en gras.
+    - N'ajoute jamais rien qui ne soit pas dans mes notes. Si un point n'est pas clair, pose-moi la question.
+  good:
+    - Le point d'équipe respecte toutes vos règles.
+    - Il n'ajoute rien qui ne figurait pas dans les notes.
+    - La semaine prochaine, vous ne collerez que les nouvelles notes. Les règles seront déjà là.
+  better:
+    text: Enregistrez les règles ci-dessus dans un projet ou dans les instructions personnalisées, si votre outil le permet. Envoyez ensuite les notes d'exemple avec ce court prompt.
+    prompt: |-
+      Voici les notes de la semaine. Rédige le point d'équipe.
+
+      [collez les notes ici]
+  selfCheck:
+    - "Vérifiez qu'il a suivi les cinq règles."
+    - "Vérifiez qu'il a commencé par le sujet le plus important."
+    - "Cherchez ce qui ne figurait pas dans les notes."
+    - "Demandez-vous si vous pourriez réutiliser ces règles la semaine prochaine."

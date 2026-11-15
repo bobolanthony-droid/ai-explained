@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="A calm, plain-language guide to AI at work. You're not late." />
+    <meta name="theme-color" content="#fffaf2" />
+    <!-- First draft, shared by link only: ask search engines not to list it. Remove when you go public. -->
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
+    <title>AI Explained</title>
+    <script>
+      // Apply the saved theme before first paint, so dark-mode users see no white flash.
+      try {
+        var s = (JSON.parse(localStorage.getItem('ai-explained:settings') || '{}').state) || {};
+        var t = s.theme || 'light';
+        if (t === 'system') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

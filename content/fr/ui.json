@@ -1,0 +1,316 @@
+{
+  "app": {
+    "name": "IA pas le feu",
+    "wordmark": "*IA* pas le feu",
+    "tagline": "L'IA au travail, expliquée calmement."
+  },
+  "nav": {
+    "label": "Principale",
+    "skip": "Aller au contenu",
+    "home": "{{name}}, accueil",
+    "learn": "Apprendre",
+    "glossary": "Glossaire",
+    "prompts": "Prompts",
+    "practice": "Pratique",
+    "me": "Moi",
+    "back": "Retour"
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "welcome": {
+    "title": "Bienvenue",
+    "intro": "Trois questions rapides nous aident à vous proposer un point de départ. Répondez à toutes, à certaines ou à aucune.",
+    "feeling": {
+      "question": "Que ressentez-vous face à l'IA en ce moment ?",
+      "curious": "De la curiosité",
+      "overwhelmed": "Un sentiment de trop-plein",
+      "sceptical": "Du scepticisme",
+      "behind": "La crainte d'être en retard"
+    },
+    "used": {
+      "question": "Avez-vous déjà utilisé un outil d'IA ?",
+      "never": "Jamais",
+      "once": "Une ou deux fois",
+      "often": "Assez souvent"
+    },
+    "time": {
+      "question": "De combien de temps disposez-vous chaque semaine ?",
+      "five": "Environ 5 minutes",
+      "fifteen": "Environ 15 minutes",
+      "more": "30 minutes ou plus"
+    },
+    "submit": "Voir mon point de départ",
+    "skip": "Passer pour le moment",
+    "resultTitle": "Un bon point de départ",
+    "feelingReply": {
+      "curious": "La curiosité est le meilleur point de départ.",
+      "overwhelmed": "C'est bien normal. Il y a beaucoup de bruit autour de l'IA. Nous irons à l'essentiel, simplement.",
+      "sceptical": "Un peu de doute, c'est sain. Nous vous montrerons aussi ce que l'IA fait mal.",
+      "behind": "Vous n'êtes pas en retard. La plupart des gens débutent à peine."
+    },
+    "timeReply": {
+      "five": "Cinq minutes par semaine suffisent. Une leçon toutes les une à deux semaines, c'est un bon rythme.",
+      "fifteen": "C'est largement assez. Environ deux leçons par semaine, sans vous presser.",
+      "more": "Parfait. Avancez au rythme qui vous convient."
+    },
+    "usedOften": "Vous utilisez déjà l'IA : les premières leçons vous sembleront peut-être familières. Elles sont courtes, et vous pouvez avancer plus loin quand vous voulez.",
+    "suggestion": "Notre suggestion",
+    "seePath": "Voir tout le parcours"
+  },
+  "learn": {
+    "title": "Apprendre",
+    "greeting": "Bonjour. Vous n'êtes pas en retard.",
+    "intro": "L'IA est nouvelle pour presque tout le monde. Avancez un petit pas à la fois.",
+    "startLabel": "Commencez ici",
+    "journey": "Votre parcours",
+    "lessonNumber": "Leçon {{number}}",
+    "minutes": "{{n}} min",
+    "lessonCount_one": "{{count}} leçon",
+    "lessonCount_other": "{{count}} leçons",
+    "whyLink": "Pourquoi cette appli existe",
+    "continueLabel": "Reprenez là où vous en étiez",
+    "nextLabel": "À suivre",
+    "startButton": "Commencer la leçon",
+    "continueButton": "Reprendre la leçon",
+    "finishedTitle": "Vous avez terminé le parcours.",
+    "finishedBody": "Revenez sur une leçon quand vous voulez.",
+    "doneCount": "Leçons terminées : {{done}} sur {{total}}",
+    "statusDone": "Terminée",
+    "soon": "Bientôt disponible"
+  },
+  "lesson": {
+    "idea": "L'idée",
+    "tryIt": "À vous",
+    "takeaways": "À retenir",
+    "words": "Les mots de cette leçon",
+    "quickCheck": "Petit point",
+    "quickCheckIntro": "Pas de note. Juste une façon de voir ce que vous avez retenu. Changez de réponse autant que vous voulez.",
+    "correctTag": "Oui, c'est ça",
+    "retryTag": "Pas tout à fait",
+    "notes": "Vos notes",
+    "notesHint": "Écrivez ce que vous voulez retenir. Vos notes restent sur cet appareil.",
+    "notesPlaceholder": "Une chose que j'ai envie d'essayer...",
+    "doneNext": "Terminé. Leçon suivante",
+    "doneBack": "Terminé. Retour à mon parcours",
+    "nextIs": "Ensuite : {{title}}",
+    "exercise": "S'exercer : {{title}}"
+  },
+  "bookmark": {
+    "save": "Garder pour plus tard",
+    "saved": "Gardé"
+  },
+  "glossary": {
+    "title": "Glossaire",
+    "intro": "Les mots de l'IA, en langage simple.",
+    "searchLabel": "Chercher un mot",
+    "searchPlaceholder": "Par exemple : prompt",
+    "filterLabel": "Filtrer par thème",
+    "all": "Tous",
+    "categories": {
+      "basics": "Les bases",
+      "how-it-works": "Comment ça marche",
+      "using": "Utiliser l'IA",
+      "going-further": "Aller plus loin",
+      "safety": "Sécurité"
+    },
+    "count_one": "{{count}} mot",
+    "count_other": "{{count}} mots",
+    "none": "Aucun mot ne correspond. Essayez une recherche plus courte.",
+    "analogy": "Une image pour comprendre",
+    "example": "Au travail",
+    "heardAs": "Vous entendrez peut-être",
+    "usageNote": "Bon à savoir",
+    "related": "Mots liés",
+    "taughtIn": "Expliqué dans",
+    "openFull": "Ouvrir la fiche complète",
+    "close": "Fermer"
+  },
+  "simpler": {
+    "show": "Expliquez-moi encore plus simplement",
+    "hide": "Masquer la version simple",
+    "label": "Encore plus simple"
+  },
+  "toolkit": {
+    "title": "Boîte à outils des prompts",
+    "intro": "Tout ce qu'il faut pour demander clairement à l'IA. Tout fonctionne hors ligne.",
+    "tools": {
+      "recipe": {
+        "title": "La recette",
+        "text": "Les cinq ingrédients d'un bon prompt."
+      },
+      "builder": {
+        "title": "Générateur de prompt",
+        "text": "Remplissez quelques cases. Obtenez un prompt à copier."
+      },
+      "checklist": {
+        "title": "Améliorer mon prompt",
+        "text": "Une courte liste pour améliorer n'importe quel prompt."
+      },
+      "gallery": {
+        "title": "Avant et après",
+        "text": "Des prompts faibles, rendus solides."
+      },
+      "templates": {
+        "title": "Modèles",
+        "text": "Des prompts tout prêts pour les tâches courantes."
+      },
+      "tips": {
+        "title": "Conseils",
+        "text": "Des idées courtes à utiliser dès aujourd'hui."
+      },
+      "mine": {
+        "title": "Mes prompts",
+        "text": "Vos propres prompts et vos favoris."
+      }
+    },
+    "before": "Avant",
+    "after": "Après",
+    "toBuilder": "Essayer dans le générateur de prompt",
+    "builder": {
+      "intro": "Toutes les cases sont facultatives. Commencez par la tâche, puis complétez si vous voulez.",
+      "preview": "Votre prompt",
+      "empty": "Votre prompt apparaîtra ici au fil de la saisie.",
+      "save": "Enregistrer dans Mes prompts",
+      "saved": "Enregistré",
+      "clear": "Effacer",
+      "seeMine": "Enregistré. Voir Mes prompts"
+    },
+    "checklist": {
+      "intro": "Relisez votre prompt. Cochez ensuite ce qu'il contient déjà.",
+      "ideas": "Des idées pour l'améliorer",
+      "allDone": "Il semble prêt. Essayez-le, puis améliorez-le au fur et à mesure.",
+      "reset": "Recommencer"
+    },
+    "gallery": {
+      "intro": "La même demande, formulée de deux façons.",
+      "why": "Pourquoi ça marche"
+    },
+    "templates": {
+      "intro": "Remplacez les mots [entre crochets] par les vôtres."
+    },
+    "tips": {
+      "intro": "Faites défiler les fiches, ou utilisez les flèches.",
+      "count": "Conseil {{n}} sur {{total}}",
+      "example": "Exemple",
+      "prev": "Conseil précédent",
+      "next": "Conseil suivant"
+    },
+    "mine": {
+      "intro": "Un prompt qui marche mérite d'être gardé. Tout reste sur cet appareil.",
+      "yours": "Vos prompts",
+      "none": "Aucun prompt enregistré. Créez-en un dans le générateur, ou écrivez-en un ci-dessous.",
+      "newTitle": "Écrire un nouveau prompt",
+      "nameLabel": "Nom (facultatif)",
+      "namePlaceholder": "Résumé du rapport hebdomadaire",
+      "textLabel": "Prompt",
+      "add": "Enregistrer le prompt",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "saveChanges": "Enregistrer les modifications",
+      "confirmDelete": "Supprimer ce prompt ?",
+      "yesDelete": "Oui, supprimer",
+      "favourites": "Favoris",
+      "noFavourites": "Pas encore de favoris. Touchez « Ajouter aux favoris » sur un modèle, un conseil ou un exemple.",
+      "kind": {
+        "template": "Modèle",
+        "tip": "Conseil",
+        "gallery": "Exemple"
+      }
+    }
+  },
+  "copy": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "copyIn": "Copier en {{language}}",
+    "failed": "La copie a échoué. Sélectionnez le texte et copiez-le à la main."
+  },
+  "favourite": {
+    "add": "Ajouter aux favoris",
+    "added": "Dans les favoris"
+  },
+  "practice": {
+    "title": "Pratique",
+    "intro": "Faites ces exercices dans un outil d'IA que vous avez déjà. L'idéal est un outil validé par votre employeur.",
+    "tried": "Essayé",
+    "safetyTitle": "Avant de coller quoi que ce soit",
+    "safetyBody": "Utilisez uniquement du texte inventé ou sans caractère sensible. Suivez les règles de votre employeur sur l'IA. Chaque exercice fournit un texte d'exemple : vous n'avez jamais besoin de vraies données de travail.",
+    "sample": "Copiez le texte d'exemple",
+    "sampleHint": "Ce texte est inventé. Vous pouvez le coller sans risque.",
+    "starter": "Copiez le prompt de départ",
+    "starterHint": "Collez-le dans votre outil d'IA et lisez la réponse.",
+    "better": "Allez plus loin",
+    "good": "À quoi ressemble une bonne réponse",
+    "selfCheck": "Vérifiez la réponse",
+    "selfCheckHint": "Cochez chaque vérification une fois faite.",
+    "markTried": "J'ai essayé",
+    "triedDone": "Vous avez essayé cet exercice. Bravo."
+  },
+  "tools": {
+    "title": "Des exemples de chaque famille",
+    "types": {
+      "chat-assistant": "Assistants conversationnels",
+      "office-suite": "IA dans les logiciels de bureau",
+      "agent": "Agents"
+    },
+    "note": "Ce sont des exemples, pas des recommandations. Utilisez ce que votre employeur a validé.",
+    "reviewed": "Liste révisée le {{date}}"
+  },
+  "plan": {
+    "count": "Étapes faites : {{done}} sur {{total}}"
+  },
+  "stage": {
+    "comingTitle": "En cours d'écriture",
+    "lesson": "Cette leçon est en cours d'écriture. Elle arrivera bientôt."
+  },
+  "me": {
+    "title": "Moi",
+    "settings": "Réglages",
+    "why": "Pourquoi cette appli existe",
+    "pace": "Avancez à votre rythme. Rien ne presse.",
+    "bookmarks": "Gardé pour plus tard",
+    "noBookmarks": "Rien pour l'instant. Touchez « Garder pour plus tard » sur une leçon ou sur un mot.",
+    "notes": "Vos notes",
+    "noNotes": "Pas encore de notes. Vous pouvez en écrire à la fin de chaque leçon.",
+    "welcome": "Questions de bienvenue"
+  },
+  "settings": {
+    "title": "Réglages",
+    "language": "Langue",
+    "theme": "Apparence",
+    "themeSystem": "Comme l'appareil",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "textSize": "Taille du texte",
+    "sizeStandard": "Standard",
+    "sizeLarge": "Grande",
+    "sizeLarger": "Plus grande",
+    "sizeLargest": "Très grande",
+    "motion": "Réduire les animations",
+    "motionHint": "Désactive les animations. Le réglage de votre appareil est toujours respecté lui aussi.",
+    "data": "Vos données",
+    "dataHint": "Tout ce que vous enregistrez reste sur cet appareil.",
+    "export": "Exporter mes données",
+    "reset": "Réinitialiser mes données",
+    "resetTitle": "Tout réinitialiser ?",
+    "resetBody": "Cela supprime votre progression, vos notes et vos prompts de cet appareil. Cette action est définitive.",
+    "resetConfirm": "Oui, réinitialiser",
+    "cancel": "Annuler",
+    "about": "À propos",
+    "version": "Version {{version}}",
+    "reviewed": "Dernière révision du contenu : {{date}}",
+    "privacy": "Pas de compte. Pas de suivi. Pas de publicité."
+  },
+  "update": {
+    "available": "Une nouvelle version est prête.",
+    "reload": "Mettre à jour",
+    "later": "Plus tard",
+    "offlineReady": "Prêt à fonctionner hors ligne.",
+    "dismiss": "OK"
+  },
+  "notFound": {
+    "title": "Rien ici",
+    "body": "Cette page n'existe pas. Ce n'est pas grave.",
+    "home": "Aller à Apprendre"
+  }
+}

@@ -1,0 +1,94 @@
+id: keeping-up
+title: "Choisir ses outils et rester à jour, sans stress"
+summary: "Cinq minutes par semaine suffisent."
+minutes: 7
+
+opener: "De nouveaux outils d'IA sortent chaque semaine. Vous n'avez pas à tous les suivre. Il vous faut un outil qui vous convient, et une petite habitude."
+
+idea:
+  paragraphs:
+    - "La plupart des outils d'IA reposent sur quelques types de [[model|modèles]]. Ils se ressemblent plus que les publicités ne le laissent croire."
+    - "Ne courez donc pas après le dernier sorti. Choisissez un outil que vous avez le droit d'utiliser, et apprenez à bien vous en servir."
+  simpler: "Vous n'avez pas besoin de l'outil le plus récent. Vous avez besoin d'un outil que vous savez utiliser."
+  analogy: "C'est comme choisir un couteau de cuisine. Un bon couteau que vous maniez bien vaut mieux qu'un tiroir plein de gadgets."
+  analogyLimit: "La limite de cette image : un couteau reste le même pendant des années. Les outils d'IA changent tous les quelques mois. Un petit point régulier est donc utile."
+
+sections:
+  - title: Trois familles d'outils
+    paragraphs:
+      - "Les assistants conversationnels. Vous écrivez, ils répondent. C'est par là que la plupart des gens commencent."
+      - "L'IA dans vos logiciels de bureau. Elle est intégrée à votre messagerie, à vos documents et à vos tableurs."
+      - "Les agents. Ils réalisent des étapes pour vous, comme vous l'avez vu à la leçon 6."
+    # Affiche les exemples de content/shared/tools.yaml, avec la date de dernière révision.
+    widget: tool-examples
+
+  - title: Des mots que vous croiserez en comparant
+    paragraphs:
+      - "Certains [[open-source|modèles sont ouverts]], d'autres fermés. Les modèles ouverts peuvent tourner sur les ordinateurs de l'entreprise. Les modèles fermés s'utilisent chez leur créateur."
+      - "Un [[plugin]] est une extension qui donne à un outil une compétence de plus. Une [[api|API]] permet à d'autres logiciels de parler directement à un modèle."
+      - "Le [[fine-tuning|fine-tuning]] est un entraînement en plus, pour un type de tâche. Ces choix reviennent surtout à votre service informatique, pas à vous."
+
+  - title: Tester un outil en dix minutes
+    paragraphs:
+      - "Est-il validé dans votre entreprise ? Sinon, arrêtez-vous là."
+      - "Confiez-lui une vraie tâche de votre semaine, avec des détails inventés. La réponse est-elle utile ?"
+      - "Interrogez-le sur un sujet que vous connaissez bien. A-t-il raison ? Dit-il quand il n'est pas sûr ?"
+      - "Vérifiez où vont vos données. Cherchez une page sur la confidentialité, ou demandez au service informatique."
+
+  - title: Reconnaître l'emballement
+    paragraphs:
+      - "Méfiez-vous des titres qui disent « toujours », « jamais » ou « tout va changer »."
+      - "Un [[benchmark]] est une note obtenue par un modèle à un test. Une bonne note ne dit pas qu'il est bon pour votre métier."
+      - "Vous lirez peut-être des articles sur l'[[agi|IAG]], une IA capable de presque tout ce que sait faire une personne. Personne ne s'accorde sur le sens du mot, ni sur une date. Vous pouvez laisser ce débat à d'autres."
+
+  - title: Cinq minutes par semaine
+    paragraphs:
+      - "Choisissez une petite chose à essayer chaque semaine. Un nouveau type de tâche, par exemple, ou un conseil de l'onglet Prompts."
+      - "Demandez à un collègue à quoi lui sert l'IA. Les gens partagent volontiers leurs bonnes idées quand on les leur demande."
+      - "Cela suffit. Vous n'avez pas besoin de lire l'actualité tous les jours."
+
+  - title: Vos 30 prochains jours
+    paragraphs:
+      - "Voici un plan simple. Il comporte une petite étape par semaine. Cochez chaque étape une fois qu'elle est faite."
+    # Le plan à cocher, enregistré sur l'appareil. Son texte est dans pages.yaml.
+    widget: thirty-day-plan
+
+example:
+  title: Au travail
+  paragraphs:
+    - "L'équipe de Farid reçoit un nouvel outil d'IA. Un collègue lui envoie cinq articles sur trois autres outils."
+    - "Farid garde les articles pour plus tard. Il passe dix minutes avec l'outil validé, sur une vraie tâche. Le résumé de son rapport hebdomadaire est bon."
+    - "Il programme un rappel pour le vendredi. « Essayer une nouvelle chose avec l'IA. » C'est tout son plan."
+
+tryIt:
+  - "Faites la première étape de votre plan sur 30 jours cette semaine, puis cochez-la. Vous retrouverez le plan dans l'onglet Moi."
+
+takeaways:
+  - "Un outil validé et bien utilisé vaut mieux que dix outils dont vous avez seulement entendu parler."
+  - "Testez un outil sur votre propre tâche. Ne vous fiez ni aux titres ni aux notes."
+  - "Cinq minutes par semaine suffisent pour rester à jour."
+
+quickCheck:
+  - question: Un titre annonce qu'un nouvel outil « change tout ». Quelle est la réaction posée ?
+    options:
+      - text: Je l'adopte tout de suite
+        reply: "Rien ne presse. Les titres sont faits pour accrocher. Dix minutes de test sur votre propre tâche vous en diront plus."
+      - text: Je l'essaie sur une de mes tâches, si j'en ai le droit
+        correct: true
+        reply: "Oui. Votre propre tâche vous en dit plus que n'importe quel titre."
+
+  - question: Combien de temps faut-il pour rester à jour sur l'IA ?
+    options:
+      - text: Environ cinq minutes par semaine
+        correct: true
+        reply: "Oui. Une petite expérience par semaine, cela finit par compter."
+      - text: Une heure par jour
+        reply: "Cela épuiserait n'importe qui. Quelques minutes par semaine, sur une petite chose, suffisent."
+
+  - question: Un modèle obtient la meilleure note à un benchmark. Qu'est-ce que cela vous apprend ?
+    options:
+      - text: C'est le meilleur outil pour mon métier
+        reply: "Peut-être, peut-être pas. Un benchmark ressemble à un examen scolaire. Le vrai test, c'est votre propre tâche."
+      - text: Il a réussi un test donné, rien de plus
+        correct: true
+        reply: "Oui. Il sera peut-être bon pour votre travail, ou pas. Essayez pour voir."

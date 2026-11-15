@@ -1,0 +1,90 @@
+id: not-late
+title: "You're not late: what AI actually is"
+summary: "What people mean by AI, and why today is a fine day to start."
+minutes: 6
+
+# 1. Reassurance opener
+opener: AI can feel like a train that left without you. It didn't. Most people are only starting now, and this is a good place to start.
+
+# 2. The idea in plain words + analogy
+idea:
+  paragraphs:
+    - "[[ai|AI]] means computer programs that do things we thought only people could do. They can read, write, or recognise a face."
+    - It is not a robot. It is not a mind. It is software, like the apps you already use.
+  simpler: AI is a computer program that has learned to do some clever things. It does not think or feel.
+  analogy: Think of a calculator. It does sums faster than you, but it does not understand money. AI is like a calculator for words and pictures.
+  analogyLimit: "Where this stops working: a calculator is always right. AI is sometimes wrong, and it will not tell you."
+
+# A bit more: one idea per section
+sections:
+  - title: Three words you will hear
+    paragraphs:
+      - "[[ai|AI]] is the big family. It covers any program that does “smart” tasks."
+      - "[[machine-learning|Machine learning]] is one way to build AI. The computer learns from many examples, instead of following rules written by hand."
+      - "[[generative-ai|Generative AI]] is the newest part. It makes new things, like text or pictures, when you ask."
+    figure:
+      id: nested-circles
+      labels: [AI, Machine learning, Generative AI]
+      alt: Three boxes, one inside the other. The largest is AI. Inside it is machine learning. Inside that is generative AI.
+      caption: Each one sits inside the one before.
+
+  - title: You have used AI for years
+    paragraphs:
+      - Your spam filter is AI. So is the map app that finds a faster road. So are the film ideas a streaming service shows you.
+      - So you are not starting from zero. You have years of practice. You just did not call it AI.
+
+  - title: So why all the noise now?
+    paragraphs:
+      - A few years ago, something changed. [[chatbot|Chat assistants]] arrived. You type a question in plain words, and they write an answer.
+      - Before that, you needed experts to use AI. Now anyone who can write a message can try it. That is why everyone is talking about it.
+      - These tools are still young. They change often. Nobody has it all worked out, and that includes the experts.
+
+# 3. A workplace example
+example:
+  title: At work
+  paragraphs:
+    - Maria works in accounts. She has never “used AI”. Or so she thinks.
+    - But her email already hides spam. Her phone turns voice notes into text. Last week, a colleague showed her a chat assistant that tidied up a long email.
+    - Maria did not need a course to start. She needed ten minutes and one small task.
+
+# 4. Try it
+tryIt:
+  - "No tool needed today. Look at your phone or your work computer. Find two places where AI already helps you."
+  - "The spam filter? Autocomplete? The map app?"
+  - "Just notice them. That is all."
+
+# 5. Key takeaways (always three)
+takeaways:
+  - AI is software that does tasks we thought needed a person. It is not a mind.
+  - Generative AI is the new part. It writes and draws when you ask.
+  - Almost everyone is a beginner. Today is a fine day to start.
+
+# 6. Quick check: one correct option per question, a kind reply for every option
+quickCheck:
+  - question: Which of these is AI?
+    options:
+      - text: A spam filter that learns which emails are junk
+        correct: true
+        reply: Yes. It learned from examples of junk mail. That is AI, and you have used it for years.
+      - text: A light switch
+        reply: Not this one. A switch does the same thing every time, and it has not learned anything. The spam filter is the one that learned from examples.
+      - text: A paper calendar
+        reply: Not this one. Paper does not learn. The spam filter does, because it learned from examples of junk mail.
+
+  - question: What is new about generative AI?
+    options:
+      - text: It is always right
+        reply: A common hope, but no. It makes mistakes, and it can sound sure when it is wrong. What is new is that it makes text and pictures.
+      - text: It makes new text or pictures when you ask
+        correct: true
+        reply: Yes. Older AI sorts and spots things. Generative AI makes new things.
+      - text: It thinks like a person
+        reply: It can feel that way, but no. It follows patterns it has seen. What is new is that it can make text and pictures.
+
+  - question: Is it too late to start learning about AI?
+    options:
+      - text: Yes. Everyone else already knows it
+        reply: It can feel like that. But most people have tried a chat tool once or twice at most. You are in good company.
+      - text: No. Most people are just starting
+        correct: true
+        reply: Right. These tools are young and still changing. Starting today is fine.

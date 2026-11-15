@@ -1,0 +1,93 @@
+id: safety
+title: "Sécurité, confidentialité et bon sens"
+summary: "Ce qu'il ne faut pas partager, et quand demander à une personne."
+minutes: 8
+
+opener: "Utiliser l'IA sans risque relève surtout du bon sens. Au travail, vous avez déjà un bon jugement. Cette leçon vous montre où l'appliquer."
+
+idea:
+  paragraphs:
+    - "Deux habitudes couvrent l'essentiel. Faites attention à ce que vous y mettez. Vérifiez ce qui en sort."
+    - "Le reste, c'est connaître quelques ruses que d'autres pourraient tenter."
+  simpler: "Ne lui confiez pas de secrets. Ne croyez pas tout ce qu'elle dit."
+  analogy: "Traitez un outil d'IA comme une carte postale. N'y écrivez rien que vous ne voudriez pas voir lu par d'autres. Et traitez ses réponses comme le conseil d'un inconnu, utile mais à vérifier."
+  analogyLimit: "La limite de cette image : certains outils professionnels sont plus discrets qu'une carte postale. Votre employeur en a peut-être validé un. Demandez quels outils vous pouvez utiliser, et pour quoi."
+
+sections:
+  - title: Ce qu'il ne faut pas coller
+    paragraphs:
+      - "La [[data-privacy|protection des données]], c'est garder en sécurité les informations personnelles. Pensez aux noms, aux adresses, à la santé et aux salaires."
+      - "La [[confidentiality|confidentialité]] concerne les secrets de l'entreprise. Pensez aux données des clients, aux prix et aux projets non publics."
+      - "En cas de doute, n'y mettez rien. Remplacez les détails par des mentions comme [client] ou [montant]."
+
+  - title: Connaissez les règles de votre entreprise
+    paragraphs:
+      - "Beaucoup d'employeurs ont une charte sur l'IA. Elle indique les outils validés et ce que vous pouvez partager."
+      - "Vous ne la trouvez pas ? Demandez à votre responsable ou au service informatique. Cette question n'est jamais déplacée."
+
+  - title: Vérifiez ce qui en sort
+    paragraphs:
+      - "L'IA peut affirmer des choses fausses avec assurance. Vérifiez les faits, les chiffres, les noms et les citations avant de vous y fier."
+      - "Elle peut aussi être injuste, à cause des [[bias|biais]] de ce qu'elle a appris. Redoublez d'attention pour tout ce qui concerne des personnes."
+      - "Les outils ont des [[guardrails|garde-fous]], c'est-à-dire des limites intégrées. Ils aident. Ils ne remplacent pas votre jugement."
+
+  - title: À qui appartiennent les mots et les images ?
+    paragraphs:
+      - "Le [[copyright|droit d'auteur]] protège ce que les gens créent. Pour l'IA, les règles sont encore en discussion."
+      - "C'est pour un usage public, comme une publicité ou une brochure ? Demandez avant d'utiliser un texte ou une image d'IA."
+
+  - title: Les ruses à connaître
+    paragraphs:
+      - "Un [[deepfake]] est une fausse voix, une fausse photo ou une fausse vidéo qui paraît vraie."
+      - "Un message réclame de l'argent ou un mot de passe en urgence ? Vérifiez autrement. Appelez la personne à un numéro que vous connaissez."
+      - "L'[[prompt-injection|injection de prompt]] est un texte caché qui donne des ordres secrets à une IA. Elle compte surtout quand une IA lit vos e-mails ou navigue sur le web pour vous."
+      - "Vous n'avez pas à tout repérer. Ralentissez simplement quand quelque chose vous paraît étrange."
+
+  - title: Quand s'arrêter et demander à une personne
+    paragraphs:
+      - "Arrêtez-vous quand la décision touche à l'emploi, à la santé, à l'argent ou aux droits de quelqu'un."
+      - "Arrêtez-vous quand vous ne pouvez pas vérifier la réponse vous-même. Arrêtez-vous quand quelque chose vous semble anormal."
+      - "Demander à un collègue n'est pas un échec. C'est bien faire son travail."
+
+example:
+  title: Au travail
+  paragraphs:
+    - "Elena veut de l'aide pour une réclamation délicate. Elle copie l'e-mail du client, puis s'arrête."
+    - "Elle retire le nom, l'adresse et le numéro de commande. Elle colle le reste dans l'outil validé par son entreprise."
+    - "Le brouillon promet un remboursement sous trois jours. Elena vérifie la règle, qui prévoit dix jours. Elle corrige, puis envoie."
+
+tryIt:
+  - "Cherchez la charte IA de votre employeur, ou demandez s'il en existe une. Notez deux choses. Quels outils sont validés ?"
+  - "Que ne faut-il jamais y mettre ? Il n'y a pas encore de charte ? La liste « Améliorer mon prompt », dans l'onglet Prompts, comporte une vérification sur la confidentialité."
+
+takeaways:
+  - "Laissez de côté les détails personnels et confidentiels. Utilisez des mentions entre crochets."
+  - "Vérifiez les faits, les chiffres et les noms avant de vous fier à une réponse."
+  - "Quand l'enjeu est important, ou que quelque chose cloche, demandez à une personne."
+
+quickCheck:
+  - question: Vous voulez de l'aide pour répondre à un client. Que faites-vous d'abord ?
+    options:
+      - text: Je colle l'e-mail entier, avec tous les détails
+        reply: "C'est tentant, parce que c'est rapide. Mais les détails personnels doivent rester dehors. Remplacez-les d'abord par des mentions entre crochets."
+      - text: Je retire le nom du client et ses données personnelles
+        correct: true
+        reply: "Oui. L'IA aide tout aussi bien avec [client] à la place du nom."
+
+  - question: Vous recevez un message vocal de votre responsable qui réclame un paiement urgent. Que faites-vous ?
+    options:
+      - text: J'appelle ma responsable à un numéro que je connais
+        correct: true
+        reply: "Oui. Une voix peut être imitée. Un appel rapide lève le doute."
+      - text: Je paie vite, puisque c'est urgent
+        reply: "L'urgence est justement le signal d'alerte. Une voix peut aujourd'hui être imitée. Vérifiez par un appel à un numéro que vous connaissez."
+      - text: Je réponds au message pour demander s'il est authentique
+        reply: "Le réflexe est bon, mais la réponse arrive chez l'expéditeur. Passez par un autre moyen. Appelez un numéro que vous avez déjà."
+
+  - question: L'IA vous donne un chiffre pour un rapport. Que faites-vous ?
+    options:
+      - text: Je l'utilise. Les ordinateurs sont bons en calcul
+        reply: "Les calculatrices, oui. Les assistants prédisent des mots et peuvent se tromper sur un chiffre. Vérifiez d'abord."
+      - text: Je le compare à une source fiable
+        correct: true
+        reply: "Oui. L'IA peut se tromper sur un chiffre tout en paraissant sûre d'elle."

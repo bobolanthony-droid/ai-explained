@@ -1,0 +1,134 @@
+# Hands-on exercises (English). The user does them in an AI tool they already have.
+# Every exercise uses made-up text, so nobody needs to paste real work data.
+#
+#   goal           one line
+#   sampleText     optional made-up text to paste
+#   starterPrompt  the first prompt to copy
+#   good           what a good answer looks like
+#   better         a tweak, with a second prompt to copy
+#   selfCheck      short checks to carry out, each starting with a verb
+
+- id: summarise-email
+  title: Summarise a long email
+  minutes: 5
+  goal: Turn a long, messy email into a few clear points.
+  sampleText: |-
+    Subject: Office move, an update and a few other things
+
+    Hi all,
+
+    Just a quick one (sorry, it got long). The move to the Riverside building is now set for Monday 14th, not the 7th as we said before. The lifts there are still being checked. Packing crates arrive on Thursday 10th. Please label every crate with your name and your new desk number. Your desk number is on the floor plan, which I will send tomorrow. IT will move the computers over the weekend, so please shut down by 4pm on Friday 11th. Parking is limited at Riverside. There are only 20 spaces, first come first served, so think about the bus or the train. Any questions, ask me or Priya.
+
+    Thanks,
+    Dan
+  starterPrompt: |-
+    Summarise the email below in three bullet points. Then list any dates I need to remember.
+
+    [paste the email here]
+  good:
+    - It is much shorter than the email.
+    - It keeps the key facts. These are the new move date and what you must do.
+    - The dates match the email. Check them yourself.
+  better:
+    text: Now say who the summary is for and what shape you want.
+    prompt: |-
+      Summarise the same email for someone who was on holiday. Give me a table with two columns: "Date" and "What I need to do".
+  selfCheck:
+    - "Compare every date with the email."
+    - "Look for anything important that is missing."
+    - "Look for anything that was not in the email."
+    - "Decide if you could send it to a colleague as it is."
+
+- id: better-question
+  title: Ask a better question
+  minutes: 6
+  goal: See how a role, some context and a format change the answer.
+  starterPrompt: |-
+    Give me ideas for a team lunch.
+  good:
+    - The first answer is general. That is normal. You gave it very little to work with.
+    - The second answer fits your team, not just any team.
+    - It uses the limits you gave. These are the time, the budget and the food needs.
+  better:
+    text: Now ask again in the same chat. This time give a role, some context and a format.
+    prompt: |-
+      You are an office manager who plans friendly team events. We are 12 people. Two are vegetarian and one does not eat gluten. We have one hour and [amount] per person. Suggest three team lunch ideas. Put them in a table with the cost, what to order, and why it suits everyone.
+  selfCheck:
+    - "Compare the two answers. Decide which one is more useful."
+    - "Check that the second answer respects every limit you gave."
+    - "Check that it uses the format you asked for."
+    - "Think of one more detail that would make it better."
+
+- id: draft-improve
+  title: Draft a message, then improve it
+  minutes: 7
+  goal: Get a first draft, then shape it in two short steps.
+  starterPrompt: |-
+    Write a short message to my team. Our Thursday meeting moves from 10am to 2pm this week, because the meeting room is being painted. It will be in Room 4 instead.
+  good:
+    - The first draft has all the facts. These are the day, the new time, the reason and the room.
+    - After your changes, it sounds like something you would send.
+    - It is short enough to read in ten seconds.
+  better:
+    text: Now improve it in the same chat. Ask for one change at a time.
+    prompt: |-
+      Make it shorter and friendlier. Put the new time and the room in the first line.
+  selfCheck:
+    - "Check that the first draft has every fact you gave."
+    - "Look for anything it invented, like a different room or time."
+    - "Check that each change you asked for made it better."
+    - "Decide if you would be happy to send the final version."
+
+- id: fact-check
+  title: Fact-check an AI answer
+  minutes: 8
+  goal: Practise spotting answers that sound right but may not be.
+  starterPrompt: |-
+    Tell me five facts about the history of the paperclip. Give a source for each one.
+  good:
+    - You notice that the answer sounds confident. That tells you nothing about whether it is true.
+    - You search for at least one source yourself, outside the chat.
+    - You find out which facts hold up. Some sources may be wrong, or may not exist.
+  better:
+    text: Now ask it to judge its own answer. Then check one fact yourself.
+    prompt: |-
+      Look at your last answer again. Which of these facts are you least sure about, and why? Which sources should I check myself?
+  selfCheck:
+    - "Search for one of the sources yourself, outside the chat."
+    - "See if that source really exists."
+    - "See if the source says what the AI claims."
+    - "Read which facts the AI said it was least sure about."
+
+- id: reusable-project
+  title: Set up reusable instructions
+  minutes: 10
+  goal: Save your rules once, so a task you repeat takes less time.
+  sampleText: |-
+    Team update notes, week 12
+    - new printer installed on floor 2, it works
+    - Jo is back from leave on Monday
+    - client visit moved to the 21st
+    - reminder, timesheets are due Friday at noon
+    - the kitchen fridge will be cleared out on Thursday evening
+  starterPrompt: |-
+    You help me write my weekly team update. Follow these rules every time.
+    - Use plain, friendly words.
+    - Start with the most important item.
+    - Use short bullet points, one line each.
+    - Put dates in bold.
+    - Never add anything that is not in my notes. If something is unclear, ask me.
+  good:
+    - The update follows every rule you set.
+    - It adds nothing that was not in the notes.
+    - Next week, you only paste in new notes. The rules are already there.
+  better:
+    text: Save the rules above in a project or in custom instructions, if your tool has them. Then send the sample notes with this short prompt.
+    prompt: |-
+      Here are this week's notes. Write the update.
+
+      [paste the notes here]
+  selfCheck:
+    - "Check that it followed all five rules."
+    - "Check that it started with the most important item."
+    - "Look for anything that was not in the notes."
+    - "Decide if you could reuse these rules next week."

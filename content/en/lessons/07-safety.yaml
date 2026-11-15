@@ -1,0 +1,93 @@
+id: safety
+title: "Safety, privacy and good judgement"
+summary: "What not to share, and when to ask a person."
+minutes: 8
+
+opener: "Using AI safely is mostly common sense. You already have good judgement at work. This lesson shows where to apply it."
+
+idea:
+  paragraphs:
+    - "Two habits cover most of it. Be careful what you put in. Check what comes out."
+    - "The rest is knowing a few tricks that other people may try."
+  simpler: "Do not tell it secrets. Do not believe everything it says."
+  analogy: "Treat an AI tool like a postcard. Do not write on it what you would not want others to read. And treat its answers like advice from a stranger, useful but worth checking."
+  analogyLimit: "Where this stops working: some work tools are more private than a postcard. Your employer may have approved one. Ask which tools you may use, and for what."
+
+sections:
+  - title: What not to paste in
+    paragraphs:
+      - "[[data-privacy|Data privacy]] means keeping personal information safe. Think of names, addresses, health details and pay."
+      - "[[confidentiality|Confidentiality]] covers company secrets. Think of client details, prices and plans that are not public."
+      - "If you are not sure, leave it out. Replace details with placeholders like [client] or [amount]."
+
+  - title: Know your company's rules
+    paragraphs:
+      - "Many employers have an AI policy. It says which tools are approved and what you may share."
+      - "Can you not find one? Ask your manager or IT. This is never a silly question."
+
+  - title: Check what comes out
+    paragraphs:
+      - "AI can state wrong things with confidence. Check facts, numbers, names and quotes before you rely on them."
+      - "It can also be unfair, because of [[bias]] in what it learned from. Take extra care with anything about people."
+      - "Tools have [[guardrails]], which are built-in limits. They help. They do not replace your judgement."
+
+  - title: Who owns the words and pictures?
+    paragraphs:
+      - "[[copyright|Copyright]] protects what people create. The rules for AI are still being worked out."
+      - "Is it for something public, like an advert or a brochure? Ask before you use AI text or pictures."
+
+  - title: Tricks to watch for
+    paragraphs:
+      - "A [[deepfake]] is a fake voice, photo or video that seems real."
+      - "Does a message ask for money or passwords in a hurry? Check another way. Call the person on a number you know."
+      - "[[prompt-injection|Prompt injection]] is hidden text that gives an AI secret orders. It matters most when an AI can read your email or browse the web for you."
+      - "You do not have to spot every trick. Just slow down when something feels odd."
+
+  - title: When to stop and ask a person
+    paragraphs:
+      - "Stop when the decision affects someone's job, health, money or rights."
+      - "Stop when you cannot check the answer yourself. Stop when something feels wrong."
+      - "Asking a colleague is not a failure. It is the job done well."
+
+example:
+  title: At work
+  paragraphs:
+    - "Elena wants help with a tricky complaint. She copies the customer's email, then pauses."
+    - "She removes the name, the address and the order number. She pastes the rest into her company's approved tool."
+    - "The draft reply promises a refund in three days. Elena checks the policy, which says ten days. She fixes it, then sends."
+
+tryIt:
+  - "Find your employer's AI policy, or ask if there is one. Note two things. Which tools are approved?"
+  - "What must never go in? Is there no policy yet? The Fix my prompt checklist in the Prompts tab has a privacy check you can use."
+
+takeaways:
+  - "Leave out personal and confidential details. Use placeholders."
+  - "Check facts, numbers and names before you rely on an answer."
+  - "When it matters, or feels wrong, ask a person."
+
+quickCheck:
+  - question: You want help replying to a customer. What do you do first?
+    options:
+      - text: Paste in the whole email, with all the details
+        reply: "It is tempting, because it is quick. But personal details should stay out. Swap them for placeholders first."
+      - text: Remove the customer's name and personal details
+        correct: true
+        reply: "Yes. The AI can help just as well with [customer] in place of the name."
+
+  - question: You get a voice message from your boss asking for an urgent payment. What do you do?
+    options:
+      - text: Call your boss on a number you know
+        correct: true
+        reply: "Yes. Voices can be faked. A quick call settles it."
+      - text: Pay quickly, because it is urgent
+        reply: "The hurry is the warning sign. Voices can be faked now. Check with a call on a number you know."
+      - text: Reply to the message to ask if it is real
+        reply: "A good instinct, but the reply goes to the sender. Use another route. Call a number you already have."
+
+  - question: The AI gives you a number for a report. What do you do?
+    options:
+      - text: Use it. Computers are good with numbers
+        reply: "Calculators are. Chat assistants predict words, and they can get numbers wrong. Check it first."
+      - text: Check it against a source you trust
+        correct: true
+        reply: "Yes. AI can get numbers wrong and sound sure about it."

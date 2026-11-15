@@ -1,0 +1,61 @@
+# Galerie avant/après (français) : un prompt faible, sa version solide, et pourquoi elle fonctionne.
+
+- id: late-delivery
+  title: Un e-mail délicat
+  weak: Écris un e-mail à un client pour un retard de livraison.
+  strong: Tu es conseiller au service client d'un magasin de meubles. Un client a commandé un canapé il y a trois semaines. Il arrivera avec deux semaines de retard, à cause d'un fournisseur. Écris un e-mail qui présente nos excuses, donne la nouvelle date et offre la livraison. Moins de 120 mots. Ton chaleureux, sans chercher d'excuses.
+  why: On sait qui écrit, ce qui s'est passé, ce qu'il faut dire, la longueur et le ton. L'IA n'a rien à deviner.
+
+- id: manager-summary
+  title: Un résumé
+  weak: Résume ça.
+  strong: |-
+    Résume le texte ci-dessous pour ma responsable. Elle a deux minutes. Donne-moi trois points, puis une ligne sur la décision qu'elle doit prendre. Emploie des mots simples.
+
+    [collez votre texte]
+  why: Le lecteur, la longueur et le but sont précisés. Un résumé pour une responsable pressée n'est pas un résumé pour un spécialiste.
+
+- id: team-day
+  title: Des idées
+  weak: Donne-moi des idées pour la journée d'équipe.
+  strong: Nous sommes une équipe de 15 personnes, dans des bureaux. Nous avons un après-midi et [montant] par personne. Certains ne boivent pas d'alcool et une personne se déplace en fauteuil roulant. Propose six idées de sortie d'équipe. Présente-les dans un tableau avec le coût, la durée et pourquoi cela convient à tout le monde.
+  why: Ce sont les contraintes qui font le travail. Le budget, le temps et les besoins de chacun transforment des idées vagues en idées utilisables.
+
+- id: explain-policy
+  title: Une explication
+  weak: Explique la nouvelle règle sur les notes de frais.
+  strong: |-
+    Explique la règle sur les notes de frais ci-dessous à une personne qui vient d'arriver. Emploie des mots simples et des phrases courtes. Donne un exemple de dépense acceptée et un exemple de dépense refusée. Termine par les trois règles à ne pas oublier.
+
+    [collez la règle]
+  why: L'IA travaille à partir du vrai texte, elle n'a donc rien à deviner. Le prompt précise aussi le lecteur et demande des exemples.
+
+- id: friendlier-rewrite
+  title: Une reformulation
+  weak: Améliore ça.
+  strong: |-
+    Réécris le message ci-dessous sur un ton plus chaleureux. Garde tous les faits et toutes les dates. Moins de 80 mots. N'ajoute pas de points d'exclamation.
+
+    [collez votre message]
+  why: « Améliorer » peut tout vouloir dire. Ici, on sait ce qu'il faut changer, ce qu'il faut garder et la longueur attendue.
+
+- id: meeting-agenda
+  title: Un ordre du jour
+  weak: Écris un ordre du jour pour notre réunion.
+  strong: Nous avons une réunion d'équipe de 30 minutes lundi. Nous devons décider qui tient le standard en août et nous mettre d'accord sur le nouveau classement des dossiers. Écris un ordre du jour avec la durée de chaque point. Place les décisions en premier. Ajoute une ligne sur ce que chacun doit préparer.
+  why: La durée, les sujets et le but sont donnés. L'ordre du jour peut alors coller à la vraie réunion.
+
+- id: spreadsheet-formula
+  title: Une formule de tableur
+  weak: Comment faire une addition dans un tableur ?
+  strong: J'ai un tableur. La colonne A contient des dates, la colonne B le nom d'un vendeur et la colonne C le montant de la vente. Je veux le total des ventes de chaque personne en mars. Donne-moi la formule et explique chaque partie avec des mots simples.
+  why: Les colonnes et le résultat attendu sont décrits. Avec l'explication, vous pouvez vérifier la formule et la réutiliser.
+
+- id: honest-feedback
+  title: Un avis sur un brouillon
+  weak: C'est bien ?
+  strong: |-
+    Voici le brouillon d'un mot de bienvenue pour les nouveaux clients. Donne-moi deux points réussis et deux points à améliorer. Signale toute phrase difficile à suivre. Ne le réécris pas.
+
+    [collez votre brouillon]
+  why: À une question fermée, l'IA répond poliment « oui ». Demander des points forts et des points faibles précis donne un avis utilisable.

@@ -1,0 +1,91 @@
+# Prompt templates (English). Every template has at least one [placeholder] in square brackets.
+
+- id: summarise-document
+  title: Summarise a document
+  use: When you have a long text and little time.
+  prompt: |-
+    Summarise the text below for [your audience]. Give me [number] bullet points. Then add one line on what I should do next. Use plain words.
+
+    Text:
+    [paste your text]
+
+- id: difficult-email
+  title: Draft a difficult email
+  use: When you need to say something hard, kindly.
+  prompt: |-
+    Help me write an email to [who it is for]. The situation is this: [what happened]. I want them to [what you want]. Keep it under [number] words. The tone should be [tone, for example calm and respectful]. Do not [what to avoid].
+
+- id: meeting-prep
+  title: Prepare for a meeting
+  use: Before a meeting where you want to feel ready.
+  prompt: |-
+    I have a meeting about [topic] with [who]. My goal is [your goal]. List five questions I should be ready to answer. Then list three questions I should ask. Keep each one short.
+
+- id: notes-to-actions
+  title: Turn notes into actions
+  use: After a meeting, when your notes are a mess.
+  prompt: |-
+    Here are my rough notes from a meeting. Turn them into a list of actions. For each action, give the task, the owner and the deadline. If something is unclear, write "to check" instead of guessing.
+
+    Notes:
+    [paste your notes]
+
+- id: explain-simply
+  title: Explain something simply
+  use: When a document or an idea is hard to follow.
+  prompt: |-
+    Explain [topic or pasted text] in plain words, for someone who is new to it. Use short sentences and one everyday comparison. Then give me the three things I most need to remember.
+
+- id: compare-options
+  title: Compare options
+  use: When you have to choose between a few things.
+  prompt: |-
+    I need to choose between [option A], [option B] and [option C]. What matters most to me is [your priorities]. Compare them in a table with the good points, the weak points and the cost. Do not pick for me. Tell me what else I should find out first.
+
+- id: critique-draft
+  title: Critique my draft
+  use: When you have written something and want honest feedback.
+  prompt: |-
+    Here is my draft of [what it is]. It is for [your audience]. Tell me three things that work and three things I could improve. Be direct but kind. Do not rewrite it yet.
+
+    Draft:
+    [paste your draft]
+
+- id: plan-project
+  title: Plan a project
+  use: When a task feels too big to start.
+  prompt: |-
+    I need to [your goal] by [date]. I have [people, time or budget]. Break this into steps, in order. For each step, say how long it might take and what could go wrong. Ask me up to three questions first if anything is unclear.
+
+- id: brainstorm
+  title: Brainstorm ideas
+  use: When you need a lot of ideas, fast.
+  prompt: |-
+    Give me [number] ideas for [what you need]. It is for [your audience]. My limits are [budget, time or other limits]. Make the ideas different from each other. Mark the three that are easiest to do.
+
+- id: rewrite-audience
+  title: Rewrite for a different reader
+  use: When the content is right but the reader has changed.
+  prompt: |-
+    Rewrite the text below for [new audience]. Keep every fact the same. Change the tone to [tone]. Explain any technical words. Keep it under [number] words.
+
+    Text:
+    [paste your text]
+
+- id: create-checklist
+  title: Create a checklist
+  use: When you want to be sure nothing is forgotten.
+  prompt: |-
+    Create a checklist for [task or event]. It is for [who will use it]. Put the steps in order. Keep each step to one short line. Add a last section called "Easy to forget".
+
+- id: interview-questions
+  title: Prepare interview or review questions
+  use: Before a job interview or a yearly review.
+  prompt: |-
+    I am preparing [an interview or a review] for [role]. The skills that matter most are [skills]. Write eight open questions. For each one, say what a good answer would show. Keep the questions fair, and do not ask about private life.
+
+- id: check-answer
+  title: Double-check an answer
+  use: After an AI answer that you plan to rely on.
+  prompt: |-
+    Look again at your answer about [topic]. List the facts and numbers in it. For each one, say how sure you are, and where I can check it myself. Say clearly if you are guessing.

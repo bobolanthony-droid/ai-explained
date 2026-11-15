@@ -1,0 +1,90 @@
+id: not-late
+title: "Vous n'êtes pas en retard : ce qu'est vraiment l'IA"
+summary: "Ce que l'on appelle « IA », et pourquoi aujourd'hui est un bon jour pour commencer."
+minutes: 6
+
+# 1. Pour rassurer
+opener: L'IA peut donner l'impression d'un train parti sans vous. Ce n'est pas le cas. La plupart des gens commencent à peine, et c'est un bon moment pour s'y mettre.
+
+# 2. L'idée en mots simples + une image
+idea:
+  paragraphs:
+    - "L'[[ai|IA]] désigne des programmes informatiques qui font des choses que l'on croyait réservées aux humains. Ils savent lire, écrire ou reconnaître un visage."
+    - Ce n'est pas un robot. Ce n'est pas un cerveau. C'est un logiciel, comme les applications que vous utilisez déjà.
+  simpler: L'IA, c'est un programme qui a appris à faire des choses malignes. Elle ne pense pas et ne ressent rien.
+  analogy: Pensez à une calculatrice. Elle calcule plus vite que vous, mais elle ne comprend pas l'argent. L'IA, c'est un peu une calculatrice pour les mots et les images.
+  analogyLimit: "La limite de cette image : une calculatrice a toujours raison. L'IA se trompe parfois, et elle ne vous prévient pas."
+
+# Un peu plus : une idée par section
+sections:
+  - title: Trois mots que vous allez entendre
+    paragraphs:
+      - "L'[[ai|IA]], c'est la grande famille. Elle regroupe tous les programmes qui réalisent des tâches « intelligentes »."
+      - "L'[[machine-learning|apprentissage automatique]] est une façon de créer une IA. L'ordinateur apprend à partir de nombreux exemples, au lieu de suivre des règles écrites à la main."
+      - "L'[[generative-ai|IA générative]] est la partie la plus récente. Elle crée du nouveau, comme du texte ou des images, quand vous le lui demandez."
+    figure:
+      id: nested-circles
+      labels: [IA, Apprentissage automatique, IA générative]
+      alt: Trois cadres, l'un dans l'autre. Le plus grand est l'IA. À l'intérieur se trouve l'apprentissage automatique. Et dedans, l'IA générative.
+      caption: Chacune est contenue dans la précédente.
+
+  - title: Vous utilisez l'IA depuis des années
+    paragraphs:
+      - Votre filtre anti-spam, c'est de l'IA. L'appli de navigation qui trouve une route plus rapide aussi. Les films que vous suggère une plateforme de streaming aussi.
+      - Vous ne partez donc pas de zéro. Vous avez des années de pratique. Simplement, vous n'appeliez pas cela de l'IA.
+
+  - title: Alors pourquoi tout ce bruit maintenant ?
+    paragraphs:
+      - Il y a quelques années, quelque chose a changé. Les [[chatbot|assistants conversationnels]] sont arrivés. Vous posez une question avec vos mots, et ils rédigent une réponse.
+      - Avant, il fallait des spécialistes pour utiliser l'IA. Aujourd'hui, toute personne capable d'écrire un message peut essayer. Voilà pourquoi tout le monde en parle.
+      - Ces outils sont encore jeunes. Ils changent souvent. Personne n'a tout compris, pas même les spécialistes.
+
+# 3. Un exemple au travail
+example:
+  title: Au travail
+  paragraphs:
+    - Claire travaille à la comptabilité. Elle n'a jamais « utilisé l'IA ». Du moins, c'est ce qu'elle croit.
+    - Pourtant, sa messagerie écarte déjà les spams. Son téléphone transforme ses notes vocales en texte. La semaine dernière, un collègue lui a montré un assistant qui a remis en ordre un long e-mail.
+    - Claire n'a pas eu besoin d'une formation pour commencer. Il lui a fallu dix minutes et une petite tâche.
+
+# 4. À vous
+tryIt:
+  - "Pas besoin d'outil aujourd'hui. Regardez votre téléphone ou votre ordinateur de travail. Trouvez deux endroits où l'IA vous aide déjà."
+  - "Le filtre anti-spam ? La saisie automatique ? L'appli de navigation ?"
+  - "Remarquez-les, simplement. C'est tout."
+
+# 5. À retenir (toujours trois points)
+takeaways:
+  - L'IA est un logiciel qui réalise des tâches que l'on croyait réservées aux humains. Ce n'est pas un cerveau.
+  - L'IA générative est la nouveauté. Elle écrit et dessine à la demande.
+  - Presque tout le monde débute. Aujourd'hui est un bon jour pour commencer.
+
+# 6. Petit point : une seule bonne réponse par question, une réponse bienveillante pour chaque choix
+quickCheck:
+  - question: Lequel de ces objets utilise l'IA ?
+    options:
+      - text: Un filtre anti-spam qui apprend à reconnaître les e-mails indésirables
+        correct: true
+        reply: Oui. Il a appris à partir d'exemples de courrier indésirable. C'est de l'IA, et vous l'utilisez depuis des années.
+      - text: Un interrupteur
+        reply: Pas celui-ci. Un interrupteur fait toujours la même chose, il n'a rien appris. C'est le filtre anti-spam qui a appris à partir d'exemples.
+      - text: Un agenda papier
+        reply: Pas celui-ci. Le papier n'apprend pas. Le filtre anti-spam, lui, a appris à partir d'exemples de courrier indésirable.
+
+  - question: Qu'est-ce qui est nouveau avec l'IA générative ?
+    options:
+      - text: Elle a toujours raison
+        reply: On aimerait bien, mais non. Elle fait des erreurs, et elle peut sembler sûre d'elle quand elle se trompe. La nouveauté, c'est qu'elle crée du texte et des images.
+      - text: Elle crée du texte ou des images à la demande
+        correct: true
+        reply: Oui. Les IA plus anciennes trient et repèrent. L'IA générative, elle, crée du nouveau.
+      - text: Elle pense comme une personne
+        reply: On peut en avoir l'impression, mais non. Elle suit des schémas qu'elle a déjà vus. La nouveauté, c'est qu'elle peut créer du texte et des images.
+
+  - question: Est-il trop tard pour s'intéresser à l'IA ?
+    options:
+      - text: Oui. Tout le monde s'y connaît déjà
+        reply: On peut le croire. Mais la plupart des gens ont essayé un outil de chat une ou deux fois, pas plus. Vous êtes en bonne compagnie.
+      - text: Non. La plupart des gens débutent
+        correct: true
+        reply: Tout à fait. Ces outils sont jeunes et changent encore. Commencer aujourd'hui, c'est très bien.

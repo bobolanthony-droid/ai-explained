@@ -1,0 +1,23 @@
+# "Fix my prompt" checklist (English). The suggestion shows when the box is NOT ticked.
+
+- id: reader
+  question: Did I say who it is for?
+  suggestion: Add one line about the reader. For example, “This is for new staff with no technical background.”
+- id: verb
+  question: Did I say what I want, starting with a clear verb?
+  suggestion: Start with a verb, such as write, summarise, list, compare or rewrite.
+- id: context
+  question: Did I explain the situation?
+  suggestion: Add two or three facts the AI cannot know. What happened? What matters most?
+- id: format
+  question: Did I say what format I want?
+  suggestion: Name the shape and the length. For example, “five bullet points” or “an email under 100 words”.
+- id: good
+  question: Did I say what good looks like?
+  suggestion: Describe a good result, or paste a short example you like.
+- id: avoid
+  question: Did I say what to avoid?
+  suggestion: Name one or two things to leave out. For example, “no jargon” or “do not invent numbers”.
+- id: private
+  question: Is it free of private or confidential details?
+  suggestion: Replace names and numbers with placeholders like [customer] or [amount]. Fill them in yourself afterwards.

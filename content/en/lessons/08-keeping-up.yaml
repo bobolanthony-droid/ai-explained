@@ -1,0 +1,94 @@
+id: keeping-up
+title: "Choosing tools and keeping up, calmly"
+summary: "Five minutes a week is enough."
+minutes: 7
+
+opener: "New AI tools appear every week. You do not need to follow them all. You need one tool that works for you, and one small habit."
+
+idea:
+  paragraphs:
+    - "Most AI tools are built on a few kinds of [[model|models]]. They differ less than the adverts suggest."
+    - "So do not chase the newest one. Pick a tool you are allowed to use, and learn it well."
+  simpler: "You do not need the newest tool. You need one you know how to use."
+  analogy: "It is like choosing a kitchen knife. One good knife that you use well beats a drawer full of gadgets."
+  analogyLimit: "Where this stops working: a knife stays the same for years. AI tools change every few months. So a short, regular check-in is worth having."
+
+sections:
+  - title: Three kinds of tool
+    paragraphs:
+      - "Chat assistants. You type, and they answer. This is where most people start."
+      - "AI inside your office apps. It sits in your email, your documents and your spreadsheets."
+      - "Agents. They carry out steps for you, as you saw in Lesson 6."
+    # Shows the examples from content/shared/tools.yaml, with the date they were last reviewed.
+    widget: tool-examples
+
+  - title: Words you may meet when comparing tools
+    paragraphs:
+      - "Some [[open-source|models are open]], and some are closed. Open ones can run on a company's own computers. Closed ones are used through their maker."
+      - "A [[plugin]] is an add-on that gives a tool one more skill. An [[api|API]] lets other software talk to a model directly."
+      - "[[fine-tuning|Fine-tuning]] means extra training for one kind of task. These are mostly choices for your IT team, not for you."
+
+  - title: Try a tool in ten minutes
+    paragraphs:
+      - "Is it approved at work? If not, stop here."
+      - "Give it one real task from your week, with made-up details. Is the answer useful?"
+      - "Ask it something you know well. Does it get it right? Does it say when it is unsure?"
+      - "Check where your data goes. Look for a privacy page, or ask IT."
+
+  - title: How to spot hype
+    paragraphs:
+      - "Be wary of headlines that say “always”, “never” or “everything will change”."
+      - "A [[benchmark]] is a test score for models. A high score does not mean it is good at your job."
+      - "You may read about [[agi|AGI]], an AI that could do most things a person can. People do not agree on what it means, or when it might come. You can leave that debate to others."
+
+  - title: Five minutes a week
+    paragraphs:
+      - "Pick one small thing to try each week. It could be a new kind of task, or a tip from the Prompts tab."
+      - "Ask one colleague what they use AI for. People share good ideas when asked."
+      - "That is enough. You do not need to read the news every day."
+
+  - title: Your next 30 days
+    paragraphs:
+      - "Here is a simple plan. It has one small step a week. Tick each step when you have done it."
+    # The tick-box plan, saved on the device. Its wording is in pages.yaml.
+    widget: thirty-day-plan
+
+example:
+  title: At work
+  paragraphs:
+    - "Farid's team gets a new AI tool at work. A colleague sends him five articles about three other tools."
+    - "Farid leaves the articles for later. He spends ten minutes with the approved tool on a real task. It summarises his weekly report well."
+    - "He sets a reminder for Fridays. “Try one new thing with AI.” That is his whole plan."
+
+tryIt:
+  - "Do the first step of your 30-day plan this week, then tick it. You can find the plan again in the Me tab."
+
+takeaways:
+  - "One approved tool, used well, beats ten you have only read about."
+  - "Test a tool on your own task. Do not rely on headlines or scores."
+  - "Five minutes a week is enough to keep up."
+
+quickCheck:
+  - question: A headline says a new tool “changes everything”. What is a calm response?
+    options:
+      - text: Switch to it straight away
+        reply: "No need to rush. Headlines are written to grab you. A ten-minute test on your own task tells you more."
+      - text: Try it on one of your own tasks, if you are allowed to
+        correct: true
+        reply: "Yes. Your own task tells you more than any headline."
+
+  - question: How much time do you need to keep up with AI?
+    options:
+      - text: About five minutes a week
+        correct: true
+        reply: "Yes. One small experiment a week adds up fast."
+      - text: An hour every day
+        reply: "That would wear anyone out. A few minutes a week, on one small thing, is enough."
+
+  - question: A model has a top benchmark score. What does that tell you?
+    options:
+      - text: It is the best tool for my job
+        reply: "Maybe, maybe not. A benchmark is like a school exam. Your own task is the real test."
+      - text: It did well on a set test, and that is all
+        correct: true
+        reply: "Yes. It may or may not be good at your work. Try it and see."

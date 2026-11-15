@@ -1,0 +1,84 @@
+id: how-chatbots-think
+title: "How chatbots “think” (simply)"
+summary: "Why they sound so sure, and why they still get things wrong."
+minutes: 7
+
+opener: "You do not need to know how an engine works to drive a car. But a little knowledge helps you drive well. The same goes for AI."
+
+idea:
+  paragraphs:
+    - "Inside a chat assistant is a [[llm|large language model]], or LLM for short. It has read a huge amount of text. From that, it learned which words tend to follow which."
+    - "When you ask it something, it does one thing. It predicts the next word, then the next, then the next."
+  simpler: "It is a very strong autocomplete. It guesses the next word, over and over."
+  analogy: "Your phone suggests the next word when you type a message. An LLM does the same, but for whole pages. Think of a very well-read intern who can write about almost anything."
+  analogyLimit: "Where this stops working: an intern knows when they are unsure. The LLM does not. It writes with the same confidence either way."
+
+sections:
+  - title: Where its knowledge comes from
+    paragraphs:
+      - "The text it learned from is called [[training-data|training data]]. It includes books, articles and web pages."
+      - "The trained program is called a [[model]]. Training stops on a certain date. After that, the model learns nothing new by itself."
+      - "So it may not know last week's news. Some tools can search the web to fill that gap. Many cannot."
+
+  - title: It reads in small pieces
+    paragraphs:
+      - "The model does not see words the way you do. It cuts text into small pieces called [[token|tokens]]. A token is often part of a word."
+      - "It can only keep so many tokens in mind at once. That limit is its [[context-window|context window]]."
+      - "In a very long chat, early messages slip out of view. If the assistant seems to forget, start a fresh chat."
+
+  - title: Why it sounds sure and can still be wrong
+    paragraphs:
+      - "The model is built to write text that sounds right. It is not built to check whether the text is true."
+      - "Sometimes it states something false as if it were a fact. This is called a [[hallucination]]."
+      - "It is not lying. It has no idea it is wrong. That is why you check anything that matters."
+
+  - title: What it is good at, and what it is not
+    paragraphs:
+      - "It is good with words. It can draft, summarise, rewrite, explain and suggest ideas."
+      - "It is weaker with exact facts, recent events and sums. It also knows nothing about you or your company unless you tell it."
+      - "A simple rule helps. Use it for a first draft. Do not use it as the final word."
+
+example:
+  title: At work
+  paragraphs:
+    - "Tom asks an assistant for three studies on remote work. It gives three titles, with authors and dates. They look perfect."
+    - "Tom searches for them. Two exist, but the third does not. The assistant made it up."
+    - "Tom is not annoyed. He expected it. He keeps the two real studies and moves on."
+
+tryIt:
+  - "Ask a chat assistant about something you know very well. Your town, your hobby or your job. Read the answer slowly."
+  - "What did it get right? What did it get slightly wrong? This is the best way to learn how far to trust it."
+
+takeaways:
+  - "A chat assistant predicts the next word. It does not look things up, unless it has a search tool."
+  - "It can sound sure and be wrong. Check anything that matters."
+  - "If it loses the thread in a long chat, start a fresh one."
+
+quickCheck:
+  - question: What does a large language model do?
+    options:
+      - text: It looks up answers in a database of facts
+        reply: "Not quite. It has no list of facts to check. It predicts likely words, which is why it can be wrong."
+      - text: It predicts which words should come next
+        correct: true
+        reply: "Yes. It writes one small piece at a time, based on patterns in the text it learned from."
+      - text: It thinks about your question like a person
+        reply: "It can seem so. But it is predicting words, not thinking things through the way you do."
+
+  - question: An assistant gives you a source that does not exist. What happened?
+    options:
+      - text: It hallucinated
+        correct: true
+        reply: "Yes. It wrote something that sounds right but is not true. It happens, so check sources."
+      - text: It lied on purpose
+        reply: "It is not lying. It does not know the source is fake. It wrote what a source usually looks like."
+      - text: Your question was bad
+        reply: "This is not your fault. Even with a clear question, it can invent things. Checking is part of the job."
+
+  - question: The assistant forgets what you said at the start of a long chat. What helps?
+    options:
+      - text: Typing in capital letters
+        reply: "That will not help. The early messages have slipped out of its view. A fresh chat with the key points works better."
+      - text: Starting a fresh chat and pasting in the key points
+        correct: true
+        reply: "Yes. A fresh chat gives it a clear desk."

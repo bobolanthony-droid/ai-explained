@@ -1,0 +1,84 @@
+id: how-chatbots-think
+title: "Comment « pensent » les chatbots (version simple)"
+summary: "Pourquoi ils semblent si sûrs d'eux, et pourquoi ils se trompent quand même."
+minutes: 7
+
+opener: "Pas besoin de connaître la mécanique pour conduire une voiture. Mais quelques notions aident à mieux conduire. Avec l'IA, c'est pareil."
+
+idea:
+  paragraphs:
+    - "Au cœur d'un assistant conversationnel, il y a un [[llm|grand modèle de langage]], ou LLM. Il a lu une énorme quantité de textes. Il en a retenu quels mots suivent souvent quels autres."
+    - "Quand vous lui posez une question, il fait une seule chose. Il prédit le mot suivant, puis le suivant, puis le suivant."
+  simpler: "C'est une saisie automatique très puissante. Elle devine le mot suivant, encore et encore."
+  analogy: "Votre téléphone vous propose le mot suivant quand vous écrivez un message. Un LLM fait pareil, mais sur des pages entières. Imaginez un stagiaire qui a énormément lu et qui peut écrire sur presque tout."
+  analogyLimit: "La limite de cette image : un stagiaire sait quand il n'est pas sûr. Le LLM, non. Il écrit avec la même assurance dans les deux cas."
+
+sections:
+  - title: D'où vient ce qu'il sait
+    paragraphs:
+      - "Les textes à partir desquels il a appris s'appellent les [[training-data|données d'entraînement]]. Ce sont des livres, des articles et des pages web."
+      - "Le programme ainsi entraîné s'appelle un [[model|modèle]]. L'entraînement s'arrête à une certaine date. Ensuite, le modèle n'apprend plus rien tout seul."
+      - "Il peut donc ignorer l'actualité de la semaine dernière. Certains outils savent chercher sur le web pour combler ce manque. Beaucoup ne le savent pas."
+
+  - title: Il lit par petits morceaux
+    paragraphs:
+      - "Le modèle ne voit pas les mots comme vous. Il découpe le texte en petits morceaux, les [[token|tokens]]. Un token est souvent une partie de mot."
+      - "Il ne peut garder en tête qu'un certain nombre de tokens à la fois. Cette limite s'appelle la [[context-window|fenêtre de contexte]]."
+      - "Dans une très longue conversation, les premiers messages sortent de son champ de vision. Si l'assistant semble oublier, ouvrez une nouvelle conversation."
+
+  - title: Pourquoi il semble sûr de lui et peut se tromper
+    paragraphs:
+      - "Le modèle est conçu pour écrire un texte qui sonne juste. Il n'est pas conçu pour vérifier que ce texte est vrai."
+      - "Il lui arrive d'affirmer une chose fausse comme si c'était un fait. On appelle cela une [[hallucination]]."
+      - "Il ne ment pas. Il ne sait pas qu'il se trompe. Voilà pourquoi vous vérifiez tout ce qui compte."
+
+  - title: Ce qu'il fait bien, et moins bien
+    paragraphs:
+      - "Il est à l'aise avec les mots. Il sait rédiger, résumer, reformuler, expliquer et proposer des idées."
+      - "Il est moins fiable pour les faits précis, l'actualité et les calculs. Il ne sait rien non plus de vous ni de votre entreprise, sauf si vous le lui dites."
+      - "Une règle simple peut vous aider. Servez-vous-en pour un premier jet. Ne lui laissez pas le dernier mot."
+
+example:
+  title: Au travail
+  paragraphs:
+    - "Thomas demande à un assistant trois études sur le télétravail. Il reçoit trois titres, avec les auteurs et les dates. Tout semble parfait."
+    - "Thomas les cherche. Deux existent, mais pas la troisième. L'assistant l'a inventée."
+    - "Thomas ne s'en agace pas. Il s'y attendait. Il garde les deux vraies études et poursuit son travail."
+
+tryIt:
+  - "Interrogez un assistant sur un sujet que vous connaissez très bien. Votre ville, votre passe-temps ou votre métier. Lisez la réponse lentement."
+  - "Qu'a-t-il dit de juste ? Qu'a-t-il dit d'un peu faux ? C'est la meilleure façon de savoir jusqu'où lui faire confiance."
+
+takeaways:
+  - "Un assistant conversationnel prédit le mot suivant. Il ne consulte rien, sauf s'il dispose d'un outil de recherche."
+  - "Il peut sembler sûr de lui et se tromper. Vérifiez tout ce qui compte."
+  - "S'il perd le fil dans une longue conversation, ouvrez-en une nouvelle."
+
+quickCheck:
+  - question: Que fait un grand modèle de langage ?
+    options:
+      - text: Il cherche les réponses dans une base de faits
+        reply: "Pas tout à fait. Il n'a aucune liste de faits à consulter. Il prédit des mots probables, c'est pourquoi il peut se tromper."
+      - text: Il prédit les mots qui doivent suivre
+        correct: true
+        reply: "Oui. Il écrit un petit morceau à la fois, d'après ce qu'il a retenu de ses lectures."
+      - text: Il réfléchit à votre question comme une personne
+        reply: "On peut en avoir l'impression. Mais il prédit des mots. Il ne raisonne pas comme vous."
+
+  - question: Un assistant vous donne une source qui n'existe pas. Que s'est-il passé ?
+    options:
+      - text: Il a halluciné
+        correct: true
+        reply: "Oui. Il a écrit quelque chose de plausible, mais de faux. Cela arrive, alors vérifiez les sources."
+      - text: Il a menti exprès
+        reply: "Il ne ment pas. Il ignore que la source est fausse. Il a écrit ce à quoi ressemble une source."
+      - text: Votre question était mauvaise
+        reply: "Vous n'y êtes pour rien. Même avec une question claire, il peut inventer. Vérifier fait partie du travail."
+
+  - question: L'assistant oublie ce que vous avez dit au début d'une longue conversation. Que faire ?
+    options:
+      - text: Écrire en majuscules
+        reply: "Cela ne changera rien. Les premiers messages sont sortis de son champ de vision. Une nouvelle conversation, avec l'essentiel, marche mieux."
+      - text: Ouvrir une nouvelle conversation et y coller l'essentiel
+        correct: true
+        reply: "Oui. Une nouvelle conversation lui redonne un bureau dégagé."

@@ -1,0 +1,11 @@
+# The ONLY place where specific products are named. Lesson text talks about
+# tool *types*, so it does not go stale. Review this file every few months.
+lastReviewed: "2026-11-14"
+contentLastReviewed: "2026-11-14"
+tools:
+  - type: chat-assistant
+    examples: [ChatGPT, Claude, Copilot, Gemini, Le Chat]
+  - type: office-suite
+    examples: [Microsoft 365 Copilot, Gemini in Google Workspace]
+  - type: agent
+    examples: [ChatGPT agent, Claude Cowork, Copilot agents]

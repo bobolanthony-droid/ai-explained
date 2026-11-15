@@ -1,0 +1,89 @@
+id: good-prompt
+title: "Parler à l'IA : comment écrire un bon prompt"
+summary: "Une recette simple pour demander clairement."
+minutes: 8
+
+opener: "Vous savez déjà le faire. Écrire un bon prompt, c'est expliquer clairement ce que vous voulez. Vous le faites chaque jour avec vos collègues."
+
+idea:
+  paragraphs:
+    - "Un [[prompt]], c'est ce que vous écrivez à un outil d'IA. C'est votre question ou votre consigne."
+    - "Plus le prompt est clair, meilleure est la réponse. L'IA ne lit pas dans vos pensées. Elle n'a que vos mots."
+  simpler: "Dites à l'IA exactement ce que vous voulez, comme à quelqu'un qui vient vous aider."
+  analogy: "Imaginez un nouveau collègue, le jour de son arrivée. Il est vif, mais il ne sait rien de votre travail. Un bon prompt, c'est le brief que vous lui feriez."
+  analogyLimit: "La limite de cette image : un collègue pose des questions quand le brief n'est pas clair. L'IA, le plus souvent, devine. C'est donc à vous d'en dire plus dès le départ."
+
+sections:
+  - title: Une recette simple
+    paragraphs:
+      - "Un bon prompt contient souvent cinq ingrédients. Vous n'avez pas besoin des cinq à chaque fois."
+      - "Le rôle, c'est qui l'IA doit être. Le contexte, c'est la situation. La tâche, c'est ce que vous voulez obtenir."
+      - "Le format, c'est la forme de la réponse. Les contraintes, c'est ce qu'il faut éviter."
+      - "Commencez par la tâche. Ajoutez le reste quand la réponse ne vous convient pas."
+
+  - title: Avant et après
+    paragraphs:
+      - "Voici un prompt faible. « Écris un e-mail sur le retard de livraison. »"
+      - "En voici un plus solide. « Tu travailles au service client d'un magasin de meubles. Un canapé arrivera avec deux semaines de retard. Écris un e-mail court et chaleureux qui présente nos excuses et donne la nouvelle date. »"
+      - "Le second donne un rôle, le contexte, la tâche et le ton. L'IA a beaucoup moins à deviner."
+
+  - title: Donnez-lui les faits
+    paragraphs:
+      - "Vous voulez une réponse fondée sur un document ? Collez le document. Puis écrivez, « Utilise uniquement ce texte. »"
+      - "On appelle cela l'[[grounding|ancrage]]. La réponse est rattachée à une source en laquelle vous avez confiance."
+      - "Le risque de faits inventés diminue. Il ne disparaît pas, alors vous vérifiez quand même."
+
+  - title: Voyez cela comme une conversation
+    paragraphs:
+      - "La première réponse est un brouillon. Dites ce qu'il faut changer. « Plus court. » « Plus chaleureux. » « Ajoute un tableau. »"
+      - "Posez deux fois la même question, et vous aurez peut-être deux réponses différentes. C'est normal. Un réglage appelé [[temperature|température]] apporte cette variété."
+      - "Si la conversation s'embrouille, ouvrez-en une nouvelle."
+
+  - title: Les erreurs courantes
+    paragraphs:
+      - "Trop vague. « Aide-moi pour mon rapport. » Précisez quel rapport, pour qui, et quelle aide vous attendez."
+      - "Trop long et trop touffu. Cinq demandes dans un seul message, c'est trop. Demandez une chose à la fois."
+      - "S'arrêter à la première réponse. La deuxième ou la troisième est souvent bien meilleure."
+
+example:
+  title: Au travail
+  paragraphs:
+    - "Aïcha doit annoncer à son équipe une nouvelle règle sur les notes de frais. Elle écrit d'abord « Présente la nouvelle règle des notes de frais. » La réponse est longue et raide."
+    - "Elle réessaie. « Tu es une responsable de bureau sympathique. Notre équipe de dix personnes doit désormais envoyer ses justificatifs sous 30 jours. Écris un court message pour notre messagerie d'équipe. Pas de jargon. »"
+    - "La nouvelle réponse est presque prête. Elle change deux mots et la publie."
+
+tryIt:
+  - "Ouvrez l'onglet Prompts de cette appli. Le générateur de prompt propose une case par ingrédient. Remplissez la tâche et une autre case."
+  - "Copiez le prompt et essayez-le dans votre outil d'IA. La boîte à outils contient aussi des modèles, des conseils et une liste de vérification. Revenez-y quand vous voulez."
+
+takeaways:
+  - "Un bon prompt est un brief clair. Dites qui, quoi, pour qui et sous quelle forme."
+  - "Collez les faits à utiliser. Puis vérifiez la réponse."
+  - "La première réponse est un brouillon. Poursuivez la conversation."
+
+quickCheck:
+  - question: Quel prompt donnera la meilleure réponse ?
+    options:
+      - text: "« Écris un texte sur le recyclage. »"
+        reply: "Celui-ci laisse beaucoup à deviner. Pour qui, et de quelle longueur ? L'autre prompt répond à ces questions."
+      - text: "« Écris cinq conseils de recyclage au bureau pour les nouveaux arrivants, sous forme de liste courte. »"
+        correct: true
+        reply: "Oui. Il dit quoi, combien, pour qui et sous quelle forme."
+
+  - question: La première réponse est trop longue et trop formelle. Que faire ensuite ?
+    options:
+      - text: Dire ce qu'il faut changer, et redemander
+        correct: true
+        reply: "Oui. « Plus court et plus chaleureux, s'il te plaît » suffit souvent."
+      - text: Abandonner. L'outil n'est pas fait pour ça
+        reply: "Pas encore. La première réponse n'est qu'un brouillon. Dites ce qu'il faut changer, et elle s'améliorera le plus souvent."
+      - text: Ouvrir une nouvelle conversation et retaper le même prompt
+        reply: "Vous aurez peut-être une réponse différente, mais pas meilleure. Il est plus rapide de dire ce qu'il faut changer."
+
+  - question: Vous voulez une réponse fondée sur vos notes de réunion. Que faire ?
+    options:
+      - text: Poser la question en espérant que l'IA sache
+        reply: "Elle n'était pas à votre réunion. Sans les notes, elle ne peut que deviner. Collez-les, sans les détails privés."
+      - text: Coller les notes et écrire « utilise uniquement ces notes »
+        correct: true
+        reply: "Oui. La réponse est ainsi rattachée à votre texte. Relisez-la quand même."

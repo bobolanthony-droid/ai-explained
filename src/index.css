@@ -1,0 +1,115 @@
+@import 'tailwindcss';
+
+/* Design tokens. Tailwind classes like bg-surface / text-ink-soft read these,
+   so light and dark mode are just two sets of values. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-soft: var(--soft);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-primary: var(--primary);
+  --color-primary-ink: var(--primary-ink);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: 'Nunito Variable', ui-rounded, system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', Georgia, serif;
+}
+
+:root {
+  color-scheme: light;
+  --bg: #fffaf2; /* warm cream */
+  --surface: #ffffff;
+  --soft: #fbeedd;
+  --ink: #1e2b29;
+  --ink-soft: #4f5e5b;
+  --line: #eadfcd; /* decorative dividers */
+  --line-strong: #8a8474; /* borders of controls (3:1 contrast) */
+  --primary: #1c7261; /* fresh green */
+  --primary-ink: #ffffff;
+  --primary-soft: #d6f0e6;
+  --accent: #e9a66b; /* apricot, decoration only */
+  --accent-ink: #9a4715; /* apricot dark enough for text */
+  --accent-soft: #fbe3cc;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #1f2c2b; /* soft dusk, not black */
+  --surface: #2a3938;
+  --soft: #334544;
+  --ink: #f3efe6;
+  --ink-soft: #c5cfcb;
+  --line: #445856;
+  --line-strong: #8a9c98;
+  --primary: #9bdcc7;
+  --primary-ink: #10201c;
+  --primary-soft: #2f4a43;
+  --accent: #e9a66b;
+  --accent-ink: #f6bd8a;
+  --accent-soft: #4a3524;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+    font-size: 1.0625rem; /* 17px: comfortable on a phone */
+    line-height: 1.6;
+    -webkit-tap-highlight-color: transparent;
+  }
+  :focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  /* <main> is focused after each navigation for screen readers; no ring needed. */
+  main:focus {
+    outline: none;
+  }
+  dialog::backdrop {
+    background: rgb(0 0 0 / 0.5);
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border-line rounded-3xl border p-5;
+  }
+  .btn {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 text-center font-bold;
+  }
+  .btn-primary {
+    @apply bg-primary text-primary-ink;
+  }
+  .btn-quiet {
+    @apply bg-surface text-ink border-line-strong border;
+  }
+  .row-link {
+    @apply flex min-h-14 items-center justify-between gap-3 px-5 py-3 font-semibold;
+  }
+  .eyebrow {
+    @apply text-sm font-bold tracking-wide uppercase;
+  }
+}
+
+/* Motion: off when the device asks for it OR the in-app setting is on. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+[data-reduce-motion='true'] *,
+[data-reduce-motion='true'] *::before,
+[data-reduce-motion='true'] *::after {
+  animation-duration: 0.01ms !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}

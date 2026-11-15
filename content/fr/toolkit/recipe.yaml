@@ -1,0 +1,66 @@
+# La recette du prompt (français) : Rôle, Contexte, Tâche, Format, Contraintes, et Exemples en option.
+# Les six id sont fixes (le générateur de prompt a une case par id). Le texte, lui, se modifie librement.
+
+intro: Un bon prompt ressemble à un bon brief. Imaginez un nouveau collègue, le jour de son arrivée. Il est vif, mais il ne sait rien de votre travail. Que lui diriez-vous ?
+note: Vous n'avez pas besoin de tous les ingrédients à chaque fois. Commencez par la tâche. Ajoutez les autres quand la réponse ne vous convient pas.
+
+elements:
+  - id: role
+    name: Rôle
+    label: "Rôle :"
+    oneLine: Dites à l'IA qui elle doit être pour ce travail.
+    analogy: C'est comme dire à un intérimaire « aujourd'hui, vous êtes à l'accueil ».
+    before: Écris un texte sur notre nouvelle politique de congés.
+    after: Tu es responsable RH et tu écris des notes claires et chaleureuses au personnel. Écris un texte sur notre nouvelle politique de congés.
+    helper: Quel rôle l'IA doit-elle jouer ?
+    placeholder: Un responsable RH qui écrit des notes claires et chaleureuses au personnel
+
+  - id: context
+    name: Contexte
+    label: "Contexte :"
+    oneLine: Expliquez la situation et à qui le résultat s'adresse.
+    analogy: C'est comme raconter à un nouveau collègue ce qui s'est passé avant son arrivée.
+    before: Réponds à ce client.
+    after: Ce client attend un remboursement depuis deux semaines. Il est mécontent mais poli. Nous voulons le garder. Réponds à ce client.
+    helper: Que se passe-t-il ? Qui lira le résultat ?
+    placeholder: Notre équipe de 12 personnes change de bureaux le mois prochain. Le stationnement inquiète.
+
+  - id: task
+    name: Tâche
+    label: "Tâche :"
+    oneLine: Dites exactement ce que vous voulez obtenir.
+    analogy: C'est comme dire « classez ces documents par date », et non « occupez-vous de ça ».
+    before: Aide-moi pour ma réunion.
+    after: Liste cinq questions que je devrais poser à la réunion budget de demain.
+    helper: Que doit faire l'IA ? Commencez par un verbe.
+    placeholder: Écris une courte note qui explique le déménagement des bureaux
+
+  - id: format
+    name: Format
+    label: "Format :"
+    oneLine: Dites quelle forme doit prendre la réponse.
+    analogy: C'est comme demander « une page » ou « un tableau », pour ne pas recevoir un roman.
+    before: Résume ce rapport.
+    after: Résume ce rapport en cinq points. Pas plus de 15 mots par point.
+    helper: Une liste, un tableau, un e-mail ? De quelle longueur ?
+    placeholder: Un e-mail d'environ 120 mots, avec un objet clair
+
+  - id: constraints
+    name: Contraintes
+    label: "Contraintes :"
+    oneLine: Dites ce qu'il faut éviter et les limites à respecter.
+    analogy: C'est comme prévenir un traiteur, « pas de fruits à coque ».
+    before: Rédige une offre d'emploi pour un chauffeur.
+    after: Rédige une offre d'emploi pour un chauffeur. Emploie des mots simples. Pas de jargon. Ne mentionne pas le salaire.
+    helper: Que faut-il éviter ? Y a-t-il des limites ?
+    placeholder: Ton chaleureux. Pas de jargon. Ne promets aucune date.
+
+  - id: examples
+    name: Exemples (facultatif)
+    label: "Exemple de ce que je veux :"
+    oneLine: Montrez à quoi ressemble un bon résultat.
+    analogy: C'est comme montrer à un peintre la photo de la couleur que vous voulez.
+    before: Écris un objet pour ma lettre d'information.
+    after: Écris un objet pour ma lettre d'information. En voici un que j'ai aimé, « Trois petites victoires de mars ». Écris-en cinq dans ce style.
+    helper: Facultatif. Collez un court exemple qui vous plaît.
+    placeholder: "« Bonne nouvelle : l'ascenseur est réparé. Merci de votre patience. »"

@@ -1,0 +1,23 @@
+# Liste « Améliorer mon prompt » (français). La suggestion s'affiche quand la case N'EST PAS cochée.
+
+- id: reader
+  question: Ai-je dit à qui c'est destiné ?
+  suggestion: Ajoutez une ligne sur le lecteur. Par exemple, « C'est pour de nouveaux collègues, sans bagage technique. »
+- id: verb
+  question: Ai-je dit ce que je veux, en commençant par un verbe clair ?
+  suggestion: Commencez par un verbe, comme écrire, résumer, lister, comparer ou reformuler.
+- id: context
+  question: Ai-je expliqué la situation ?
+  suggestion: Ajoutez deux ou trois faits que l'IA ne peut pas connaître. Que s'est-il passé ? Qu'est-ce qui compte le plus ?
+- id: format
+  question: Ai-je dit quel format je veux ?
+  suggestion: Précisez la forme et la longueur. Par exemple, « cinq points » ou « un e-mail de moins de 100 mots ».
+- id: good
+  question: Ai-je dit à quoi ressemble un bon résultat ?
+  suggestion: Décrivez un bon résultat, ou collez un court exemple qui vous plaît.
+- id: avoid
+  question: Ai-je dit ce qu'il faut éviter ?
+  suggestion: Citez une ou deux choses à laisser de côté. Par exemple, « pas de jargon » ou « n'invente pas de chiffres ».
+- id: private
+  question: Mon prompt est-il sans détail privé ou confidentiel ?
+  suggestion: Remplacez les noms et les chiffres par des mentions comme [client] ou [montant]. Vous les compléterez vous-même ensuite.

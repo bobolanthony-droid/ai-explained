@@ -1,0 +1,82 @@
+# Tips cards (English): one short idea each, always with an example.
+# The order here is the order of the cards.
+
+- id: be-specific
+  title: Be specific about the goal and the reader
+  text: Vague questions get vague answers. Say what you want and who it is for.
+  example: Instead of “Write about recycling”, try “Write five tips on office recycling for new staff.”
+
+- id: give-context
+  title: Give context
+  text: The AI knows nothing about your situation. Tell it what is going on and what you already know.
+  example: "“Our shop closes early on Fridays in August. Customers keep asking why. Write a short sign for the door.”"
+
+- id: say-format
+  title: Say what format you want
+  text: Name the shape and the length. Otherwise you get whatever the AI picks.
+  example: "“Give me a table with three columns.” “Keep it under 150 words.” “Write it as an email.”"
+
+- id: show-example
+  title: Show an example of what good looks like
+  text: One sample teaches more than a long description. Paste one you like.
+  example: "“Here is a past update I liked. Write the new one in the same style.”"
+
+- id: ask-questions-first
+  title: Ask it to ask you questions first
+  text: Not sure what to include? Let the AI interview you.
+  example: "“Before you write anything, ask me up to five questions about what I need.”"
+
+- id: break-into-steps
+  title: Break big tasks into steps
+  text: One huge request gives a muddled answer. Ask for one part at a time.
+  example: First ask for an outline. Then ask for section one. Then ask it to tighten the wording.
+
+- id: set-tone
+  title: Set the tone and the reading level
+  text: The same facts can sound warm, formal or simple. Say which you want.
+  example: "“Friendly but professional.” “Explain it so a new starter can follow.”"
+
+- id: say-what-to-avoid
+  title: Say what to avoid
+  text: Limits help. Tell it what to leave out.
+  example: "“No jargon. No bullet points. Do not mention prices.”"
+
+- id: iterate
+  title: Treat it as a conversation
+  text: The first answer is a draft. Say what to change, and ask again.
+  example: "“Shorter, please. And make the second point friendlier.”"
+
+- id: ask-to-critique
+  title: Ask it to check its own answer
+  text: A second look often finds weak spots. Ask for one.
+  example: "“What is weak or unclear in your answer? Fix those parts.”"
+
+- id: ask-for-sources
+  title: Ask for sources, then check them yourself
+  text: Ask where a fact comes from and what it is assuming. Then look it up. Sources can be wrong, or made up.
+  example: "“Which parts of this are you unsure about? What did you assume?”"
+
+- id: fresh-chat
+  title: Start a fresh chat when it drifts
+  text: Long chats get muddled. A new chat with a clear summary works better.
+  example: Copy the best version so far. Open a new chat. Paste it in and say what you want next.
+
+- id: no-confidential
+  title: Do not paste confidential details
+  text: Leave out names, numbers and anything private. Use placeholders. Follow your employer's rules on AI.
+  example: Write “[customer name]” and “[amount]”. Fill them in yourself afterwards.
+
+- id: save-prompts
+  title: Save prompts that work
+  text: A prompt that worked once will work again. Keep it and reuse it.
+  example: Save it in My prompts in this app. Next month, change two words and go.
+
+- id: common-mistakes
+  title: Four common mistakes
+  text: Four things go wrong most often. The request is vague, or long and tangled. The context is missing, or the first answer is taken as final.
+  example: "“Help with my report” has all four. Say which report, for whom, and what help you want. Then improve the answer."
+
+- id: give-a-role
+  title: Give it a role
+  text: A role sets the style and the level of detail in one short line.
+  example: "“You are a patient trainer who explains things to new staff.”"

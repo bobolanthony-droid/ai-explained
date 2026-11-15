@@ -1,0 +1,28 @@
+why:
+  title: Pourquoi cette appli existe
+  paragraphs:
+    - L'actualité de l'IA va vite. On peut croire que tout le monde a déjà tout compris. Ce n'est pas le cas.
+    - La plupart des gens débutent. Beaucoup ont essayé un outil de chat une ou deux fois. C'est tout à fait normal.
+    - Vous n'avez pas besoin de tout apprendre. Quelques idées claires et un peu de pratique suffisent.
+    - Cette appli vous les apporte en leçons courtes. Chacune prend cinq à dix minutes.
+    - Nous serons honnêtes avec vous. L'IA est utile pour certaines choses et peu douée pour d'autres. Nous vous montrerons les deux.
+    - Ici, pas de score ni de série à tenir. Avancez à votre rythme. Y a pas le feu.
+
+# Le plan « 30 prochains jours » (leçon 8 et onglet Moi). Chaque étape doit rester petite.
+plan:
+  title: Mes 30 prochains jours
+  intro: Une petite étape par semaine. Il n'y a pas de date limite, et vous pouvez changer l'ordre.
+  steps:
+    - id: week-1
+      title: "Semaine 1 : une petite tâche"
+      text: Utilisez l'IA pour résumer un long e-mail ou un document.
+    - id: week-2
+      title: "Semaine 2 : un meilleur prompt"
+      text: Servez-vous du générateur de prompt pour une vraie demande.
+    - id: week-3
+      title: "Semaine 3 : un réglage"
+      text: Écrivez trois lignes d'instructions personnalisées dans votre outil d'IA.
+    - id: week-4
+      title: "Semaine 4 : un partage"
+      text: Montrez à un collègue un prompt qui a bien marché pour vous.
+  done: Vous avez fait les quatre étapes. Continuez à votre rythme.

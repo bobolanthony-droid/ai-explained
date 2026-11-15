@@ -1,0 +1,89 @@
+id: good-prompt
+title: "Talking to AI: how to write a good prompt"
+summary: "A simple recipe for asking clearly."
+minutes: 8
+
+opener: "You already know how to do this. Writing a good prompt is just explaining what you want, clearly. You do it with colleagues every day."
+
+idea:
+  paragraphs:
+    - "A [[prompt]] is what you type to an AI tool. It is your question or your instruction."
+    - "The clearer the prompt, the better the answer. The AI cannot read your mind. It only has your words."
+  simpler: "Tell the AI exactly what you want, the way you would tell a new helper."
+  analogy: "Picture a new colleague on their first day. They are bright, but they know nothing about your work. A good prompt is the briefing you would give them."
+  analogyLimit: "Where this stops working: a colleague asks questions when the briefing is unclear. The AI usually just guesses. So you have to say more at the start."
+
+sections:
+  - title: A simple recipe
+    paragraphs:
+      - "Good prompts often have five ingredients. You do not need all five every time."
+      - "Role is who the AI should be. Context is the situation. Task is what you want done."
+      - "Format is the shape of the answer. Constraints are what to avoid."
+      - "Start with the task. Add the others when the answer is not good enough."
+
+  - title: Before and after
+    paragraphs:
+      - "Here is a weak prompt. “Write an email about the late delivery.”"
+      - "Here is a stronger one. “You work in customer service at a furniture shop. A sofa will arrive two weeks late. Write a short, warm email that says sorry and gives the new date.”"
+      - "The second prompt gives a role, the context, the task and the tone. The AI has much less to guess."
+
+  - title: Give it the facts
+    paragraphs:
+      - "Do you want an answer based on a document? Paste the document in. Then say, “Use only this text.”"
+      - "This is called [[grounding]]. It ties the answer to a source you trust."
+      - "It lowers the risk of made-up facts. It does not remove it, so you still check."
+
+  - title: Treat it as a conversation
+    paragraphs:
+      - "The first answer is a draft. Say what to change. “Shorter.” “Friendlier.” “Add a table.”"
+      - "Ask the same thing twice and you may get two different answers. That is normal. A setting called [[temperature]] adds variety."
+      - "If the chat gets muddled, start a fresh one."
+
+  - title: Common mistakes
+    paragraphs:
+      - "Too vague. “Help with my report.” Say which report, for whom, and what kind of help."
+      - "Too long and tangled. Five requests in one message is too many. Ask for one thing at a time."
+      - "Stopping at the first answer. The second or third try is often much better."
+
+example:
+  title: At work
+  paragraphs:
+    - "Aisha must tell her team about a new expenses rule. Her first prompt is “Write about the new expenses rule.” The answer is long and stiff."
+    - "She tries again. “You are a friendly office manager. Our team of ten must now send receipts within 30 days. Write a short note for our team chat. No jargon.”"
+    - "The new answer is nearly ready to send. She changes two words and posts it."
+
+tryIt:
+  - "Open the Prompts tab in this app. The Prompt builder has one box for each ingredient. Fill in the task and one other box."
+  - "Copy the prompt and try it in your AI tool. The Toolkit also has templates, tips and a checklist. Come back to it any time."
+
+takeaways:
+  - "A good prompt is a clear briefing. Say who, what, for whom, and in what shape."
+  - "Paste in the facts you want used. Then check the answer."
+  - "The first answer is a draft. Keep the conversation going."
+
+quickCheck:
+  - question: Which prompt will get a better answer?
+    options:
+      - text: "“Write about recycling.”"
+        reply: "This one leaves a lot to guess. Who is it for, and how long should it be? The other prompt answers those questions."
+      - text: "“Write five tips on office recycling for new staff, as a short list.”"
+        correct: true
+        reply: "Yes. It says what, how many, for whom, and in what shape."
+
+  - question: The first answer is too long and too formal. What is the best next step?
+    options:
+      - text: Tell it what to change, and ask again
+        correct: true
+        reply: "Yes. “Shorter and friendlier, please” is often all it takes."
+      - text: Give up. The tool is no good for this
+        reply: "Not yet. The first answer is only a draft. Tell it what to change, and it will usually improve."
+      - text: Start a new chat and type the same prompt again
+        reply: "You might get a different answer, but not a better one. It is quicker to say what to change."
+
+  - question: You want an answer based on your meeting notes. What should you do?
+    options:
+      - text: Ask the question and hope it knows
+        reply: "It was not at your meeting. Without the notes, it can only guess. Paste them in, without private details."
+      - text: Paste in the notes and say “use only these notes”
+        correct: true
+        reply: "Yes. That ties the answer to your text. Still read it through."

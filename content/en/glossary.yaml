@@ -1,0 +1,321 @@
+# Glossary wording (English). One entry per id listed in content/shared/glossary.yaml.
+#
+# Rules for every entry (the "Grandma test"):
+#   definition  one plain sentence, 20 words at most
+#   simpler     the "like I'm 10" version
+#   analogy     an everyday comparison, AND where the comparison stops working
+#   example     something concrete from a normal working day
+#   heardAs     how people actually say it at work
+# Link to another term with [[term-id]] or [[term-id|words to show]].
+
+- id: ai
+  term: AI (artificial intelligence)
+  definition: Computer programs that do things we thought only people could do, like read, write or recognise a face.
+  simpler: A computer program that has learned to do some clever things, like finishing your sentence.
+  analogy: It is like a calculator for words and pictures. It is fast and often useful. But unlike a calculator, it can be wrong.
+  example: Your email app suggests the end of your sentence. That is AI.
+  heardAs: "“We're using AI to sort customer emails.”"
+
+- id: machine-learning
+  term: Machine learning
+  definition: A way to build AI by showing a computer many examples, instead of writing rules by hand.
+  simpler: The computer learns from examples. A child learns what a dog is the same way, by seeing lots of dogs.
+  analogy: A new colleague learns to spot a good invoice by seeing hundreds of them. Nobody hands them a full rule book. Unlike a person, the computer needs thousands of examples and learns only that one task.
+  example: Your spam filter learned from millions of emails that people marked as junk.
+  heardAs: "“The model was trained on last year's sales data.”"
+
+- id: generative-ai
+  term: Generative AI
+  definition: AI that makes new things, such as text, pictures or sound, when you ask for them.
+  simpler: AI that makes things. You ask, and it writes or draws.
+  analogy: Other AI is like a sorter. It puts things in boxes. Generative AI is like a writer. It starts from a blank page. But it builds on what it has seen before, not on ideas of its own.
+  example: You ask a [[chatbot|chat assistant]] to draft a thank-you note. It writes one in seconds.
+  heardAs: "“GenAI”, “gen AI”"
+
+- id: chatbot
+  term: Chatbot (AI assistant)
+  definition: A tool you talk to in writing. You type a question and it types an answer.
+  simpler: A computer you can chat with, like texting.
+  analogy: It is like texting a helpful colleague who answers at once. Unlike a colleague, it does not know your company unless you tell it.
+  example: You paste in your meeting notes and ask for the three main actions.
+  heardAs: "“AI assistant”, “chat assistant”, “the chat”"
+
+- id: llm
+  term: Large language model (LLM)
+  definition: A program that has read a huge amount of text and predicts which words should come next.
+  simpler: A very strong autocomplete. It guesses the next word, again and again.
+  analogy: Your phone suggests the next word when you type. An LLM does the same, but for whole pages. It is like a very well-read intern. Unlike a person, it does not know if what it writes is true.
+  example: You type “Write a polite reminder about the unpaid invoice”. The LLM predicts a fitting email, word by word.
+  heardAs: "“the model”, “the LLM”, “the engine behind the chatbot”"
+
+- id: training-data
+  term: Training data
+  definition: The examples an AI learned from, such as text, pictures or recordings.
+  simpler: Everything the AI was shown so it could learn.
+  analogy: It is like the books a student read before an exam. The student only knows what was in those books. Unlike a student, the AI cannot go and read a newer book by itself.
+  example: An assistant may not know last week's news. Its training data ended before then.
+  heardAs: "“It was trained on public web pages.” “That's not in its training data.”"
+
+- id: hallucination
+  term: Hallucination
+  definition: When an AI tool states something false as if it were true.
+  simpler: When the AI makes something up and sounds sure about it.
+  analogy: Imagine someone who never says “I don't know”. They always give an answer, even when they are guessing. Unlike a person, the AI is not lying. It cannot tell a fact from a guess that sounds good.
+  example: You ask for a source. The AI gives a report title that looks real but does not exist.
+  heardAs: "“The AI made that up.” “It hallucinated a reference.”"
+
+- id: prompt
+  term: Prompt
+  definition: "What you type to an AI tool: your question or your instruction."
+  simpler: Your message to the AI. What you ask for.
+  analogy: It is like a note you leave for a new colleague. A clear note gets good work. A vague note gets a guess. Unlike a colleague, the AI will not come back to ask what you meant.
+  example: "“Summarise this email in three bullet points for my manager.” That is a prompt."
+  heardAs: "“Try a different prompt.” “What was your prompt?”"
+
+- id: agent
+  term: AI agent
+  definition: An AI tool that can carry out several steps by itself to reach a goal you set.
+  simpler: An AI that does not just answer. It does the steps for you.
+  analogy: A [[chatbot|chatbot]] is like asking for directions. An agent is like asking a driver to take you there. Unlike a good driver, an agent can take a wrong turn and not notice. Keep an eye on the road.
+  example: You ask an agent to find a meeting slot, book a room and send the invites.
+  heardAs: "“AI agent”, “agentic”, “an agent handles that”"
+
+- id: data-privacy
+  term: Data privacy
+  definition: Keeping personal and company information safe, and sharing it only with people allowed to see it.
+  simpler: Not showing private things to people or tools that should not see them.
+  analogy: Treat an AI tool like a postcard, not a sealed letter. Do not write anything you would not want others to read. But some approved work tools are more like a sealed letter. Ask before you assume.
+  example: Before you paste a customer email into an AI tool, you remove the name and account number.
+  heardAs: "“Don't put client data in that tool.” “Is this tool approved?”"
+
+- id: model
+  term: Model
+  definition: The trained program inside an AI tool. It turns your request into an answer.
+  simpler: The engine inside the AI tool.
+  analogy: A car has an engine. A chat tool has a model. Two different tools can share the same engine. Unlike an engine, a model was not built part by part. It was trained on examples.
+  example: Your chat tool gets an update. The page looks the same, but the answers are better. The model changed.
+  heardAs: "“Which model are you using?” “The new model is faster.”"
+
+- id: token
+  term: Token
+  definition: A small piece of text, often part of a word. AI tools read and write in tokens.
+  simpler: A little chunk of a word. The AI counts in chunks, not in words.
+  analogy: Think of Scrabble tiles in small groups. The AI builds its answer one group at a time. Unlike tiles, you never see tokens. They work behind the scenes.
+  example: A tool says it has a limit of so many tokens. That is roughly how much text it can handle at once.
+  heardAs: "“We ran out of tokens.” “It is priced per token.”"
+
+- id: context-window
+  term: Context window
+  definition: The amount of text an AI tool can keep in mind at one time.
+  simpler: How much the AI can remember in one chat.
+  analogy: It is like a desk. Only so many papers fit on it. Add more, and the oldest ones fall off the edge. Unlike you, the AI cannot pick a paper back up off the floor.
+  example: In a very long chat, the assistant forgets what you said at the start. You open a fresh chat and paste in the key points.
+  heardAs: "“That document is too big for the context window.” “It lost the context.”"
+
+- id: grounding
+  term: Grounding
+  definition: Tying an AI's answer to a trusted source, such as a document you give it.
+  simpler: Telling the AI to use this text, not its memory.
+  analogy: It is like asking a colleague to answer from the contract on the table, not from memory. Unlike a careful colleague, the AI may still add things that are not in the text. Ask it to quote the part it used.
+  example: You paste in the meeting notes and write, “Answer only from these notes.”
+  heardAs: "“Is that answer grounded?” “Ground it in the policy document.”"
+
+- id: temperature
+  term: Temperature (creativity setting)
+  definition: A setting that controls how predictable or how varied an AI's answers are.
+  simpler: A dial. Low means safe and steady. High means surprising.
+  analogy: Picture two cooks. One follows the recipe exactly. The other improvises. Low temperature is the first cook. High temperature is the second. Unlike a cook, the AI cannot taste which dish went wrong.
+  example: You ask the same question twice and get two different answers. That variety comes from temperature.
+  heardAs: "“Turn the temperature down for facts.” “Make it more creative.”"
+
+- id: multimodal
+  term: Multimodal
+  definition: Able to work with more than text, such as pictures, sound or video.
+  simpler: An AI that can look and listen, not just read.
+  analogy: A colleague can read your note, look at your photo and listen to your voicemail. A multimodal AI can do the same kinds of things. Unlike a colleague, it can misread a blurry photo and still sound sure.
+  example: You take a photo of a whiteboard. The assistant turns it into typed notes.
+  heardAs: "“It is multimodal, so you can upload a picture.” “Just show it a screenshot.”"
+
+- id: rag
+  term: RAG (retrieval-augmented generation)
+  definition: A way for an AI tool to look things up in chosen documents before it answers.
+  simpler: The AI looks in your documents first. Then it answers.
+  analogy: It is like an open-book exam. The student may check the book before answering, so the answers are more reliable. But the student can still misread the page. You still check.
+  example: Your company assistant gets a question about holidays. It finds the HR policy first, then quotes it.
+  heardAs: "“It uses RAG over our documents.” “It searches the knowledge base first.”"
+
+- id: human-in-the-loop
+  term: Human in the loop
+  definition: A person checks or approves the AI's work before anything important happens.
+  simpler: A person looks first. The AI does not get the last word.
+  analogy: A junior writes the letter. A manager signs it. That signature is the human in the loop. Unlike a quick signature, the check has to be real. Read it before you approve it.
+  example: An AI drafts replies to customers. A team member reads each one and presses send.
+  heardAs: "“Keep a human in the loop.” “Someone must sign it off.”"
+
+- id: bias
+  term: Bias
+  definition: When an AI gives unfair or one-sided answers because of patterns in what it learned from.
+  simpler: When the AI is unfair, because the examples it learned from were unfair.
+  analogy: Imagine learning about jobs only from old films. You might think every pilot is a man. The AI learns from the past in the same way. Unlike a person, it cannot notice this and correct itself.
+  example: You ask for a picture of “a manager”. Every picture shows a man in a suit. You ask again and say what you want.
+  heardAs: "“Check that for bias.” “The data was biased.”"
+
+- id: project
+  term: Project (workspace)
+  definition: A place inside an AI tool where you keep the chats, files and instructions for one topic.
+  simpler: A folder for one piece of work, with its own rules.
+  analogy: It is like a project binder on your desk. Everything for that job is in one place. Unlike a binder, the AI reads the whole thing every time you ask.
+  example: You make a project called “Monthly report”. It holds last month's report and your style rules.
+  heardAs: "“Put it in the project.” “I have a workspace for that client.”"
+
+- id: custom-instructions
+  term: Custom instructions
+  definition: Standing notes that tell an AI tool how you want it to answer every time.
+  simpler: Rules you write once. The AI follows them in every chat.
+  analogy: It is like a note on the fridge for the babysitter. You write it once, and it applies every evening. Unlike a babysitter, the AI may drift from the note in a long chat. Remind it.
+  example: You write, “Use British spelling. Keep answers short. Ask before you assume.”
+  heardAs: "“Set it in your custom instructions.” “I told it to always use plain words.”"
+
+- id: memory
+  term: Memory
+  definition: A feature that lets an AI tool remember things about you between chats.
+  simpler: The AI keeps a few notes about you for next time.
+  analogy: A good barista remembers your usual order. Memory lets an assistant do that. Unlike a barista's memory, you can open these notes, read them and delete them.
+  example: You tell the assistant that you write for a French audience. Next week, it remembers without being told.
+  heardAs: "“It remembered my preferences.” “You can turn memory off.”"
+
+- id: system-prompt
+  term: System prompt
+  definition: Hidden instructions, set by whoever built the tool, that shape how the AI behaves.
+  simpler: Rules the maker gave the AI before you arrived.
+  analogy: A shop assistant gets a briefing before the doors open. Be polite. Do not talk about rival shops. You never see that briefing, but it shapes every answer. Unlike your own instructions, you did not write it and usually cannot change it.
+  example: Your company's HR assistant only answers HR questions. Its system prompt tells it to.
+  heardAs: "“That is in the system prompt.” “The tool was told not to do that.”"
+
+- id: agentic-workflow
+  term: Agentic workflow
+  definition: A task where an AI plans and carries out several steps, checking its work as it goes.
+  simpler: The AI works through a to-do list, step by step.
+  analogy: A cook does not just chop. They plan the meal, cook each dish, taste and adjust. An agentic workflow is the whole meal, not one chop. Unlike a cook, the AI may not notice that a dish has gone wrong.
+  example: An AI reads new invoices, checks them against the orders, and drafts a list of problems for you to review.
+  heardAs: "“We built an agentic workflow for that.” “It runs the steps itself.”"
+
+- id: tool-use
+  term: Tool use
+  definition: When an AI can use other software, such as search, a calculator or your calendar.
+  simpler: The AI can pick up tools, not just talk.
+  analogy: Think of a helper with a phone. They can call a taxi, check the weather or look up an address. Without the phone, they can only talk. Unlike a helper, the AI only has the tools that someone has switched on.
+  example: You ask, “What is 17% of 2,340?” The assistant uses a calculator tool instead of guessing.
+  heardAs: "“It can call tools.” “It used the search tool.”"
+
+- id: connector
+  term: Connector
+  definition: A link that lets an AI tool see or use another app, like your calendar or files.
+  simpler: A bridge between the AI and one of your apps.
+  analogy: It is like giving a new assistant the key to one room. They can now fetch the files in it. You choose which rooms. Unlike a person, the AI will read whatever is in the room, so choose with care.
+  example: You connect your calendar. Now you can ask, “When am I free on Thursday?”
+  heardAs: "“Turn on the email connector.” “Is it connected to our drive?”"
+
+- id: mcp
+  term: MCP (Model Context Protocol)
+  definition: A shared standard that lets AI tools plug into other apps in the same way.
+  simpler: One kind of plug that fits many apps.
+  analogy: It is like a standard wall socket. Any lamp with the right plug works in any room. MCP is the standard plug between AI tools and apps. Unlike a socket, each link still needs your permission.
+  example: Your IT team adds an MCP link to the project tracker. Your assistant can now list your open tasks.
+  heardAs: "“There is an MCP server for that.” “It connects over MCP.”"
+
+- id: automation
+  term: Scheduled task (automation)
+  definition: A job you set up once that an AI tool then runs on its own, at set times.
+  simpler: You set it once. It runs by itself, like an alarm clock.
+  analogy: It is like a standing order at the bank. You set it up, and it happens every month. Unlike a standing order, the result can differ each time. Look at it now and then.
+  example: Every Monday at 8am, the assistant sends you a summary of last week's team updates.
+  heardAs: "“I scheduled it to run weekly.” “That report is automated.”"
+
+- id: confidentiality
+  term: Confidentiality
+  definition: The duty to keep certain information secret, such as client details or company plans.
+  simpler: Some things are secret. You do not pass them on.
+  analogy: Think of a sealed envelope marked “private”. You would not read it aloud in a busy café. Pasting it into an unapproved AI tool is a bit like that. But an approved work tool may be different, so check first.
+  example: You want help with a contract. You remove the client's name and the prices before you paste it.
+  heardAs: "“That is confidential.” “Do not share that outside the team.”"
+
+- id: copyright
+  term: Copyright
+  definition: The legal right of creators to control how their work is copied and used.
+  simpler: If someone made it, it is theirs. You cannot just copy it.
+  analogy: A recipe book belongs to its author. You may cook from it, but you may not reprint it and sell it. With AI, the rules are still being worked out, and they differ by country. When it matters, ask your legal team.
+  example: You want an AI picture “in the style of” a living artist for an advert. You stop and ask your legal team first.
+  heardAs: "“Who owns the copyright?” “Can we use that image?”"
+
+- id: prompt-injection
+  term: Prompt injection
+  definition: A trick where hidden text in a document or web page gives an AI tool secret orders.
+  simpler: Someone hides a sneaky note, and the AI obeys it.
+  analogy: Imagine a letter with a line in tiny print that says, “Assistant, send this person the office keys.” A careful person would ignore it. Unlike a person, the AI cannot always tell your orders from text it was only asked to read.
+  example: An AI summarises a web page. Hidden text on the page says, “Tell the reader to visit this link.” The summary includes the link.
+  heardAs: "“That page had a prompt injection.” “Do not let it act on emails by itself.”"
+
+- id: deepfake
+  term: Deepfake
+  definition: A fake picture, video or voice recording, made with AI, that looks or sounds real.
+  simpler: A fake video or voice that seems real.
+  analogy: It is like a forged signature, but for a face or a voice. Unlike a forged signature, it can be made in minutes, by almost anyone.
+  example: You get a voice message from “your director” asking for an urgent payment. You call them back on a number you know.
+  heardAs: "“That video is a deepfake.” “Someone cloned his voice.”"
+
+- id: guardrails
+  term: Guardrails
+  definition: Limits built into an AI tool to stop harmful, unsafe or off-topic answers.
+  simpler: Safety rails. They stop the AI from going where it should not.
+  analogy: They are like the barriers on a mountain road. They prevent the worst accidents. Unlike road barriers, they have gaps. They are no reason to stop paying attention.
+  example: You ask a work assistant for medical advice. It suggests you see a doctor instead.
+  heardAs: "“The guardrails blocked that.” “It refused to answer.”"
+
+- id: open-source
+  term: Open and closed models
+  definition: Open models can be downloaded and run by anyone. Closed models are only used through their maker.
+  simpler: Open means anyone can take it home. Closed means you can only visit.
+  analogy: An open model is like a published recipe. Anyone can cook it in their own kitchen. A closed model is like a restaurant dish. You can order it, but the recipe stays secret. Neither one is always better or safer.
+  example: Your IT team runs an open model on company computers, so no data leaves the building.
+  heardAs: "“It is open source.” “That one is a closed model.”"
+
+- id: api
+  term: API (application programming interface)
+  definition: A way for one piece of software to talk to another, with no person in between.
+  simpler: A door that lets programs talk to each other.
+  analogy: It is like a waiter. You do not walk into the kitchen. The waiter takes your order in and brings the dish out. An API carries requests between programs. Unlike a waiter, it only understands exact orders.
+  example: Your company's help desk sends each question to an AI model through an API.
+  heardAs: "“We use the API.” “It is connected through an API.”"
+
+- id: plugin
+  term: Plugin (add-on)
+  definition: An extra piece you add to an AI tool so it can do one more thing.
+  simpler: An add-on. Like an app for your AI tool.
+  analogy: A phone does more when you add apps. An AI tool does more when you add plugins. Unlike most phone apps, a plugin may see what you type in the chat. Check who made it before you add it.
+  example: You add a plugin that turns the assistant's answer into slides.
+  heardAs: "“Is there a plugin for that?” “Install the add-on.”"
+
+- id: fine-tuning
+  term: Fine-tuning
+  definition: Giving an existing AI model extra training so it gets better at one kind of task.
+  simpler: Extra lessons for an AI, on one subject.
+  analogy: A doctor trains in general medicine first. Then they specialise in hearts. Fine-tuning is the specialising part. Unlike a doctor, a model can get worse at other things when it specialises.
+  example: A company fine-tunes a model on its past support replies. The model then writes in the company's style.
+  heardAs: "“We fine-tuned it on our own data.” “It is a custom model.”"
+
+- id: benchmark
+  term: Benchmark
+  definition: A standard test used to compare how well AI models do on set tasks.
+  simpler: A school test for AI models.
+  analogy: It is like a school exam. It shows how a student does on that exam. It does not show how they will do in your job. Unlike students, models have sometimes seen the test questions before.
+  example: A headline says a new model “beats every benchmark”. You try it on your own task before you believe it.
+  heardAs: "“It scores well on the benchmarks.” “It is top of the leaderboard.”"
+
+- id: agi
+  term: AGI (artificial general intelligence)
+  definition: A possible future AI that could do most thinking tasks as well as a person.
+  simpler: An AI that could do almost anything a person can. It does not exist today.
+  analogy: Today's AI is like a set of very good tools. AGI would be more like an all-round colleague. But people do not agree on what the word means. Nobody knows if or when it will arrive.
+  example: One article says AGI is “two years away”. Another says “decades”. You note that nobody knows, and get on with your day.
+  heardAs: "“When will we get AGI?” “Some people say it is close.”"

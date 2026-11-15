@@ -1,0 +1,28 @@
+why:
+  title: Why this exists
+  paragraphs:
+    - AI news moves fast. It can feel like everyone else already gets it. They don't.
+    - Most people are just starting. Many have tried a chat tool once or twice. That is a normal place to be.
+    - You don't need to learn everything. You need a few clear ideas and a little practice.
+    - This app gives you that in short lessons. Each one takes five to ten minutes.
+    - We'll be honest with you. AI is useful for some things and poor at others. We'll show you both.
+    - There are no scores here and no streaks. Go at your own pace. You're not late.
+
+# The "next 30 days" plan (Lesson 8 and the Me tab). Keep each step small.
+plan:
+  title: My next 30 days
+  intro: One small step a week. There is no deadline, and you can change the order.
+  steps:
+    - id: week-1
+      title: "Week 1: one small task"
+      text: Use AI to summarise one long email or document.
+    - id: week-2
+      title: "Week 2: one better prompt"
+      text: Use the Prompt builder for one real request.
+    - id: week-3
+      title: "Week 3: one thing set up"
+      text: Write three lines of custom instructions in your AI tool.
+    - id: week-4
+      title: "Week 4: one thing shared"
+      text: Show a colleague one prompt that worked for you.
+  done: You have done all four steps. Carry on at your own pace.

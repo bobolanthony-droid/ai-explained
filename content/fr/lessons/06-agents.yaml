@@ -1,0 +1,83 @@
+id: agents
+title: "Agents, connecteurs et tâches planifiées"
+summary: "Quand l'IA enchaîne des étapes pour vous, et comment garder la main."
+minutes: 8
+
+opener: "C'est la partie la plus récente de l'IA, et celle dont on parle le plus. Prenez votre temps. Beaucoup de gens ne l'ont pas encore essayée, et c'est très bien ainsi."
+
+idea:
+  paragraphs:
+    - "Un assistant conversationnel répond. Un [[agent|agent IA]] agit. Vous lui donnez un objectif, et il réalise les étapes."
+    - "Pour agir, il lui faut des outils et des accès. C'est vous qui décidez ce que vous lui accordez."
+  simpler: "Un chatbot vous dit comment faire. Un agent le fait pour vous, si vous le laissez faire."
+  analogy: "Un chatbot, c'est comme demander son chemin. Un agent, c'est comme demander à un chauffeur de vous y conduire."
+  analogyLimit: "La limite de cette image : un bon chauffeur connaît les routes et remarque ses erreurs. Un agent peut se tromper de route sans s'en apercevoir. Vous gardez donc un œil sur le trajet."
+
+sections:
+  - title: Comment un agent s'y prend
+    paragraphs:
+      - "Un agent peut se servir d'autres logiciels. Il peut chercher sur le web, faire un calcul ou lire un fichier. On appelle cela l'[[tool-use|utilisation d'outils]]."
+      - "Parfois, il prévoit plusieurs étapes et contrôle son propre travail. On parle alors de [[agentic-workflow|flux de travail agentique]]."
+
+  - title: "Les connecteurs : lui donner accès"
+    paragraphs:
+      - "Un [[connector|connecteur]] relie l'IA à l'une de vos applications. Ce peut être votre agenda, votre messagerie ou vos documents."
+      - "Avec un connecteur d'agenda, vous pouvez demander, « Quand suis-je libre jeudi ? » Sans lui, l'IA ne peut pas le savoir."
+      - "Vous entendrez peut-être le sigle [[mcp|MCP]]. C'est une norme commune pour ces liens, comme une prise standard. Inutile de savoir comment elle fonctionne."
+
+  - title: "Les tâches planifiées : un seul réglage"
+    paragraphs:
+      - "Certains outils peuvent lancer un travail à heures fixes. C'est une [[automation|tâche planifiée]]."
+      - "Par exemple, un résumé de vos e-mails non lus chaque jour à 8 h. Ou la liste des échéances de la semaine, chaque lundi."
+      - "C'est aussi une façon tranquille d'organiser vos propres tâches. Demandez chaque semaine la liste de ce qui arrive à échéance."
+
+  - title: Commencez petit et gardez la main
+    paragraphs:
+      - "Donnez d'abord accès à une seule application. Choisissez-en une qui ne contient rien de sensible."
+      - "Laissez l'agent préparer, pas envoyer. Il rédige l'e-mail. Vous appuyez sur Envoyer."
+      - "On retrouve ici l'[[human-in-the-loop|humain dans la boucle]]. Plus une IA peut agir, plus il compte."
+      - "Renseignez-vous d'abord auprès de votre employeur. Beaucoup d'entreprises encadrent ce à quoi un outil d'IA peut se connecter."
+
+example:
+  title: Au travail
+  paragraphs:
+    - "Chaque lundi matin, David dresse sa liste de tâches. Il la tire de ses e-mails, de ses messages et de son agenda."
+    - "L'assistant validé par son entreprise a des connecteurs pour les trois. Il crée une tâche planifiée, le lundi à 8 h. Elle liste ce qui est à rendre dans la semaine."
+    - "La première liste oublie une échéance. David ajoute une ligne aux consignes. « Inclus tout ce qui est marqué urgent. »"
+    - "La liste suivante est juste. Il la relit quand même chaque semaine."
+
+tryIt:
+  - "Rien à installer aujourd'hui. Ouvrez votre outil d'IA et cherchez des mots comme « connecteurs », « applications », « outils » ou « planifié ». Regardez simplement ce qui existe."
+  - "Votre outil ne propose rien de tout cela ? Ce n'est pas grave. Vous savez maintenant quoi chercher."
+
+takeaways:
+  - "Un agent agit pour atteindre un objectif. Un chatbot ne fait que répondre."
+  - "Les connecteurs donnent des accès. Vous choisissez les applications, une à la fois."
+  - "Il prépare, vous validez. Suivez les règles de votre employeur."
+
+quickCheck:
+  - question: Quelle est la principale différence entre un chatbot et un agent ?
+    options:
+      - text: Un agent a toujours raison
+        reply: "Aucune IA n'a toujours raison. Un agent peut se tromper lui aussi. C'est pourquoi une personne vérifie son travail."
+      - text: Un agent peut réaliser des étapes pour vous
+        correct: true
+        reply: "Oui. Un chatbot répond. Un agent peut agir, avec les outils qu'on lui a donnés."
+      - text: Un agent est un robot
+        reply: "Il n'y a aucun robot. C'est un logiciel qui réalise des étapes, comme chercher ou rédiger, pour atteindre un objectif."
+
+  - question: À quoi sert un connecteur ?
+    options:
+      - text: À relier l'IA à l'une de vos applications
+        correct: true
+        reply: "Oui. Votre agenda, par exemple. Elle peut alors voir quand vous êtes libre."
+      - text: À rendre l'IA plus rapide
+        reply: "Pas tout à fait. Un connecteur donne un accès, pas de la vitesse. Il relie l'IA à une application, comme votre agenda."
+
+  - question: Vous essayez un agent pour la première fois. Comment bien commencer ?
+    options:
+      - text: Tout connecter et le laisser envoyer des e-mails à ma place
+        reply: "C'est beaucoup de confiance pour un premier jour. Commencez par une application, et laissez-le rédiger pendant que vous envoyez."
+      - text: Lui ouvrir une seule application peu sensible, et relire ce qu'il fait
+        correct: true
+        reply: "Oui. Avancez par petites étapes, en vérifiant. Vous pourrez élargir les accès plus tard."

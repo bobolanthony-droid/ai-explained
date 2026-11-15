@@ -1,0 +1,14 @@
+# Exercise order on the Practice tab, and the lesson each one goes with
+# (that lesson's "Try it" section links to the exercise).
+# The wording is in content/<language>/exercises.yaml (same ids).
+exercises:
+  - id: summarise-email
+    lesson: everyday-wins
+  - id: better-question
+    lesson: good-prompt
+  - id: draft-improve
+    lesson: everyday-wins
+  - id: fact-check
+    lesson: how-chatbots-think
+  - id: reusable-project
+    lesson: workspace

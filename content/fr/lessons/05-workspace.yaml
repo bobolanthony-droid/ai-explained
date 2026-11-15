@@ -1,0 +1,83 @@
+id: workspace
+title: "Votre espace de travail IA : projets, instructions et mémoire"
+summary: "Réglez les choses une fois, pour ne plus vous répéter."
+minutes: 7
+
+opener: "Lassé de réexpliquer la même chose à chaque conversation ? Vous pouvez tout régler une fois. Cela prend dix minutes, sans aucune compétence technique."
+
+idea:
+  paragraphs:
+    - "La plupart des assistants permettent d'enregistrer vos préférences. Vous leur dites une fois comment vous aimez travailler. Ils l'appliquent à chaque fois."
+    - "Il existe trois grands moyens. Ce sont les instructions personnalisées, les projets et la mémoire."
+  simpler: "Donnez vos règles à l'IA une fois. Elle les garde pour la suite."
+  analogy: "Pensez à la première semaine d'un nouvel assistant. Vous lui expliquez comment vous aimez que les choses soient faites. Ensuite, vous n'avez plus à vous répéter."
+  analogyLimit: "La limite de cette image : un assistant humain progresse au fil des années. L'IA ne connaît que ce qui figure dans ses notes. Si les notes sont dépassées, l'IA l'est aussi."
+
+sections:
+  - title: "Les instructions personnalisées : vos règles permanentes"
+    paragraphs:
+      - "Les [[custom-instructions|instructions personnalisées]] sont des consignes valables pour toutes les conversations. Vous les écrivez une fois, dans les réglages de l'outil."
+      - "Les meilleures sont courtes. « Je travaille aux RH. Emploie des mots simples. Fais des réponses brèves. Pose-moi une question avant de supposer. »"
+
+  - title: "Les projets : un endroit par sujet"
+    paragraphs:
+      - "Un [[project|projet]] ressemble à un dossier pour un travail précis. Il réunit les conversations, les fichiers et les règles de ce sujet."
+      - "Créez-en un pour tout ce que vous refaites régulièrement. Un rapport mensuel, un client ou une lettre d'information."
+      - "Ajoutez-y un exemple de bon résultat. L'IA en reprendra le style."
+
+  - title: "La mémoire : ce qu'elle retient de vous"
+    paragraphs:
+      - "Certains outils ont une [[memory|mémoire]]. Ils notent des choses sur vous et s'en servent dans les conversations suivantes."
+      - "C'est pratique. Cela veut aussi dire que l'outil conserve des informations sur vous. Vous pouvez en général lire, modifier ou désactiver cette mémoire dans les réglages."
+
+  - title: Les règles que vous ne voyez pas
+    paragraphs:
+      - "Chaque outil d'IA a aussi un [[system-prompt|prompt système]]. Ce sont des consignes cachées, écrites par ceux qui l'ont conçu."
+      - "Voilà pourquoi deux outils peuvent répondre différemment à la même question. Vous ne pouvez pas le changer, et ce n'est pas grave."
+
+  - title: Gardez de l'ordre
+    paragraphs:
+      - "Ouvrez une nouvelle conversation pour chaque nouveau sujet. Les conversations longues et mélangées embrouillent l'IA."
+      - "Conservez les prompts qui marchent. La page Mes prompts de cette appli est faite pour cela."
+      - "Relisez vos instructions tous les quelques mois. Supprimez ce qui ne convient plus."
+
+example:
+  title: Au travail
+  paragraphs:
+    - "Carla rédige un point d'équipe chaque vendredi. Avant, elle réexpliquait le format chaque semaine."
+    - "Elle a maintenant un projet « Point du vendredi ». Il contient ses règles et deux anciens points qu'elle aimait bien."
+    - "Chaque vendredi, elle colle ses notes en vrac et obtient un brouillon dans son style. Il faut encore le relire. Mais cela prend cinq minutes au lieu de trente."
+
+tryIt:
+  - "Ouvrez les réglages de votre outil d'IA et cherchez les instructions personnalisées. Écrivez trois lignes courtes sur votre métier et sur les réponses que vous aimez."
+  - "Posez ensuite une question et observez la différence. L'onglet Pratique propose un exercice qui vous guide pour créer un projet complet."
+
+takeaways:
+  - "Les instructions personnalisées sont vos règles permanentes, pour toutes les conversations."
+  - "Un projet réunit au même endroit tout ce qui concerne un sujet."
+  - "Regardez ce que l'outil retient de vous. Gardez de l'ordre."
+
+quickCheck:
+  - question: Vous voulez des réponses en mots simples dans toutes vos conversations. Qu'utilisez-vous ?
+    options:
+      - text: Les instructions personnalisées
+        correct: true
+        reply: "Oui. Vous l'écrivez une fois, et cela s'applique partout."
+      - text: Un très long premier message à chaque fois
+        reply: "Cela marche, mais c'est fatigant. Les instructions personnalisées font le même travail une fois pour toutes."
+
+  - question: À quoi sert un projet ?
+    options:
+      - text: À poser une question rapide, une seule fois
+        reply: "Pour une question rapide, une conversation ordinaire suffit. Le projet est fait pour le travail qui revient."
+      - text: À une tâche que vous refaites régulièrement
+        correct: true
+        reply: "Oui. Les fichiers et les règles restent au même endroit, prêts pour la prochaine fois."
+
+  - question: Votre outil a une mémoire. Quelle est la bonne habitude ?
+    options:
+      - text: Lui confier vos mots de passe, pour qu'il aide davantage
+        reply: "Ne faites jamais cela. La mémoire sert aux préférences, pas aux secrets. En revanche, regardez de temps en temps ce qu'il a retenu."
+      - text: Regarder de temps en temps ce qu'il a retenu
+        correct: true
+        reply: "Oui. Vous pouvez en général le lire, le modifier ou le désactiver."

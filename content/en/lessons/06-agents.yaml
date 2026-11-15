@@ -1,0 +1,83 @@
+id: agents
+title: "Agents, connectors and scheduled tasks"
+summary: "When AI does steps for you, and how to stay in charge."
+minutes: 8
+
+opener: "This is the newest part of AI, and it gets a lot of noise. Take your time with it. Many people have not tried it yet, and that is fine."
+
+idea:
+  paragraphs:
+    - "A chat assistant answers. An [[agent|AI agent]] acts. You give it a goal, and it carries out the steps."
+    - "To act, it needs tools and access. You decide how much of each to give."
+  simpler: "A chatbot tells you how. An agent does it for you, if you let it."
+  analogy: "A chatbot is like asking for directions. An agent is like asking a driver to take you there."
+  analogyLimit: "Where this stops working: a good driver knows the roads and notices mistakes. An agent can take a wrong turn and not notice. So you watch the road."
+
+sections:
+  - title: How an agent gets things done
+    paragraphs:
+      - "An agent can use other software. It might search the web, do a sum or read a file. This is called [[tool-use|tool use]]."
+      - "Sometimes it plans several steps and checks its own work. People call this an [[agentic-workflow|agentic workflow]]."
+
+  - title: "Connectors: giving it access"
+    paragraphs:
+      - "A [[connector]] links the AI to one of your apps. It might be your calendar, your email or your documents."
+      - "With a calendar connector, you can ask, “When am I free on Thursday?” Without it, the AI cannot know."
+      - "You may hear the letters [[mcp|MCP]]. It is a shared standard for these links, like a standard plug. You do not need to know how it works."
+
+  - title: "Scheduled tasks: set it once"
+    paragraphs:
+      - "Some tools can run a job at set times. This is a [[automation|scheduled task]]."
+      - "One example is a summary of your unread emails at 8am each day. Another is a list of the week's deadlines every Monday."
+      - "It is also a calm way to organise your own tasks. Ask for a weekly list of what is due."
+
+  - title: Start small and stay in charge
+    paragraphs:
+      - "Give access to one app first. Pick one that holds nothing sensitive."
+      - "Let the agent prepare, not send. It drafts the email. You press send."
+      - "This is the [[human-in-the-loop|human in the loop]] again. The more an AI can do, the more it matters."
+      - "Check with your employer first. Many companies have rules about what an AI tool may connect to."
+
+example:
+  title: At work
+  paragraphs:
+    - "Dev spends Monday mornings building a to-do list from his emails, chats and calendar."
+    - "His company's approved assistant has connectors for all three. He sets up a scheduled task for Mondays at 8am. It lists what is due that week."
+    - "The first list misses one deadline. Dev adds a line to the instructions. “Include anything marked urgent.”"
+    - "The next list is right. He still reads it each week."
+
+tryIt:
+  - "No setup needed today. Open your AI tool and look for words like “connectors”, “apps”, “tools” or “scheduled”. Just see what is there."
+  - "Does your tool have none of these? That is fine too. Now you know what to look for."
+
+takeaways:
+  - "An agent acts on a goal. A chatbot only answers."
+  - "Connectors give access. You choose which apps, one at a time."
+  - "Let it prepare. You approve. Follow your employer's rules."
+
+quickCheck:
+  - question: What is the main difference between a chatbot and an agent?
+    options:
+      - text: An agent is always right
+        reply: "No AI is always right. An agent can make mistakes too. That is why a person checks its work."
+      - text: An agent can carry out steps for you
+        correct: true
+        reply: "Yes. A chatbot answers. An agent can act, using the tools it has been given."
+      - text: An agent is a robot
+        reply: "There is no robot involved. It is software that carries out steps, like searching or drafting, to reach a goal."
+
+  - question: What does a connector do?
+    options:
+      - text: It links the AI to one of your apps
+        correct: true
+        reply: "Yes. Your calendar is one example. Then it can see when you are free."
+      - text: It makes the AI faster
+        reply: "Not quite. A connector is about access, not speed. It links the AI to an app, such as your calendar."
+
+  - question: You are trying an agent for the first time. What is a good way to start?
+    options:
+      - text: Connect everything and let it send emails for you
+        reply: "That is a lot of trust on day one. Start with one app, and let it draft while you send."
+      - text: Give it one low-risk app, and review what it does
+        correct: true
+        reply: "Yes. Take small steps, and check as you go. You can widen access later."

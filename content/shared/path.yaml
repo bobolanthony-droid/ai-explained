@@ -1,0 +1,11 @@
+# The learning path: module order, and which lessons sit in each module.
+# Titles live in each language's path.yaml and lesson files.
+modules:
+  - id: understand
+    lessons: [not-late, how-chatbots-think]
+  - id: use-well
+    lessons: [good-prompt, everyday-wins]
+  - id: go-further
+    lessons: [workspace, agents]
+  - id: stay-safe
+    lessons: [safety, keeping-up]

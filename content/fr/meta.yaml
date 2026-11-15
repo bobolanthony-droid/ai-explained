@@ -1,0 +1,4 @@
+label: FR
+name: Français
+# Type normal spaces; the build adds French non-breaking spaces and curly apostrophes.
+typography: french
