@@ -103,7 +103,12 @@ test('works offline after the first visit', async ({ page, context }) => {
   await page.goto('/glossary');
   // Wait until the service worker has stored the app.
   await page.evaluate(() => navigator.serviceWorker.ready);
-  await expect(page.getByText('Ready to use offline.')).toBeVisible();
+  // ...and has finished saving every file (the app no longer shows a notice for this).
+  await page.waitForFunction(async () => {
+    const names = await caches.keys();
+    const cache = names.find((n) => n.includes('precache'));
+    return cache ? (await (await caches.open(cache)).keys()).length > 40 : false;
+  });
 
   await context.setOffline(true);
   await page.reload();

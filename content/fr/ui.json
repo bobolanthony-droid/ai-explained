@@ -304,9 +304,7 @@
   "update": {
     "available": "Une nouvelle version est prête.",
     "reload": "Mettre à jour",
-    "later": "Plus tard",
-    "offlineReady": "Prêt à fonctionner hors ligne.",
-    "dismiss": "OK"
+    "later": "Plus tard"
   },
   "notFound": {
     "title": "Rien ici",
