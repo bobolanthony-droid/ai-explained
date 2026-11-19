@@ -162,6 +162,14 @@ While `endpoint` is empty the links are hidden, and the form offers "Copy my ans
 Answers are sent as stable ids (for example `clarity: mostly-clear`), plus the app language, the number of
 lessons finished and the app version. No name, no device identifier.
 
+## Automatic translation
+
+Browsers offer to translate pages written in another language than the phone's. That rewrites the page
+behind React's back and crashed the app, so: `index.html` asks browsers not to translate it
+(`translate="no"`), phones set to a language the app has (for example French) get a one-tap offer to switch,
+and `src/app/translationGuard.ts` stops a translator that ignores the request from crashing the app.
+If a screen still fails, a calm "Something went wrong / Reload" screen replaces the technical error.
+
 ## Known limits
 
 - The installed app name is fixed ("AI Explained"): a web app has one manifest, so the

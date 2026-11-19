@@ -3,6 +3,7 @@ import { NotFound } from '@/features/NotFound';
 import { LearnPage } from '@/features/learn/LearnPage';
 import { WelcomePage } from '@/features/welcome/WelcomePage';
 import { AppShell } from './AppShell';
+import { ErrorScreen } from './ErrorScreen';
 
 /**
  * Routes.
@@ -22,6 +23,8 @@ export const router = createBrowserRouter(
   [
   {
     element: <AppShell />,
+    // A calm message instead of a technical error, if a screen ever fails.
+    errorElement: <ErrorScreen />,
     // Shown for an instant while the first lazy screen loads.
     hydrateFallbackElement: <></>,
     children: [

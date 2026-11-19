@@ -24,7 +24,10 @@ export function LanguageSwitcher({ full = false }: { full?: boolean }) {
             type="button"
             lang={l.code}
             aria-pressed={active}
-            onClick={() => void switchLocale(l.code)}
+            onClick={() => {
+              useSettings.setState({ languageSuggestionDismissed: true });
+              void switchLocale(l.code);
+            }}
             className={`min-h-11 min-w-11 rounded-full px-3 text-sm font-bold ${
               active ? 'bg-primary text-primary-ink' : 'text-ink-soft'
             }`}

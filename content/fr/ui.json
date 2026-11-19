@@ -16,7 +16,10 @@
     "back": "Retour"
   },
   "language": {
-    "label": "Langue"
+    "label": "Langue",
+    "suggest": "Cette appli existe aussi en français.",
+    "switchTo": "Passer en français",
+    "noThanks": "Non merci"
   },
   "welcome": {
     "title": "Bienvenue",
@@ -310,5 +313,11 @@
     "title": "Rien ici",
     "body": "Cette page n'existe pas. Ce n'est pas grave.",
     "home": "Aller à Apprendre"
+  },
+  "error": {
+    "title": "Un souci s'est produit",
+    "body": "Désolé, cet écran n'a pas pu s'afficher. Votre progression est conservée. Recharger la page suffit en général.",
+    "reload": "Recharger",
+    "home": "Revenir à l'accueil"
   }
 }

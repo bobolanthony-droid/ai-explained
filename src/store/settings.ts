@@ -18,11 +18,13 @@ export type Settings = {
   reduceMotion: boolean;
   /** The user tapped "Not now" on the install invitation. */
   installHintDismissed: boolean;
+  /** The user answered the "also in French" offer, or picked a language themselves. */
+  languageSuggestionDismissed: boolean;
 };
 
 export const useSettings = create<Settings>()(
   persist(
-    (): Settings => ({ locale: 'en', theme: 'light', textSize: 'standard', reduceMotion: false, installHintDismissed: false }),
+    (): Settings => ({ locale: 'en', theme: 'light', textSize: 'standard', reduceMotion: false, installHintDismissed: false, languageSuggestionDismissed: false }),
     { name: `${STORAGE_PREFIX}settings`, version: 1 },
   ),
 );

@@ -6,10 +6,12 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router';
+import { guardAgainstTranslation } from './app/translationGuard';
 import { startLocale } from './i18n';
 import { watchInstall } from './features/install/install';
 import { watchSettings } from './store/applySettings';
 
+guardAgainstTranslation();
 watchSettings();
 watchInstall();
 

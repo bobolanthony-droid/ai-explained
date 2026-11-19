@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Header } from '@/components/Header';
+import { LanguageSuggestion } from '@/components/LanguageSuggestion';
 import { TabBar } from '@/components/TabBar';
 import { UpdatePrompt } from '@/components/UpdatePrompt';
 import { TermSheet } from '@/features/glossary/TermSheet';
@@ -30,6 +31,7 @@ export function AppShell() {
         {t('nav.skip')}
       </a>
       <Header />
+      <LanguageSuggestion />
       <main id="main" ref={main} tabIndex={-1} className="flex-1 px-5 pt-6 pb-32">
         <Outlet />
       </main>

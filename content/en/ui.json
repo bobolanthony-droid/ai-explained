@@ -16,7 +16,10 @@
     "back": "Back"
   },
   "language": {
-    "label": "Language"
+    "label": "Language",
+    "suggest": "This app is also available in English.",
+    "switchTo": "Switch to English",
+    "noThanks": "No thanks"
   },
   "welcome": {
     "title": "Welcome",
@@ -310,5 +313,11 @@
     "title": "Nothing here",
     "body": "This page doesn't exist. That's all right.",
     "home": "Go to Learn"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "Sorry, this screen could not be shown. Your progress is safe. Reloading usually fixes it.",
+    "reload": "Reload",
+    "home": "Go to the start"
   }
 }
